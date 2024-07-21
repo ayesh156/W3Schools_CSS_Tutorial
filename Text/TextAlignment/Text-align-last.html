@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-align-last</title>
+    <style>
+        /* Align the last line of text in three (div) elements: */
+        div.a {
+            /* text-align: justify; - For Edge */
+            /* -moz-text-align-last: right; - For Firefox prior 58.0 */
+            text-align-last: right;
+        }
+
+        div.b {
+            /* text-align: justify; - For Edge */
+            /* -moz-text-align-last: center; - For Firefox prior 58.0 */
+            text-align-last: center;
+        }
+
+        div.c {
+            /* text-align: justify; - For Edge */
+            /* -moz-text-align-last: justify; - For Firefox prior 58.0 */
+            text-align-last: justify;
+        }
+
+        /* text-align-last: center; - Only for the last paragraph: */
+        div.d p:last-child {
+            /* -moz-text-align-last: center; - For Firefox prior 58.0 */
+            text-align-last: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>The text-align-last property specifies how to align the last line of a text:</h3>
+
+    <h3>That the text-align-last property sets the alignment for all last lines within the selected element. So, if you have a (div) with three paragraphs in it, text-align-last will apply to the last line of EACH of the paragraph. To use text-align-last on only the last paragraph in the container, you can use :last child, see example below.</h3>
+
+    <p><b>Note:</b> In Edge prior 79, the text-align-last property only works on text that has "text-align: justify".</p>
+
+    <h2>Align the last line of text in three (div) elements:</h2>
+
+    <div class="a">
+        <h2>text-align-last: right;</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum provident id voluptas! Velit impedit culpa eius corrupti, magnam numquam similique incidunt natus explicabo dignissimos, optio fuga itaque dolor. Beatae molestiae, tenetur asperiores blanditiis quos id vero accusantium voluptatibus debitis reprehenderit fugiat. Veniam qui non cupiditate dignissimos perspiciatis enim architecto voluptatem!</p>
+    </div>
+
+    <div class="b">
+        <h2>text-align-last: center;</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quaerat quae sit soluta cupiditate dolore quo, commodi quisquam deleniti, id facere nam, iusto eius iste alias. Dolore recusandae voluptate eos facilis, harum cupiditate! Temporibus fuga incidunt ea vitae suscipit atque eveniet unde, commodi voluptate dignissimos magnam saepe expedita inventore nobis.</p>
+    </div>
+
+    <div class="c">
+        <h2>text-align-last: justify</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, at error adipisci nostrum soluta accusantium numquam repellendus, distinctio praesentium officia dolorum obcaecati temporibus, itaque quaerat ut quam odio amet commodi consequatur facilis quasi aliquam incidunt cumque. Neque nostrum ullam nulla saepe, quia illum quis iste? Quibusdam, nemo quia! Ad, alias?</p>
+    </div>
+    
+    <h2>text-align-last: center; - Only for the last paragraph:</h2>
+
+    <div class="d">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam necessitatibus odit ut rerum? Magni consequatur inventore debitis repudiandae eaque voluptate quod iste! Reiciendis rerum accusamus voluptatum minus nesciunt nam unde quisquam. Quas, ab reprehenderit iusto asperiores placeat qui totam incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam necessitatibus odit ut rerum? Magni consequatur inventore debitis repudiandae eaque voluptate quod iste! Reiciendis rerum accusamus voluptatum minus nesciunt nam unde quisquam. Quas, ab reprehenderit iusto asperiores placeat qui totam incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam necessitatibus odit ut rerum? Magni consequatur inventore debitis repudiandae eaque voluptate quod iste! Reiciendis rerum accusamus voluptatum minus nesciunt nam unde quisquam. Quas, ab reprehenderit iusto asperiores placeat qui totam incidunt?</p>
+    </div>
+    
+</body>
+</html>

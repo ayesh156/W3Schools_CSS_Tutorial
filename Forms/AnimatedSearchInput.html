@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Search Input</title>
+    <style>
+        input[type="text"] {
+            width: 130px;
+            padding: 16px 20px;
+            box-sizing: border-box;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: white;
+            background-image: url("../src/images/searchicon.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 2px 2px;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        input[type="text"]:focus {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Animated Search Input</h1>
+
+    <h3>In this example we use the CSS transition property to animate the width of the search input when it gets focus.</h3>
+
+    <form action="">
+        <input type="text" name="search" placeholder="Search...">
+    </form>
+    
+</body>
+</html>

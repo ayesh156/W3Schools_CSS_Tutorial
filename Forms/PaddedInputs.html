@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padded Inputs</title>
+    <style>
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Padded Inputs</h1>
+
+    <h3>Use the padding property to add space inside the text field.</h3>
+
+    <p><b>Tip:</b> When you have many inputs after each other, you might also want to add some margin, to add more space outside of them:</p>
+
+    <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <p>Note that we have set the box-sizing property to border-box. This makes sure that the padding and eventually borders are included in the total width and height of the elements.</p>
+    
+</body>
+</html>

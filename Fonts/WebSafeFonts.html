@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Safe Fonts</title>
+    <style>
+        /* There are three font types: Tahoma, Verdana and sans-serif. The second and third fonts are backups, in case the first one is not found. */
+        p.f1 {font-family: Tahoma, Verdana, sans-serif;}
+
+        /* Arial (sans-serif) */
+        .f2 {font-family: Arial, sans-serif;}
+
+        /* Verdana (sans-serif) */
+        .f3 {font-family: Verdana, sans-serif;}
+
+        /* Helvetica (sans-serif) */
+        .f4 {font-family: Helvetica, sans-serif;}
+
+        /* Tahoma (sans-serif) */
+        .f5 {font-family: Tahoma, sans-serif;}
+
+        /* Trebuchet MS (sans-serif) */
+        .f6 {font-family: 'Trebuchet MS', sans-serif;}
+
+        /* Times New Roman (sans-serif) */
+        .f7 {font-family: 'Times New Roman', serif;}
+
+        /* Georgia (serif) */
+        .f8 {font-family: Georgia, serif;}
+
+        /* Garamond (serif) */
+        .f9 {font-family: Garamond, serif;}
+
+        /* Courier New (monospace) */
+        .f10 {font-family: 'Courier New', monospace;}
+
+        /* Brush Script MT */
+        .f11 {font-family: 'Brush Script MT', cursive;}
+    </style>
+</head>
+<body>
+
+    <h1>Fallback Fonts</h1>
+
+    <h3>However, there are no 100% completely web safe fonts. There is always a chance that a font is not found or is not insatalled property.</h3>
+
+    <h3>Therefore, it is very important to always use fallback fonts.</h3>
+
+    <h3>This means that you should add a list of similar "backup fonts" in the font-family property. If the first font does not work, the browser will try the next one and the next one and so on. Always end the list with a generic font family name.</h3>
+
+    <h2>There are three font types: Tahoma, Verdana and sans-serif. The second and third fonts are backups, in case the first one is not found.</h2>
+
+    <p class="f1">This is a paragraph.</p>
+    <p class="f1">This is a paragraph.</p>
+
+    <h1>Best Web Safe Fonts for HTML and CSS</h1>
+
+    <h3>The following list are the best web safe fonts for HTML and CSS.</h3>
+
+    <ul>
+        <li>Arial (sans-serif)</li>
+        <li>Verdana (sans-serif)</li>
+        <li>Helvetica (sans-serif)</li>
+        <li>Tahoma (sans-serif)</li>
+        <li>Trebuchet MS (sans-serif)</li>
+        <li>Times New Roman (serif)</li>
+        <li>Georgia (serif)</li>
+        <li>Garamond (serif)</li>
+        <li>Courier New (monospace)</li>
+        <li>Brush Script MT (cursive)</li>
+    </ul>
+
+    <p><b>Note:</b> Before you publish your website, always check how your fonts appear on different browsers and devices and always use fallback fonts!</p>
+
+    <h1>Arial (sans-serif)</h1>
+
+    <h3>Arial is the most widely used font for both online and printed media. Arial is also the default font in Google Docs.</h3>
+
+    <h3>Arial is one of the safest web fonts and it is available on all major operating systems.</h3>
+
+    <h1 class="f2">Lorem ipsum dolor sit amet.</h1>
+    <p class="f2">Lorem ipsum dolor sit amet.</p>
+    <p class="f2">0 1 2 3 4 5 6 7 8 9</p>
+
+    <h1>Verdana (sans-serif)</h1>
+
+    <h3>Verdana is a very popular font. Verdana is easily readable even for small font sizes.</h3>
+
+    <h1 class="f3">Lorem ipsum dolor sit amet.</h1>
+    <p class="f3">Lorem ipsum dolor sit amet.</p>
+    <p class="f3">0 1 2 3 4 5 6 7 8 9 </p>
+
+    <h1>Helvetica (sans-serif)</h1>
+
+    <h3>Helvetica font is loved by designers. It is sutable for many types of business</h3>
+
+    <h1 class="f4">Lorem ipsum dolor sit amet.</h1>
+    <p class="f4">Lorem ipsum dolor sit amet.</p>
+    <p class="f4">0 1 2 3 4 5 6 7 8 9 </p>
+
+    <h1>Tahoma (sans-serif)</h1>
+
+    <h3>Tahoma font has less space between the characters</h3>
+
+    <h1 class="f5">Lorem ipsum dolor sit amet.</h1>
+    <p class="f5">Lorem ipsum dolor sit amet.</p>
+    <p class="f5">0 1 2 3 4 5 6 7 8 9</p>
+
+    <h1>Trebuchet MS (sans-serif)</h1>
+
+    <h3>Trebuchet MS was designed by Microsoft in 1996. Use this font carefully. Not supported by all mobile operating systems.</h3>
+
+    <h1 class="f6">Lorem ipsum dolor sit amet.</h1>
+    <p class="f6">Lorem ipsum dolor sit amet.</p>
+    <p class="f6">0 1 2 3 4 5 6 7 8 9</p>
+
+    <h1>Times New Roman (serif)</h1>
+
+    <h3>Times New Roman is one of the most recognizable fonts in the world. It looks professional and is used in many newspapers and "news" websites. It is also the primary font for Windows devices and applications</h3>
+
+    <h1 class="f7">Lorem ipsum dolor sit amet.</h1>
+    <p class="f7">Lorem ipsum dolor sit amet.</p>
+    <p class="f7">0 1 2 3 4 5 6 7 8 9</p>
+
+    <h1>Georgia (serif)</h1>
+
+    <h3>Georgia is an elegant serif font. It is very readable at different font sizes, so it is a good candidate for mobile-responsive design</h3>
+    
+    <h1 class="f8">Lorem ipsum dolor sit amet.</h1>
+    <p class="f8">Lorem ipsum dolor sit amet.</p>
+    <p class="f8">0 1 2 3 4 5 6 7 8 9</p>
+
+    <h1>Garamond (serif)</h1>
+
+    <h3>Garamond is a classical font used for many printed books. It has a timeless look and good readability</h3>
+
+    <h1 class="f9">Lorem ipsum dolor sit amet.</h1>
+    <p class="f9">Lorem ipsum dolor sit amet.</p>
+    <p class="f9">0 1 2 3 4 5 6 7 8 9</p>
+
+    <h1>Courier New (monospace)</h1>
+
+    <h3>Courier New is the most widely used monospace serif font. Courier New is often used with coding displays and many email providers use it as their default font. Courier New is also the standard font for movie screenplays</h3>
+
+    <h1 class="f10">Lorem ipsum dolor sit amet.</h1>
+    <p class="f10">Lorem ipsum dolor sit amet.</p>
+    <p class="f10">0 1 2 3 4 5 6 7 8 9</p>
+
+    <h1>Brush Script MT (cursive)</h1>
+
+    <h3>Brush Script MT font was designed to mimic handwriting. It is elegant and sophisticated, but can be hard to read. Use it carefully</h3>
+
+    <h1 class="f11">Lorem ipsum dolor sit amet.</h1>
+    <p class="f11">Lorem ipsum dolor sit amet.</p>
+    <p class="f11">0 1 2 3 4 5 6 7 8 9</p>
+
+</body>
+</html>

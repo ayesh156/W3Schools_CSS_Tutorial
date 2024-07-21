@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty-cells</title>
+    <style>
+        /* empty-cells: hide; */
+        table.hide {
+            empty-cells: hide;
+        }
+
+        /* empty-cells: show (default); */
+        table.show {
+            empty-cells: show;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>The empty-cells property sets weather or not to display border on empty cells in a table.</h3>
+
+    <p><b>Note:</b> This property has no effect if border-collapse is "collapse".</p>
+
+    <h2>empty-cells: hide;</h2>
+    <table class="hide" border="1">
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2>empty-cells: show (default);</h2>
+    <table class="show" border="1">
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

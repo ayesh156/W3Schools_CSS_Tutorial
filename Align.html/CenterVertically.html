@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Vertically</title>
+    <style>
+        /* Center Vertically - Using padding */
+        .center {
+            padding: 70px 0;
+            border: 3px solid green;
+        }
+
+        /* Center Vertically and horizontally - Using padding */
+        .both {
+            padding: 70px 0;
+            text-align: center;
+            border: 3px solid blue;
+        }
+
+        /* Center Vertically - Using line-height */
+        .line {
+            line-height: 200px;
+            height: 200px;
+            text-align: center;
+            border: 3px solid purple;
+        }
+
+        .line {
+            line-height: 2.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* Center Vertically - Using position & transform */
+        .position {
+            position: relative;
+            height: 200px;
+            border: 3px solid coral;
+        }
+
+        .position p {
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Center Vertically - Using Flexbox */
+        .flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 3px solid silver;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Center Vertically - Using padding</h1>
+
+    <h3>There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom padding:</h3>
+
+    <div class="center">
+        <p>I am vertically centered</p>
+    </div>
+
+    <h1>Center Vertically and horizontally - Using padding</h1>
+
+    <h3>To center both vertically and horizontally, use padding and text-align: center;</h3>
+
+    <div class="both">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+
+    <h1>Center Vertically - Using line-height</h1>
+
+    <h3>Another trick is to use the line-height property with a value that is equal to the height property:</h3>
+
+    <div class="line">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+
+    <h1>Center Vertically - Using position & transform</h1>
+
+    <h3>padding and line-height are not option, another solution is to use positioning and the transform property:</h3>
+
+    <div class="position">
+        <p>I am vertically and horizontal centered</p>
+    </div>
+
+    <h1>Center Vertically - Using Flexbox</h1>
+
+    <h3>You can also use flexbox to center things. Just note that flexbox is not suppoerted in IE10 and earlier versions:</h3>
+
+    <div class="flexbox">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+    
+</body>
+</html>

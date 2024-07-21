@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Color</title>
+    <style>
+        /* The background color of a page is set like this: */
+        body {
+            background-color: lightblue;
+        }
+
+        /* The (h1), (p) and (div) elements will have different background colors: */
+        h1.h2 {
+            background-color: green;
+        }
+        div.div2 {
+            background-color: aquamarine;
+        }
+        p.p2 {
+            background-color: yellow;
+        }
+
+        /* The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0 . The lower value, the more transparent. */
+        div.div3 {
+            background-color: red;
+        }
+
+        div.div3.first {
+            opacity: 0.1;
+        }
+
+        div.div3.second {
+            opacity: 0.3;
+        }
+
+        div.div3.third {
+            opacity: 0.6;
+        }
+
+        /* If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text: */
+        div.div4 {
+            background-color: rgb(0, 0, 255);
+        }
+
+        div.div4.first {
+            background-color: rgba(0, 0, 255, 0.1);
+        }
+        
+        div.div4.second {
+            background-color: rgba(0, 0, 255, 0.3);
+        }
+
+        div.div4.third {
+            background-color: rgba(0, 0, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS background-color</h1>
+
+    <h3>With CSS, a color is most often specified by:</h3>
+
+    <ul>
+        <li>a valid color name - like "red"</li>
+        <li>a HEX value - like "#ff0000"</li>
+        <li>a RGB value - like "rgb(255,0,0)"</li>
+    </ul>
+
+    <h1>Other Elements</h1>
+
+    <h3>You can set the background color for any HTML elements:</h3>
+
+    <h2>The (h1), (p) and (div) elements will have different background colors:</h2>
+
+    <h1 class="h2">CSS background color example!</h1>
+
+    <div class="div2">
+        This is a text inside a div element.
+        <p class="p2">This paragraph has its own background color</p>
+        We are still in the div element.
+    </div>
+
+    <h1>Opacity / Transparency</h1>
+
+    <h3>The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0 . The lower value, the more transparent.</h3>
+
+    <p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read</p>
+    
+    <div class="div3 first">
+        <h1>Opacity 0.1</h1>
+    </div>
+
+    <div class="div3 second">
+        <h1>Opacity 0.3</h1>
+    </div>
+
+    <div class="div3 third">
+        <h1>Opacity 0.6</h1>
+    </div>
+
+    <div class="div3">
+        <h1>Opacity 1 (default)</h1>
+    </div>
+
+    <h1>Transparency using RGBA</h1>
+
+    <h3>If you do not want to apply opacity to child elements.The following example sets the opacity for the background color and not the text:</h3>
+
+    <div class="div4 first">
+        <h1>10% Opacity</h1>
+    </div>
+
+    <div class="div4 second">
+        <h1>30% Opacity</h1>
+    </div>
+
+    <div class="div4 third">
+        <h1>60% Opacity</h1>
+    </div>
+
+    <div class="div4">
+        <h1>Default</h1>
+    </div>
+
+</body>
+</html>

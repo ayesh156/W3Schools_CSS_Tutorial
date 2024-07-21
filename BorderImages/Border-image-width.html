@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-image-width</title>
+    <style>
+        #borderimg1 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-repeat: round;
+            border-image-slice: 30;
+            border-image-width: 10px;
+        }
+
+        #borderimg2 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-slice: 30;
+            border-image-repeat: round;
+            border-image-width: 30px 30px 40px 30px;
+        }
+
+        #borderimg3 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-repeat: round;
+            border-image-slice: 30;
+            border-image-width: 2;
+        }
+
+        #borderimg4 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-repeat: round;
+            border-image-slice: 30;
+            border-image-width: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>border-image-width Property</h1>
+
+    <h3>The border-image-width property specifies the width of the border image.</h3>
+
+    <h2>Syntax :- number|%|auto|initial|inherit;</h2>
+    
+    <p><b>Note:</b> The border-image-width property can take from one to four values (top, right, bottom and left sides). If the fourth value is omitted, it is the same as the second. If the third one is also omitted, it is the same as the first. If the second one is also omitted, it is the same as the first.</p>
+
+    <h2>Specify the width of the border image:</h2>
+
+    <p id="borderimg1">border-image-width: 10px;</p>
+    <p id="borderimg2">border-image-width: 30px 30px 40px 30px;</p>
+    <p id="borderimg3">border-image-width: 2;</p>
+    <p id="borderimg4">border-image-width: auto;</p>
+    
+</body>
+</html>

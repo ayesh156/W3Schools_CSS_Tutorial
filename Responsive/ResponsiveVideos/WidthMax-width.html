@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Videos</title>
+    <style>
+        /* Using The width Property */
+        .video {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Using The max-width Property */
+        .video2 {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using The width Property</h1>
+
+    <h3>If the width property is set to 100%, the video player will be responsive and scale up and down</h3>
+
+    <video width="600" class="video" controls>
+        <source src="../../src/mov_bbb.mp4" type="video/mp4">
+        <source src="../../src/mov_bbb.mp4" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <p>Resize the browser window to see how the size of the video player will scale.</p>
+
+    <h3>Notice that in the example above, the video player can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property intead.</h3>
+
+    <h1>Using The max-width Property</h1>
+
+    <h3>If the max-width property is set to 100%, the video player will scale down if it has to, but never scale up to be larger than its original size:</h3>
+
+    <video width="600" class="video2" controls>
+        <source src="../../src/mov_bbb.mp4" type="video/mp4">
+        <source src="../../src/mov_bbb.mp4" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <p>Resize the browser window to see how the size of the video player will scale when the width is less than 600px.</p>
+    
+</body>
+</html>

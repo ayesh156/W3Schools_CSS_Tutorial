@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        /* Basic Button Styling */
+        .bbs {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .bbs:hover {background-color: green;}
+
+        /* Button Colors */
+        .bc {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .bc.button1 {background-color: #4caf50;} /* Green */
+        .bc.button2 {background-color: #008cba;} /* Blue */
+        .bc.button3 {background-color: #f44336;} /* Red */
+        .bc.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+        .bc.button5 {background-color: #555555;} /* Black */
+
+        /* Button Sizes */
+        .bfz {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .bfz.button1 {font-size: 10px;}
+        .bfz.button2 {font-size: 12px;}
+        .bfz.button3 {font-size: 16px;}
+        .bfz.button4 {font-size: 20px;}
+        .bfz.button5 {font-size: 24px;}
+
+        /* Button Padding */
+        .bp {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .bp.button1 {padding: 10px 24px;}
+        .bp.button2 {padding: 12px 28px;}
+        .bp.button3 {padding: 14px 40px;}
+        .bp.button4 {padding: 32px 16px;}
+        .bp.button5 {padding: 16px;}
+
+        /* Rounded Buttons */
+        .bbr {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .bbr.button1 {border-radius: 2px;}
+        .bbr.button2 {border-radius: 4px;}
+        .bbr.button3 {border-radius: 8px;}
+        .bbr.button4 {border-radius: 12px;}
+        .bbr.button5 {border-radius: 5%;}
+
+        /* Colored Button Borders */
+        .bb {
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition: .6s;
+            cursor: pointer;
+        }
+
+        .bb.button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4caf50;
+        }
+
+        .bb.button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008cba;
+        }
+        .bb.button3 {
+            background-color: white;
+            color: black;
+            border: 2px solid #f44336;
+        }
+        .bb.button4 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+        }
+        .bb.button5 {
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+        }
+
+        /* Hoverable Buttons */
+        .hb {
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition: .6s;
+            cursor: pointer;
+        }
+
+        .hb.button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4caf50;
+        }
+
+        .hb.button1:hover {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .hb.button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008cba;
+        }
+
+        .hb.button2:hover {
+            background-color: #008cba;
+            color: white;
+        }
+
+        .hb.button3 {
+            background-color: white;
+            color: black;
+            border: 2px solid #f44336;
+        }
+
+        .hb.button3:hover {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .hb.button4 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+        }
+
+        .hb.button4:hover {
+            background-color: #e7e7e7;
+        }
+
+        .hb.button5 {
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+        }
+
+        .hb.button5:hover {
+            background-color: #555555;
+            color: white;
+        }
+
+        .hb2 {
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition: .6s;
+            cursor: pointer;
+        }
+
+        .hb2.button1 {
+            background-color: #4caf50;;
+            color: white;
+            border: 2px solid #4caf50;
+        }
+
+        .hb2.button1:hover {
+            background-color: white;
+            color: black
+        }
+
+        .hb2.button2 {
+            background-color: #008cba;
+            color: white;
+            border: 2px solid #008cba;
+        }
+
+        .hb2.button2:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .hb2.button3 {
+            background-color: #f44336;
+            color: white;
+            border: 2px solid #f44336;
+        }
+
+        .hb2.button3:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .hb2.button4 {
+            background-color: #e7e7e7;
+            color: black;
+            border: 2px solid #e7e7e7;
+        }
+
+        .hb2.button4:hover {
+            background-color: white;
+        }
+
+        .hb2.button5 {
+            background-color: #555555;
+            color: white;
+            border: 2px solid #555555;
+        }
+
+        .hb2.button5:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Shadow Buttons */
+        .sb {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: .4s;
+        }
+
+        .sb.button1 {box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+        .sb.button2:hover {box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);}
+
+        /* Disabled Buttons */
+        .db {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* Button Width */
+        .bw {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .bw.button1 {width: 250px;}
+        .bw.button2 {width: 50%;}
+        .bw.button3 {width: 100%;}
+        
+        /* Button Groups */
+        .btn-group .button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            /* display: inline-block; */
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .btn-group .button:hover {
+            background-color: #3e8e41;
+        }
+
+        /* Bordered Button Group */
+        .border-group .button {
+            background-color: #4caf50;
+            color: white;
+            border: 1px solid green;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            /* display: inline-block; */
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .border-group .button:hover {
+            background-color: #3e8e41;
+        }
+
+        /* Vertical Button Group */
+        .vertical-button .button{
+            background-color: #4caf50;
+            color: white;
+            border: 1px solid green;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        .vertical-button .button:not(:last-child) {
+            border-bottom: none;
+        }
+
+        .vertical-button .button:hover {
+            background-color: #3e8e41;
+        }
+
+        /* Button on Image */
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 16px 30px;
+        }
+
+        .container .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* Animated Buttons */
+        /* Add an arrow on hover: */
+        .abutton {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            color: #fff;
+            border: none;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all .5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .abutton span {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .abutton span::after {
+            content: "\00bb";
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: .5s;
+        }
+
+        .abutton:hover span {
+            padding-right: 25px;
+        }
+
+        .abutton:hover span::after {
+            opacity: 1;
+            right: 0;
+        }
+
+        /* Add a "pressed" effect on click: */
+        .pbutton {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            color: #fff;
+            background-color: #4caf50;
+            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .pbutton:hover {background-color: #3e8e41;}
+
+        .pbutton:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        /* Fade in on hover: */
+        .fbutton {
+            background-color: #f4511e;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: .3s;
+            opacity: 0.6;
+        }
+
+        .fbutton:hover {opacity: 1;}
+
+        /* Add a "ripple" effect on click: */
+        .rbutton {
+            position: relative;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            transition-duration: .4s;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .rbutton::after {
+            content: "";
+            position: absolute;
+            display: block;
+            background: #f1f1f1;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all .8s;
+        }
+
+        .rbutton:active::after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic Button Styling</h1>
+
+    <button>Default Button</button>
+    <a href="#" class="bbs">Link Button</a>
+    <button class="bbs">Button</button>
+    <input type="bbs" value="Input Button" class="bbs">
+
+    <h1>Button Colors</h1>
+
+    <h3>Use the background-color property to change the background color of a button:</h3>
+
+    <button class="bc button1">Green</button>
+    <button class="bc button2">Blue</button>
+    <button class="bc button3">Red</button>
+    <button class="bc button4">Gray</button>
+    <button class="bc button5">Black</button>
+
+   <h1>Button Sizes</h1>
+
+   <h3>Use the font-size property to change the font size of a button:</h3>
+
+   <button class="bfz button1">10px</button>
+   <button class="bfz button2">12px</button>
+   <button class="bfz button3">16px</button>
+   <button class="bfz button4">20px</button>
+   <button class="bfz button5">24px</button>
+
+   <h1>Button Padding</h1>
+
+   <h3>Use the padding property to change the padding of a button:</h3>
+
+    <button class="bp button1">10px 24px</button>
+    <button class="bp button2">12px 28px</button>
+    <button class="bp button3">14px 40px</button>
+    <button class="bp button4">32px 16px</button>
+    <button class="bp button5">16px</button>
+
+    <h1>Rounded Buttons</h1>
+
+    <h3>Use the border-radius property to add rounded corners to a button:</h3>
+
+    <button class="bbr button1">2px</button>
+    <button class="bbr button2">4px</button>
+    <button class="bbr button3">8px</button>
+    <button class="bbr button4">12px</button>
+    <button class="bbr button5">50%</button>
+
+    <h1>Colored Button Borders</h1>
+
+    <h3>Use the border property to add a colored border to a button:</h3>
+
+    <button class="bb button1">Green</button>
+    <button class="bb button2">Blue</button>
+    <button class="bb button3">Red</button>
+    <button class="bb button4">Gray</button>
+    <button class="bb button5">Black</button>
+
+    <h1>Hoverable Buttons</h1>
+
+    <h3>Use the :hover selector to change the style of a button when you move the mouse over it.</h3>
+
+    <h3>Tip: Use the transition-duration property to determine the speed of the "hover" effect:</h3>
+
+    <button class="hb button1">Green</button>
+    <button class="hb button2">Blue</button>
+    <button class="hb button3">Red</button>
+    <button class="hb button4">Gray</button>
+    <button class="hb button5">Black</button><br>
+
+    <button class="hb2 button1">Green</button>
+    <button class="hb2 button2">Blue</button>
+    <button class="hb2 button3">Red</button>
+    <button class="hb2 button4">Gray</button>
+    <button class="hb2 button5">Black</button>
+
+    <h1>Shadow Buttons</h1>
+
+    <h3>Use the box-shadow property to add shadows to a button:</h3>
+
+    <button class="sb button1">Shadow Button</button>
+    <button class="sb button2">Shadow on hover</button>
+
+    <h1>Disabled Buttons</h1>
+
+    <h3>Use the opacity property to add transparency to a button (creates a "disabled" look).</h3>
+
+    <h3>Tip: You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button:</h3>
+
+    <button class="db">Normal Button</button>
+    <button class="db disabled">Disabled Button</button>
+
+    <h1>Button Width</h1>
+
+    <h3>By default, the size of the button is determined by its text content (as wide as its content). Use the width property to change the width of a button:</h3>
+
+    <button class="bw button1">250px</button><br>
+    <button class="bw button2">50%</button><br>
+    <button class="bw button3">100%</button>
+
+    <p><b>Tip:</b> Use pixels if you want to set a fixed width and use percent for responsive button (e.g. 50% of its parent element). Resize the browser window to see the effect.</p>
+
+    <h1>Button Groups</h1>
+
+    <h3>Remove margins and add float:left to each button to create a button group:</h3>
+
+    <div class="btn-group">
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+    </div>
+
+    <p style="clear: both;"><br>Remember to clear floats after, or else will this p element also float next to the buttons.</p>
+
+    <h1>Bordered Button Group</h1>
+
+    <h3>Use the border property to create a bordered button group:</h3>
+
+    <div class="border-group">
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+    </div>
+
+    <p style="clear: both;"><br>Remember to clear floats after, or else will this p element also float next to the buttons.</p>
+
+    <h1>Vertical Button Group</h1>
+
+    <h3>Use display:block instead of float:left to group the buttons below each other, instead of side by side:</h3>
+
+    <div class="vertical-button">
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+    </div>
+
+    <h1>Button on Image</h1>
+
+    <div class="container">
+        <img src="src/images/img_lights.jpg" alt="Snow" style="width: 100%;">
+        <button class="btn">Button</button>
+    </div>
+    
+    <h1>Animated Buttons</h1>
+
+    <h2>Add an arrow on hover:</h2>
+
+    <button class="abutton" style="vertical-align: middle;"><span>Hover </span></button>
+
+    <h2>Add a "pressed" effect on click:</h2>
+
+    <button class="pbutton">Click Me</button>
+
+    <h2>Fade in on hover:</h2>
+
+    <button class="fbutton">Hover Over Me</button>
+
+    <h2>Add a "ripple" effect on click:</h2>
+
+    <button class="rbutton">Click Me</button>
+   
+</body>
+</html>

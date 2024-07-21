@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class Selector</title>
+    <style>
+        .center {
+            text-align: center;
+            color: red;
+        }
+
+        p.center2 {
+            text-align: center;
+            color: blue;
+        }
+
+        p.center3 {
+            text-align: center;
+            color: green;
+        }
+
+        p.large {
+            font-size: 300%;
+        }
+    </style>
+</head>
+<body>
+    <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+    
+    <h2>All HTML elements with class="center" will be red and center-aligned</h2>
+
+    <h3 class="center">This heading will be red and center-aligned</h3>
+    <p class="center">This paragraph will be red and center-aligned</p>
+
+    <h2>Only (p) elements with class="center2" will be blue and center-aligned</h2>
+
+    <h3 class="center2">This heading will not be affected</h3>
+    <p class="center2">This paragraph will be blue and center-aligned</p>
+
+    <h2>(p) element will be styled according to class="center3" and to class="large"</h2>
+
+    <h3 class="center3">This heading will not be affected</h3>
+    <p class="center3">This paragraph will be green and center-aligned</p>
+    <p class="center3 large">This paragraph will green, center-aligned and large font size.</p>
+    
+</body>
+</html>

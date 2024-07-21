@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector</title>
+    <style>
+        div + p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinators</h1>
+
+    <h3>A CSS selector can contain more than one simple selector. Between the simple selector, we can include a combinator.</h3>
+
+    <h3>There are four different combinators in CSS:</h3>
+
+    <ul>
+        <li>descendant selector (space)</li>
+        <li>child selector (>)</li>
+        <li>adjacent sibling selelctor (+)</li>
+        <li>general sibling selecotr (~)</li>
+    </ul>
+
+    <h1>Adjacent Sibling Selector</h1>
+
+    <h3>The adjacent sibling selector is used to select an element that is  directly after another specific element.</h3>
+
+    <h3>Sibling element must have the same parent element and "adjacent" means "immediately following".</h3>
+
+    <h3>The following example selects the first (p) element that are placed immediately after (div) element:</h3>
+
+    <div>
+        <p>Paragraph 1 in the div</p>
+        <p>Paragraph 2 in the div</p>
+    </div>
+
+    <p>Paragraph 3. After a div</p>
+    <p>Paragraph 4. After a div</p>
+
+    <div>
+        <p>Paragraph 5 in the div</p>
+        <p>Paragraph 6 in the div</p>
+    </div>
+
+    <p>Paragraph 7. After a div</p>
+    <p>Paragraph 8. After a div</p>
+    
+</body>
+</html>

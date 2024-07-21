@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        /* Set different padding for all four sides of a (div) element: */
+        .ind {
+            border: 1px solid black;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 100px;
+            padding-left: 80px;
+            background-color: lightblue;
+        }
+
+        /* Use of the inherit value */
+        .par {
+            border: 1px solid blue;
+            padding-left: 100px;
+        }
+
+        p.ex1 {
+            border: 1px solid green;
+            padding-left: inherit;
+        }
+
+        /* Use percentage Value */
+        .per {
+            border: 1px solid purple;
+            padding: 10% 15% 20% 25%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Padding</h1>
+
+    <h3>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</h3>
+
+    <h3>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom and left).</h3>
+
+    <h1>Padding - Individual Sides</h1>
+
+    <h3>CSS has properties for specifying the padding for each side of an element:</h3>
+
+    <ul>
+        <li>padding-top</li>
+        <li>padding-bottom</li>
+        <li>padding-right</li>
+        <li>padding-left</li>
+    </ul>
+
+    <h2>Set different padding for all four sides of a (div) element:</h2>
+
+    <div class="ind">
+        This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 100px and a left padding of 80px.
+    </div>
+
+    <h3>All the padding properties can have the following values:</h3>
+
+    <ul>
+        <li>length - specifies a padding in px, pt, cm, etc.</li>
+        <li>% (percentage) - specifies a padding in % of the width of the containing element</li>
+        <li>inherit - specifies that the padding should be inherited from the parent element</li>
+    </ul>
+
+    <h3><b>Note:</b> Negative values are not allowed</h3>
+
+    <h1>inherit Value</h1>
+
+    <h3>Lets the left padding of the (p.ex1) element be inherit from the parent element (.par)</h3>
+
+    <h2>Use of the inherit value</h2>
+
+    <div class="par">
+        <p class="ex1">This paragraph has inherited left padding (from the div element).</p>
+    </div>
+
+    <h2>Use percentage Value</h2>
+
+    <div class="per">
+        A paragraph with a 10% top padding, 15% right padding, 20% bottom padding and 25% left padding.The percentage is based on the width of the containing element.
+    </div>
+    
+</body>
+</html>

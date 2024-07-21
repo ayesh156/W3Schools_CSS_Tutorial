@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-image-slice</title>
+    <style>
+        #borderimg1 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("../src/images/border.png") round;
+            border-image-slice: 10%;
+        }
+
+        #borderimg2 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("../src/images/border.png") round;
+            border-image-slice: 20;
+        }
+
+        #borderimg3 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("../src/images/border.png") round;
+            border-image-slice: 10% fill;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Border-image-slice Property</h1>
+
+    <h3>The border-image-slice property specifies how to slice the image specified by border-image-source. The image is always sliced into nine sections: four corners, four edges and the middle.</h3>
+
+    <h3>The "middle" part is treated as fully transparent, unless the fill keyword is set.</h3>
+
+    <h2>Syntax :- number|%|fill|initial|inherit;</h2>
+
+    <p><b>Note:</b> The border-image-slice property can take from one to four values. If the fourth value is omitted, it is the same as the second. If the third one is also omitted, it is the same as the first. If the second one is also omitted, it is the same as the first.</p>
+
+    <p id="borderimg1">border-image-slice: 10%</p>
+    <p id="borderimg2">border-image-slice: 20</p>
+    <p id="borderimg3">border-image-slice: 10% fill</p>
+
+    <p><b>Note:</b> Internet Explorer 10, and earlier versions, do not support the border-image-slice property.</p>
+    
+</body>
+</html>

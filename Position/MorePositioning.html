@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Positioning</title>
+    <style>
+        /* position: static; */
+        #parent1 {
+            position: static;
+            border: 1px solid blue;
+            width: 300px;
+            height: 100px;
+        }
+
+        #child1 {
+            position: absolute;
+            border: 1px solid red;
+            top: 70px;
+            right: 15px;
+        }
+
+        /* position: relative; */
+        #parent2 {
+            position: relative;
+            border: 1px solid blue;
+            width: 300px;
+            height: 100px;
+        }
+
+        #child2 {
+            position: absolute;
+            border: 1px solid red;
+            top: 70px;
+            right: 15px;
+        }
+        /* position: absolute; */
+        #parent3 {
+            position: absolute;
+            border: 1px solid blue;
+            width: 300px;
+            height: 100px;
+            top: 650px;
+            right: 15px;
+        }
+
+        #child3 {
+            position: absolute;
+            border: 1px solid red;
+            top: 70px;
+            right: 15px;
+        }
+
+        /* position: fixed; */
+        #parent4 {
+            position: fixed;
+            border: 1px solid blue;
+            width: 300px;
+            height: 100px;
+            background-color: rgba(255, 200, 200, 0.5);
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #child4 {
+            position: absolute;
+            border: 1px solid red;
+            top: 70px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The position property</h1>
+
+    <h2>position: static;</h2>
+    <p>The parent1 element has position: static, and will remain in the natural flow of the page. It will NOT act as anchor point for the absolutely positioned child1 element:</p>
+    <div id="parent1">parent1: position: static
+        <div id="child1">child1: position: absolute, right: 15px, top: 70px</div>
+    </div>
+
+    <h2>position: relative;</h2>
+    <p>The parent2 element has position: relative, and will remain in the natural flow of the page. It will also act as anchor point for the absolutely positioned child2 element:</p>
+    <div id="parent2">parent2: position: relative
+        <div id="child2">child2: position: absolute, right: 15px, top: 70px</div>
+    </div>
+
+    <h2>position: absolute;</h2>
+    <p>The parent3 element has position: absolute, and will NOT remain in the natural flow of the page. It will position itself according to the closest positioned ancestor. It will also act as anchor point for the absolutely positioned child3 element:</p>
+    <div id="parent3">parent3: position: absolute, top: 650px, right: 15px.
+        <div id="child3">Child3: position: absolute, right: 15px, top: 70px</div>
+    </div>
+
+    <h2>position: fixed;</h2>
+    <p>The parent4 element has position: fixed, and will NOT remain in the natural flow of the page. It will position itself according to the viewport. It will also act as anchor point for the absolutely positioned child4 element:</p>
+    <div id="parent4">parent4: position: fixed, bottom: 0, left: 0, right: 0.
+        <div id="child4">child4: position: absolute, right: 15px, top: 70px</div>
+    </div>
+    
+</body>
+</html>

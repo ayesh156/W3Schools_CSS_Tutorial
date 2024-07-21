@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade in a box</title>
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            transition: .5s ease;
+            display: block;
+            width: 100%;
+            height: auto;
+            opacity: 1;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            position: absolute;
+            opacity: 0;
+            transition: .5s ease;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #4caf50;
+            color: white;
+            padding: 16px 32px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fade in a box:</h1>
+
+    <div class="container">
+        <img src="../../src/images/img_avatar.png" alt="Avater" class="image">
+        <div class="middle">
+            <div class="text">Ayesh Chathuranga</div>
+        </div>
+    </div>
+    
+</body>
+</html>

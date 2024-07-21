@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline-offset</title>
+    <style>
+        .ex1 {
+            margin: 20px;
+            outline: 1px solid black;
+            background-color: yellow;
+            outline: 4px solid red;
+            outline-offset: 15px;
+        }
+
+        .ex2 {
+            margin: 10px;
+            border: 1px solid black;
+            background-color: yellow;
+            outline: 5px dashed blue;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>outline-offset</h1>
+
+    <h3>The outline-offset property adds space between the outline and the edge or border of an element.</h3>
+
+    <h3>The space between an element and its outline transparent.</h3>
+
+    <h3>Outline differs from borders in three ways:</h3>
+
+    <ul>
+        <li>An outline is a line drawn around elements, outside the border edge</li>
+        <li>An outline does not take up space</li>
+        <li>An outline may be non-rectangular</li>
+    </ul>
+
+    <div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div><br>
+
+    <div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+    
+</body>
+</html>

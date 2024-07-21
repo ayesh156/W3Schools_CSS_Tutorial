@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var()</title>
+    <style>
+        :root {
+            --blue: #6495ed;
+            --white: #faf0e6;
+        }
+
+        body {
+            background-color: var(--blue);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .container {
+            background-color: var(--white);
+            color: var(--blue);
+            padding: 15px;
+        }
+
+        button {
+            background-color: var(--white);
+            color: var(--blue);
+            border: 1px solid var(--blue);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>var()</h1>
+
+    <h3>Advantage of using var() are:</h3>
+
+    <ul>
+        <li>makes the code easier to read (more understandable)</li>
+        <li>makes it much easier to change the color values</li>
+    </ul>
+
+    <h3>To change the blue and white color to a softer blue and white, you just need to change the two variable values:</h3>
+
+    <div class="container">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis eaque ex cumque ipsum repellat exercitationem totam, veritatis quaerat impedit, provident aliquam dolores reiciendis deserunt recusandae voluptate sit minus. Et.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae cum ullam rem, facere laborum tenetur maxime fugiat repellendus, eius at libero non iusto, architecto aliquid vero quos inventore magni.</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+    
+</body>
+</html>

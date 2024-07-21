@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Sprites</title>
+<style>
+    #home {
+        width: 46px;
+        height: 44px;
+        background: url("../../src/images/Image-Sprite.gif") 0 0;
+        display: inline-block;
+    }
+
+    #next {
+        width: 46px;
+        height: 44px;
+        background: url("../../src/images/Image-Sprite.gif") -91px 0;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+        
+    <h1>Image Sprites</h1>
+
+    <h3>An image sprite is a collection of images put into a single image.</h3>
+
+    <h3>A web page with many images can take a long time to load and generates multiple server requests.</h3>
+
+    <h3>Using image sprites will reduce the number of server requests and save bandwidth</h3>
+
+    <h1>Image Sprites - Simple Example</h1>
+
+    <h3>Instead of using three separate images, we use this single image ("Image-Sprite.gif")</h3>
+
+    <h3>With CSS, we can show just the part of the image we need.</h3>
+
+    <h3>In the following example the CSS specifies which part of the "Image-Sprite.gif" image to show:</h3>
+
+    <div id="home"></div>
+    <div id="next"></div>
+
+    <h2>Example explained:</h2>
+
+    <ul>
+        <li>width: 46px; height: 44px; - Defines the portion of the image we want to use</li>
+        <li>background: url(Image-Sprite.gif) 0 0; - Defines the background image and its position (left 0px, top 0px)</li>
+    </ul>
+
+</body>
+</html>

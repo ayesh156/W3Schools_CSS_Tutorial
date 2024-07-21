@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Image</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+       .container {
+           width: 33%;
+           float: left;
+           height: auto;
+           padding: 0 6px;
+       }
+
+       .container p {
+           text-align: center;
+       }
+    </style>
+</head>
+<body>
+
+    <h1>Transparent Image</h1>
+
+    <h3>The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent.</h3>
+
+    <div class="container">
+        <p>Image with 20% Transparent</p>
+        <img src="../../src/images/img_forest.jpg" alt="Forest" style="width: 100%; opacity: 0.2;">
+    </div>
+
+    <div class="container">
+        <p>Image with 50% Transparent</p>
+        <img src="../../src/images/img_forest.jpg" alt="Forest" style="width: 100%; opacity: 0.5;">
+    </div>
+
+    <div class="container">
+        <p>Image with 100% Transparent</p>
+        <img src="../../src/images/img_forest.jpg" alt="Forest" style="width: 100%; opacity: 1;">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :not Selector</title>
+    <style>
+        p {
+            color: #000;
+        }
+
+        :not(p) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>The :not(selector) selector matches every element that is NOT the specified element/selector</p>
+
+    <h2>Set a background color for all elements that are not a (p) element</h2>
+
+    <h1>This is a heading</h1>
+
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+
+    <div>This is some text in a div element</div>
+
+    <a href="https://www.w3schools.com" target="_blank">Link to W3Schools</a>
+    
+</body>
+</html>

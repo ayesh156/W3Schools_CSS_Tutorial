@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-fill-mode</title>
+    <style>
+        /* Let the (div) element retain the style values from the last keyframe when the animation ends: */
+        .div1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin-bottom: 250px;
+            animation: mymove1 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes mymove1 {
+            from {top: 0;}
+            to {top: 200px; background: blue;}
+        }
+
+        /* Let the (div) element get the style values set by the first keyframe before the animation starts (during the animation-delay period): */
+        .div2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin-bottom: 250px;
+            animation: mymove2 3s;
+            animation-delay: 2s;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes mymove2 {
+            from {top: 0; background: yellow;}
+            to {top: 200px;}
+        }
+
+        /* Let the (div) element get the style values set by the first keyframe before the animation starts, and retain the style values from the last keyframe when the animation ends: */
+        .div3 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin-bottom: 250px;
+            animation: mymove3 3s;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes mymove3 {
+            from {top: 0; background: yellow;}
+            to {top: 200px; background: blue;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>animation-fill-mode</h1>
+
+    <h3>The animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends or both).</h3>
+
+    <h3>CSS animations do not affect the element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior.</h3>
+
+    <h2>Syntax :- animation-fill-mode: none|forwards|backwards|both|initial|inherit;</h2>
+
+    <h3>forwards :- The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)</h3>
+    <h3>backwards :- The element will get the style values that is set by the first keyframe (depends on animation-direction) and retain this during the animation-delay period.</h3>
+    <h3>both :- The animation wll follow the rules for both forwards and backward, extending the animation properties in both directions.</h3>
+
+    <h3>Let the (div) element retain the style values from the last keyframe when the animation ends:</h3>
+
+    <div class="div1"></div>
+
+    <h3>Let the (div) element get the style values set by the first keyframe before the animation starts (during the animation-delay period):</h3>
+
+    <div class="div2"></div>
+
+    <h3>Let the (div) element get the style values set by the first keyframe before the animation starts, and retain the style values from the last keyframe when the animation ends:</h3>
+
+    <div class="div3"></div>
+
+</body>
+</html>

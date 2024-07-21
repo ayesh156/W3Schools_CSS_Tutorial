@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size</title>
+    <style>
+        /* Set Font Size With Pixels */
+        h1.fzp {font-size: 40px;}
+        h2.fzp {font-size: 30px;}
+        p.fzp {font-size: 14px;}
+
+        /* Set Font Size With Em */
+        h1.fze {font-size: 2.5em;}
+        h2.fze {font-size: 1.875em;}
+        p.fze {font-size: 0.875em;}
+
+        /* Use a Combination of Percent and Em */
+        body {font-size: 100%;}
+        h1.fzc {font-size: 2.5em;}
+        h2.fzc {font-size: 1.875em;}
+        p.fzc {font-size: 0.875em;}
+
+        /* Responsive Font Size */
+        h1.fzv {font-size: 10vw;}
+        p.fzv {font-size: 5vw;}
+    </style>
+</head>
+<body>
+
+    <h1>Font Size</h1>
+
+    <h3>The font-size property sets the size of the text.</h3>
+
+    <h3>Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings or headings look like paragraphs.</h3>
+
+    <h3>Always use the proper HTML tags, like (h1) - (h6) for headings and (p) for paragraphs.</h3>
+
+    <h3>The font-size value can be an absolute or relative size.</h3>
+
+    <h3>Absolute size:</h3>
+
+    <ul>
+        <li>Sets the text to a specified size</li>
+        <li>Does not allow a user to change the text size in all browsers (bad for accessibility reasons)</li>
+        <li>Absolute size is useful when the physical size of the output is known</li>
+    </ul>
+
+    <h3>Relative size:</h3>
+
+    <ul>
+        <li>Sets the size relative to surrounding elements</li>
+        <li>Allows a user to change the text size in browsers</li>
+    </ul>
+
+    <p><b>Note:</b> If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px = 1em).</p>
+
+    <h1>Set Font Size With Pixels</h1>
+
+    <h2>Setting the text size with pixels gives you full control over the text size:</h2>
+
+    <h1 class="fzp">This is heading 1</h1>
+    <h2 class="fzp">This is heading 2</h2>
+    <p class="fzp">This is a paragraph</p>
+    <p>This is another paragraph.</p>
+
+    <p><b>Tip:</b> If you use pixels, you can still use the zoom tool to resize the entire page.</p>
+
+    <h1>Set Font Size With Em</h1>
+
+    <h3>To allow users to resize the text (in the browser menu), many developers use em instead of pixels.</h3>
+
+    <h3>1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.</h3>
+
+    <h3>The size can be calculated from pixels to em using this formula: pixels/16=em</h3>
+
+    <h1 class="fze">This is heading 1</h1>
+    <h2 class="fze">This is heading 2</h2>
+    <p class="fze">This is a paragraph</p>
+    <p>This is another paragraph.</p>
+
+    <h3>In the example above, the text size in em is the same as the previous example in pixels. However, with the em size, it is possible to adjust the text size in all browsers.</h3>
+
+    <h3>Unfortunately, there is still a problem with older versions of Internet Explorer. The text becomes larger than it should when made larger, and smaller than it should when made smaller.</h3>
+
+    <h1>Use a Combination of Percent and Em</h1>
+
+    <h3>The solution that works in all browsers, is to set a default font-size in percent for the (body) element:</h3>
+
+    <h1 class="fzc">This is heading 1</h1>
+    <h2 class="fzc">This is a heading 2</h2>
+    <p class="fzc">This is a paragraphs</p>
+    <p>This is another paragraph.</p>
+
+    <h3>Our code now works great! It shows the same text size in all browsers and allows all browsers to zoom or resize the text!</h3>
+
+    <h1>Responsive Font Size</h1>
+
+    <h3>The text size can be set with a vw unit, which means the "viewport width".</h3>
+
+    <h3>That way the text size will follow the size of the browser window:</h3>
+
+    <h1 class="fzv">Responsive Text</h1>
+
+    <p class="fzv">Resize the browser window to see how the text size scales.</p>
+
+    <p class="fzv">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+    <p><b>Note:</b> Viewport is the browser window size. 1vw = 1% of viewport width. If the view port is 50cm wide, 1vw is 0.5cm</p>
+    
+</body>
+</html>

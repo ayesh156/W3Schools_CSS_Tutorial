@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Property</title>
+    <style>
+        /* Set the top edge of the positioned (div) element 50px down from the top edge of its nearest positioned ancestor: */
+        div.a {
+            position: relative;
+            border: 3px solid red;
+            width: 400px;
+            height: 200px;
+        }
+
+        div.b {
+            position: absolute;
+            border: 3px solid blue;
+            top: 0;
+        }
+
+        div.c {
+            position: absolute;
+            border: 3px solid green;
+            top: 50px;
+        }
+
+        /* Use the top property with a negative value and for an element with no positioned ancestors: */
+        div.a2 {
+            position: relative;
+            border: 3px solid red;
+            width: 400px;
+            height: 200px;
+        }
+
+        div.b2 {
+            position: absolute;
+            border: 3px solid blue;
+            top: -20px;
+        }
+
+        div.c2 {
+            position: absolute;
+            border: 3px solid green;
+            top: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Top Property</h1>
+
+    <h3>The top property affects the vertical position of a positioned element. This property has no effect on non-positioned element.</h3>
+
+    <ul>
+        <li>If position: absolute; or position: fixed; - the top property sets the top edge of an element to a unit above/below the top edge of its nearest positioned ancestor.</li>
+        <li>If position: relative; - the top property makes the element's top edge to move above/below its normal position.</li>
+        <li>If position: sticky; - the top property behaves like its postion is relative when the element is inside the viewport, and like its position is fixed when it is outside</li>
+        <li>If position: static; - the top property has no effect.</li>
+    </ul>
+
+    <h2>Set the top edge of the positioned (div) element 50px down from the top edge of its nearest positioned ancestor:</h2>
+
+    <div class="a">
+        <div class="b">This div element has position: absolute, and top: 0.</div>
+        <div class="c">This div element has position: absolute, and is placed 50 pixels down from the top edge of the containing positioned element.</div>
+    </div>
+
+    <h2>Use the top property with a negative value and for an element with no positioned ancestors:</h2>
+
+    <div class="a2">This div element has position: relative;
+        <div class="b2">This div element has position: absolute and top: -20px.</div>
+    </div>
+
+    <div class="c2">This div element has no parent element, has position: absolute and is placed 800 pixels down from the top of the document body.</div>
+
+</body>
+</html>

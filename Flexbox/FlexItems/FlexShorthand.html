@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shorthand</title>
+    <style>
+        #main {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        #main div {
+            -ms-flex: 1;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>flexible</h1>
+
+    <h3>The flex property is a shorthand property for:</h3>
+
+    <ul>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+    </ul>
+
+    <h3>The flex property sets the flexible length on flexible items.</h3>
+
+    <h3>Note: If the element is not a flexible item, the flex property has no effect.</h3>
+
+    <h2>Syntax :- flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;</h2>
+
+    <h3>auto :- Same as 1 1 auto.</h3>
+    <h3>initial :- Same as 0 1 auto.</h3>
+    <h3>none :- Same as 0 0 auto.</h3>
+
+    <h3>Let all the flexible items be the same length, regardless of its content:</h3>
+
+    <div id="main">
+        <div style="background-color: coral;">Red</div>
+        <div style="background-color: lightblue;">Blue</div>
+        <div style="background-color: lightgreen;">Green div with more content</div>
+    </div>
+
+    <p><b>Note:</b> IE11 and newer versions support the flex property. Internet Explorer 10 supports an alternative, the -ms-flex property.</p>
+    
+</body>
+</html>

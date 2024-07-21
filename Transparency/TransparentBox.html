@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Box</title>
+    <style>
+        /* Transparent Box */
+        .div1 {
+            background-color: #4caf50;
+            padding: 10px;
+        }
+
+        .tbox1 {
+            opacity: 0.1;
+        }
+
+        .tbox2 {
+            opacity: 0.3;
+        }
+
+        .tbox3 {
+            opacity: 0.6;
+        }
+
+        /* Transparency using RGBA */
+        .div2 {
+            background-color: rgb(75, 176, 80);
+            padding: 10px;
+        }
+
+        .rbox1 {
+            background-color: rgba(75, 176, 80, 0.1);
+        }
+
+        .rbox2 {
+            background-color: rgba(75, 176, 80, 0.3);
+        }
+
+        .rbox3 {
+            background-color: rgba(75, 176, 80, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transparent Box</h1>
+
+    <h3>When using the opacity property to add transparancy to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read:</h3>
+
+    <div class="div1 tbox1"><p>Opacity 0.1</p></div>
+    <div class="div1 tbox2"><p>Opacity 0.3</p></div>
+    <div class="div1 tbox3"><p>Opacity 0.6</p></div>
+    <div class="div1"><p>Opacity 1 (default)</p></div>
+    
+    <h1>Transparency using RGBA</h1>
+
+    <h3>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:</h3>
+
+    <div class="div2 rbox1"><p>10% Opacity</p></div>
+    <div class="div2 rbox2"><p>30% Opacity</p></div>
+    <div class="div2 rbox3"><p>60% Opacity</p></div>
+    <div class="div2"><p>Default</p></div>
+
+    <h3>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</h3>
+    
+    
+</body>
+</html>

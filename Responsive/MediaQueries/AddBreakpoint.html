@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Media Queries</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lusida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #9933cc;
+            color: #fff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            background-color: #33b5e5;
+            color: #fff;
+            margin-bottom: 7px;
+            padding: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+        .aside {
+            background-color: #33b5e5;
+            color: #fff;
+            font-size: 14px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* For Desktop */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        /* For Mobile Phones: */
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Web Design - Media Queries</h1>
+
+    <h1>What is a Media Query?</h1>
+
+    <h3>Media query is a CSS technique introduced in CSS3.</h3>
+
+    <h3>It uses the @media rule to include a block of CSS properties only if a certain condition is true.</h3>
+
+    <h1>Add a Breakpoint</h1>
+
+    <h3>Earlier in this tutorial we made a web page with rows and columns, and it was responsive, but it did not look good on a small screen.</h3>
+
+    <h3>Media queries can help with that. We can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint.</h3>
+
+    <h3>When the screen (browser window) get smaller than 768px, each column should have a width of 100%:</h3>
+
+    <div class="header">
+        <h1>China</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+
+        <div class="col-6">
+            <h1>The City</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque nam consectetur nihil! Praesentium libero vitae dicta id possimus eveniet nesciunt molestias quam. Exercitationem nobis illum ipsa quos tempora explicabo?</p>
+        </div>
+
+        <div class="col-3 right">
+            <div class="aside">
+                <h2>What?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Where?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>How?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+    
+</body>
+</html>

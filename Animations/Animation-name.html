@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-name</title>
+    <style>
+        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation-name: mymove;
+            animation-duration: 5s;
+        }
+
+        @keyframes mymove {
+            from {left: 0;}
+            to {left: 200px;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>animation-name</h1>
+
+    <h3>The animation-name property specifies a name for the @keyframes animation.</h3>
+
+    <h2>Syntax :- animation-name: keyframename|none|initial|inherit;</h2>
+
+    <h3>none :- Default value. Specifies that there will be no animation (can be used to override animations coming from the cascade)</h3>
+
+    <h3>Specify a name for the @keyframes animation:</h3>
+
+    <div></div>
+
+    <p><b>Note:</b> Always specify the animation-duration property. Otherwise the duration is 0, and the animation will not be played.</p>
+    
+</body>
+</html>

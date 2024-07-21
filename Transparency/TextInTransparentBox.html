@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text in Transparent Box</title>
+    <style>
+        .background {
+            background: url("../src/images/pineapple.jpg") repeat;
+            border: 3px solid black;
+        }
+
+        .transbox {
+            background-color: #fff;
+            opacity: 0.6;
+            border: 3px solid black;
+            margin: 30px;
+        }
+
+        .transbox p {
+            margin: 5%;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Text in Transparent Box</h1>
+
+    <div class="background">
+        <div class="transbox">
+            <p>This is some text placed in the transparent box.</p>
+        </div>
+    </div>
+
+    <h2>Example explained</h2>
+
+    <h3>First, we create a (div) element (class = "background") with a background image, and a border.</h3>
+
+    <h3>Then we create another (div) (class="transbox") inside the first (div)</h3>
+
+    <h3>The (div class="transbox") have a background color, and a border - the div is transparent.</h3>
+
+    <h3>Inside the transparent (div), we add some text inside a (p) element.</h3>
+    
+</body>
+</html>

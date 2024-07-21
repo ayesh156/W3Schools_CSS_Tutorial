@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var()</title>
+    <style>
+        :root {
+            --main-bg-color: coral;
+            --main-txt-color: blue;
+            --main-padding: 15px;
+        }
+
+        #div1 {
+            background-color: var(--main-bg-color);
+            color: var(--main-txt-color);
+            padding: var(--main-padding);
+        }
+
+        #div2 {
+            background-color: var(--main-bg-color);
+            color: var(--main-txt-color);
+            padding: var(--main-padding);
+        }
+
+        #div3 {
+            background-color: var(--main-bg-color);
+            color: var(--main-txt-color);
+            padding: var(--main-padding);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>var()</h1>
+
+    <h2>Syntax :- var(--name, value)</h2>
+
+    <h3>name :- Required. The variable name (must start with two dashes)</h3>
+    <h3>value :- Optional. The fallback value (used if the variable is not found)</h3>
+
+    <h2>Example that uses the var() function to insert several CSS variable values:</h2>
+
+    <div id="div1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatibus sint error quisquam itaque nulla voluptas accusantium repudiandae culpa laudantium iusto, quas natus molestiae iste est! Quod rerum earum quas.</div>
+    <br>
+
+    <div id="div2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde vero incidunt doloribus, eum, ipsum deleniti voluptatem sed quam ex nisi commodi eveniet? At impedit dolores a possimus magnam? Ad, facilis.</div>
+    <br>
+
+    <div id="div3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi totam nam illum amet, magni soluta consectetur recusandae iusto sunt veritatis cumque hic dolore, molestias, repudiandae dignissimos? Dicta aut ut perferendis!</div>
+    
+</body>
+</html>

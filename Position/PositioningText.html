@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postioning Text In an Image</title>
+    <style>
+        .container {
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+
+        /* Add some text to an image in the top right corner: */
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 20px;
+        }
+
+        /* Add some text to an image in the top left corner: */
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 20px;
+        }
+
+        /* Add some text to an image in the bottom right corner */
+        .bottomright {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 20px;
+        }
+
+        /* Add some text to an image in the bottom left corner: */
+        .bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 20px;
+        }
+
+        /* Center text in image: */
+        .center {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Positioning Text In an Image</h1>
+
+    <h3>How to position text over an image:</h3>
+
+    <div class="container">
+        <img src="../src/images/img_5terre.jpg" alt="Terre" width="1000" height="300">
+
+        <!-- Add some text to an image in the top right corner: -->
+        <div class="topright">Top Right</div>
+
+        <!-- Add some text to an image in the top left corner: -->
+        <div class="topleft">Top Left</div>
+
+        <!-- Add some text to an image in the bottom right corner: -->
+        <div class="bottomright">Bottom Right</div>
+
+        <!-- Add some text to an image in the bottom left corner: -->
+        <div class="bottomleft">Bottom Left</div>
+
+        <!-- Center text in image: -->
+        <div class="center">Centered</div>
+    </div>
+
+    
+    
+</body>
+</html>

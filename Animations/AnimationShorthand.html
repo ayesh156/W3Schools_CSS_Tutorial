@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Shorthand</title>
+    <style>
+        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove 5s infinite;
+        }
+
+        @keyframes mymove {
+            from {left: 0;}
+            to {left: 200px;}
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>animation Shorthand</h1>
+
+    <h3>The animation property is a shorthand property for:</h3>
+
+    <ul>
+        <li>animation-name</li>
+        <li>animation-duration</li>
+        <li>animation-timing-function</li>
+        <li>animation-delay</li>
+        <li>animation-iteration-count</li>
+        <li>animation-direction</li>
+        <li>animation-fill-mode</li>
+        <li>animation-play-state</li>
+    </ul>
+
+    <p><b>Note:</b> Always specifiy the animation-duration property, otherwise the duration is 0, and will never be played.</p>
+
+    <h2>Syntax :- animation: name duration timing-function delay iteration-count direction fill-mode play-state;</h2>
+
+    <h3>Binding an animation to a (div) element, using the shorthand property;</h3>
+
+    <p>Move an element from 0px to 200px left. The animation lasts for 5 seconds. It then starts over again, and go on forever (infinite).</p>
+
+    <div></div>
+
+
+</body>
+</html>

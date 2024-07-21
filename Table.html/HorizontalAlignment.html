@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Alignment</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        /* Horizontal Alignment */
+        table.center {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table.center td {
+            text-align: center;
+        }
+
+        /* (th) elements left-aligned */
+        table.left {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table.left th {
+            text-align: left;
+        }
+
+        /* Vertical Alignmen */
+        table.bottom {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table.bottom td {
+            height: 50px;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Horizontal Alignment</h1>
+
+    <h3>The text-align property sets the horizontal alignment (like left, right or center) of the content in (th) or (td)</h3>
+
+    <h3>By default, the content of (th) elements are center-aligned and the content of (td) elements are left-aligned.</h3>
+
+    <h3>To center-align the content of (td) elements as well, use text-align: center:</h3>
+
+    <table class="center">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <h3>To left-align the content, force the alignment of (th) elements to be left-aligned, with the text-align: left property:</h3>
+
+    <table class="left">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <h1>Vertical Alignment</h1>
+
+    <h3>The vertical-align property sets the vertical alignment (like top, bottom or middle) of the content in (th) or (td).</h3>
+
+    <h3>By default, the vertical alignment of the content in a table is middle (for both (th) and (td) elements).</h3>
+
+    <h3>The following example sets the vertical text alignment to bottom for (td) elements:</h3>
+
+    <table class="bottom">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

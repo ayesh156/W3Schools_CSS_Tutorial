@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-image-source</title>
+    <style>
+       #borderimg {
+           border: 10px solid transparent;
+           padding: 15px;
+           border-image: url("../src/images/border.png");
+           border-image-slice: 30;
+       }
+    </style>
+</head>
+<body>
+
+    <h1>border-image-source Property</h1>
+
+    <h3>The border-image-source property specifies the path to the image to be used as a border (instead of the normal border around an element).</h3>
+
+    <p><b>Tip:</b> If the value is "none", or if the image cannot be displayed, the border styles will be used.</p>
+
+    <p id="borderimg">Hello World!</p>
+
+    <p>Here is the original image:</p>
+    <img src="../src/images/border.png" alt="border">
+
+    <p><b>Note:</b> Internet Explorer 10, and earlier versions, do not support the border-image-source property.</p>
+    
+</body>
+</html>

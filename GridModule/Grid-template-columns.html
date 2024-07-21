@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-template-columns</title>
+    <style>
+        /* Make a 4 columns grid container: */
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto auto auto auto;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            font-size: 30px;
+            padding: 20px 0;
+        }
+
+        /* Make a 4 columns grid container, and specify a size for each column: */
+        .grid-container2 {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 30px 200px auto 100px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container2 > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            font-size: 30px;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>grid-template-columns</h1>
+
+    <h3>The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.</h3>
+
+    <h3>The values are a space separated list, where each value specifies the size of the respective columns.</h3>
+
+    <h2>grid-template-columns: none|auto|max-content|min-content|length|initial|inherit;</h2>
+
+    <ul>
+        <li><h3>none :- Default value. Columns are created if needed</h3></li>
+        <li><h3>auto :- The size of the columns is determined by the size of the container and on the size of the content of the items in the column</h3></li>
+        <li><h3>max-content :- Sets the size of each column to depend on the largest item in the column</h3></li>
+        <li><h3>min-content :- Sets the size of each column to depend on the smallest item in the column</h3></li>
+        <li><h3>length :- Sets the size of the columns, by using a legal length value.</h3></li>
+    </ul>
+
+    <h3>Make a 4 columns grid container:</h3>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+    </div>
+
+    <h3>Make a 4 columns grid container, and specify a size for each column:</h3>
+
+    <div class="grid-container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+    </div>
+    
+</body>
+</html>

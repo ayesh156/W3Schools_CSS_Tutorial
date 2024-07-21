@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-spacing</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        #table1 {
+            border-collapse: separate;
+            border-spacing: 15px;
+        }
+
+        #table2 {
+            border-collapse: separate;
+            border-spacing: 15px 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Border-spacing</h1>
+
+    <h3>The border-spacing property sets the distance between the borders of adjacent cells</h3>
+
+    <p><b>Note:</b> This property works only when border-collapse is separate.</p>
+
+    <h3>horizontal vertical - Specifies the distance between the borders of adjacent cells in px, cm, etc. Negative values are not allowed.</h3>
+
+    <ul>
+        <li>If one value is specified, it defines both the horizontal and vertical spacing between cells</li>
+        <li>If two values are specified, the first sets the horizontal spacing and the second sets the vertical spacing</li>
+    </ul>
+
+    <h2>Set the border-spacing for a table:</h2>
+
+    <h3>border-spacing: 15px;</h3>
+    <table id="table1">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <h2>border-spacing: 15px 50px;</h2>
+    <table id="table2">
+        <tr>
+            <th>Firstname</th>
+            <th>Secondname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

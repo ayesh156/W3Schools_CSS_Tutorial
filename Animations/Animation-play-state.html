@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-play-state</title>
+    <style>
+        /* Pause an animation: */
+        .div1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove1 5s;
+            animation-play-state: paused;
+        }
+
+        @keyframes mymove1 {
+            from {left: 0;}
+            to {left: 200px;}
+        }
+
+        /* Pause an animation on hover: */
+        .div2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove2 5s infinite;
+        }
+
+        .div2:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes mymove2 {
+            from {left: 0;}
+            to {left: 200px;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>animation-play-state</h1>
+
+    <h3>The animation-play-state property specifies whether the animation is running or paused.</h3>
+
+    <h3>Note: Use this property in a JavaScript to pause an animation in the middle of a cycle.</h3>
+
+    <h2>Syntax :- animation-play-state: paused|running|initial|inherit;</h2>
+
+    <h3>Pause an animation:</h3>
+
+    <div class="div1"></div>
+
+    <h3>Pause an animation on hover:</h3>
+
+    <div class="div2"></div>
+    
+</body>
+</html>

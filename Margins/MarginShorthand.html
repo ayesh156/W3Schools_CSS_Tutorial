@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin - Shorthand</title>
+    <style>
+        /* The margin shorthand property - 4 values */
+        .four {
+            border: 1px solid black;
+            margin: 25px 50px 75px 100px;
+            background-color: lightblue;
+        }
+
+        /* The margin shorthand property - 3 values */
+        .three {
+            border: 1px solid black;
+            margin: 25px 50px 75px;
+            background-color: lightblue;
+        }
+
+        /* The margin shorthand property - 2 values */
+        .two {
+            border: 1px solid black;
+            margin: 25px 50px;
+            background-color: lightblue;
+        }
+
+        /* The margin shorthand property - 1 value */
+        .one {
+            border: 1px solid black;
+            margin: 25px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3>To shorten the code, it is possible to specify all the margin properties in one property</h3>
+
+    <dl>
+        <dt>If the margin property has four values:</dt>
+        <dd>
+            <ul>
+                <li><b>margin: 25px 50px 75px 100px</b></li>
+                <ul>
+                    <li>top margin is 25px</li>
+                    <li>right margin is 50px</li>
+                    <li>bottom margin is 75px</li>
+                    <li>left margin is 100px</li>
+                </ul>
+            </ul>
+        </dd>
+        <dt>If the margin property has three values:</dt>
+        <dd>
+            <ul>
+                <li><b>margin: 25px 50px 75px</b></li>
+                <ul>
+                    <li>top margin is 25px</li>
+                    <li>right and left margins are 50px</li>
+                    <li>bottom margin is 75px</li>
+                </ul>
+            </ul>
+        </dd>
+        <dt>If the border-style property has two values:</dt>
+        <dd>
+            <ul>
+                <li><b>margin: 25px 50px</b></li>
+                <ul>
+                    <li>top and bottom margins are 25px</li>
+                    <li>right and left margins are 50px</li>
+                </ul>
+            </ul>
+        </dd>
+        <dt>If the margin property has one value:</dt>
+        <dd>
+            <ul>
+                <li><b>margin: 25px</b></li>
+                <ul>
+                    <li>all four margins are 25px</li>
+                </ul>
+            </ul>
+        </dd>
+    </dl>
+
+    <h2>The margin shorthand property - 4 values</h2>
+
+    <div class="four">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px and a left margin of 100px.</div>
+
+    <h2>The margin shorthand property - 3 values</h2>
+
+    <div class="three">This div element has a top margin of 25px, a right and left margin of 50px and a bottom margin of 75px.</div>
+
+    <h2>The margin shorthand property - 2 values</h2>
+
+    <div class="two">This div element has a top and bottom margin of 25px, a right and left margin of 50px.</div>
+
+    <h2>The margin shorthand property - 1 value</h2>
+
+    <div class="one">This div element has a top, left, bottom and right margin of 25px</div>
+
+</body>
+</html>

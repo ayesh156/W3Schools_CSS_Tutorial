@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column-fill</title>
+    <style>
+       div {
+           column-count: 3;
+           height: 100px;
+       }
+
+        /* column-fill: auto; */
+        .np1 {
+            column-fill: auto;
+        }
+
+        /* column-fill: balance; */
+        .np2 {
+            column-fill: balance;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>column-fill</h1>
+
+    <h3>The column-fill proeprty specifies how to fill columns, balanced or not.</h3>
+
+    <h3>Tip: If you add a height to a multi-column element, you can control how the content fills the columns. The content can be balanced or filled sequentially.</h3>
+
+    <h2>Syntax :- column-fill: balance|auto|initial|inherit;</h2>
+
+    <h3>balance :- Default value. Fill each column with about the same amount of content, but will not allow the columns to be taller than the height (so, columns might be shorter the height as the browser distributes the content evenly horizontally.</h3>
+    <h3>auto :- Fills each column until it reaches the height, and do this until it runs out of content (so, this value will not necessarily fill all the columns nor fill them evenly)</h3>
+
+    <h3>Specify how to fill columns:</h3>
+
+    <h2>column-fill: auto;</h2>
+    <div class="np1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis eius exercitationem inventore reprehenderit, ratione suscipit voluptatum quaerat tempora ipsum beatae fugit odit voluptatem a temporibus at. Dicta culpa vel expedita dolores adipisci distinctio soluta aliquam at repellat molestiae sequi quisquam voluptatibus qui nam ex quas, saepe minima laudantium fugiat dolore eveniet consectetur. Incidunt error voluptas harum saepe porro, minima vel ex tenetur suscipit accusantium fugiat voluptate, rem sapiente. Sunt quos omnis possimus amet dolore placeat temporibus voluptatum voluptatem nam! Possimus nobis voluptatum quos tempore quam? Omnis rem corrupti eveniet veniam nemo vel, commodi illo, rerum unde mollitia enim nam.</div>
+
+    <h2>column-fill: balance;</h2>
+    <div class="np2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita minima, repudiandae reiciendis eaque dolore. Eveniet iusto eum voluptas mollitia fugit nesciunt minus nobis totam iste rerum ut incidunt ipsa doloremque consequuntur laborum nostrum enim eos, fugiat assumenda ipsam laudantium saepe accusamus nihil cum. Minima, quis omnis? Voluptatem officia aliquam excepturi accusantium labore laboriosam repellat accusamus quod sequi enim in dolores dolor ipsa quam, distinctio praesentium. Repudiandae fugit, nulla nesciunt, nobis debitis aliquam doloribus molestiae velit sapiente deleniti aut deserunt pariatur. Nostrum illo pariatur, quasi minus tempore ipsum fuga accusantium quae ut laboriosam, blanditiis corrupti natus praesentium voluptate tenetur voluptatibus.</div>
+    
+</body>
+</html>

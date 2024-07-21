@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-column</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Make "item1" start on column 1 and span 2 columns: */
+        .gc1 .item1 {grid-column: 1 / span 2;}
+
+        /* You can use column-line values insted numbers of columns to span: */
+        .gc2 .item1 {grid-column: 1 / 3;}
+    </style>
+</head>
+<body>
+
+    <h1>grid-column</h1>
+
+    <h3>The grid-column property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:</h3>
+
+    <ul>
+        <li>grid-column-start</li>
+        <li>grid-column-end</li>
+    </ul>
+
+    <h2>Syntax :- grid-column: grid-column-start / grid-column-end;</h2>
+
+    <h2>Make "item1" start on column 1 and span 2 columns:</h2>
+
+    <div class="grid-container gc1">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+    </div>
+
+    <h3>You can use column-line values insted numbers of columns to span:</h3>
+
+    <div class="grid-container gc2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+    </div>
+    
+</body>
+</html>

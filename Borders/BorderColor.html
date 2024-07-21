@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Color</title>
+    <style>
+       p.one {
+           border-style: solid;
+           border-color: red;
+       }
+
+       p.two {
+           border-style: solid;
+           border-color: #00ff00;
+       }
+
+       p.three {
+           border-style: solid;
+           border-color: rgb(0, 0, 255);
+       }
+
+       p.four {
+           border-style: solid;
+           border-color: hsl(0, 0%, 73%);
+       }
+
+       p.five {
+           border-style: solid;
+           border-color: rgba(255, 0, 255, 0.5);
+       }
+
+       p.six {
+           border-style: solid;
+           border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+       }
+    </style>
+</head>
+<body>
+
+    <h1>Border Color</h1>
+
+    <h3>The border-color property is used to set the color of the four borders</h3>
+
+    <ul>
+        The color can be set by:
+        <li>name - specify a color name, like "red"</li>
+        <li>HEX - specify a HEX value, like "#ff0000"</li>
+        <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+        <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+        <li>transparent</li>
+    </ul>
+
+    <h2>Demonstration of the different border colors:</h2>
+
+    <p class="one">A solid red border</p>
+    <p class="two">A solid green border</p>
+    <p class="three">A solid blue border</p>
+    <p class="four">A solid gray border</p>
+    <p class="five">A solid pink border</p>
+
+    <h1>Specific Side Colors</h1>
+
+    <h3>The border-color property can have from one to four values (for the top border, right border, bottom border and left border)</h3>
+
+    <p class="six">red top, green right, blue bottom and yellow left multicolor border</p>
+    
+</body>
+</html>

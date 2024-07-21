@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide/Change Elements</title>
+    <style>
+        /* Hide Elements With Media Queries */
+       .example {
+           background-color: yellow;
+           padding: 20px;
+       }
+
+       @media screen and (max-width: 600px) {
+           .example {
+               display: none;
+           }
+       }
+
+        /* Change Font Size With Media Queries */
+        .example2 {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .example2 {
+                font-size: 80px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .example2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hide Elements With Media Queries</h1>
+
+    <h3>Another common use of media queries, is to hide elements on different screen sizes:</h3>
+
+    <div class="example">Example DIV</div>
+
+    <p>When the browser's width is 600px wide or less, hide the div element.Resize the browser window to see the effect.</p>
+
+    <h1>Change Font Size With Media Queries</h1>
+
+    <h3>You can also use media queries to change the font size of an element on different screen sizes</h3>
+
+    <div class="example2">Example DIV 2</div>
+
+    <p>When the borwser's with is 600px wide or less, set the font-size of DIV to 30px. When it is 601 or wider, set the font-size to 80px. Resize the browser window to see the effect.</p>
+    
+</body>
+</html>

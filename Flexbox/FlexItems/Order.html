@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        .main {
+            width: 400px;
+            height: 150px;
+            border: 1px solid #c3c3c3;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        .main div {
+            width: 70px;
+            height: 70px;
+        }
+
+        #myRedDIV {order: 2;}
+        #myBlueDIV {order: 4;}
+        #myGreenDIV {order: 3;}
+        #myPinkDIV {order: 1;}
+
+        /* Safari 6.1 + */
+        #myRedDIV {-webkit-order: 2;}
+        #myBlueDIV {-webkit-order: 4;}
+        #myGreenDIV {-webkit-order: 3;}
+        #myPinkDIV {-webkit-order: 1;}
+        
+    </style>
+</head>
+<body>
+
+    <h1>order</h1>
+
+    <h3>The order property specifies the order of a flexible item relative to the rest of the flexible items inside the same container.</h3>
+
+    <h3>Note: If the element is not a flexible item, the order property has no effect.</h3>
+
+    <h3>Set the order of the flexible items:</h3>
+
+    <div class="main">
+        <div id="myRedDIV" style="background-color: coral;"></div>
+        <div id="myBlueDIV" style="background-color: lightblue;"></div>
+        <div id="myGreenDIV" style="background-color: lightgreen;"></div>
+        <div id="myPinkDIV" style="background-color: pink;"></div>
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the order property.</p>
+
+    <p><b>Note:</b> Safari 6.1 (and newer) supports an alternative, the -webkit- order property.</p>
+    
+</body>
+</html>

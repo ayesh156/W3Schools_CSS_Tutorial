@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-items</title>
+    <style>
+        .main {
+            width: 300px;
+            height: 400px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .main div {
+            flex: 1;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        #main1 {align-items: stretch;}
+        #main2 {align-items: center;}
+        #main3 {align-items: flex-start;}
+        #main4 {align-items: flex-end;}
+        #main5 {align-items: baseline;}
+    </style>
+</head>
+<body>
+
+    <h1>align-items</h1>
+
+    <h3>The align-items property specifies the default alignment for items inside the flexible container.</h3>
+
+    <h3>Tip: Use the <a href="../FlexItems/Align-self.html">align-self</a> property of each item to override the align-items property.</h3>
+
+    <h2>Syntax :- align-items: stretch|center|flex-start|flex-end|baseline|initial|inherit;</h2>
+
+    <h3>Different values of the align-items property.</h3>
+
+    <h2>align-items: stretch;</h2>
+    <div class="main" id="main1">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div with more content</div>
+    </div>
+
+    <h2>align-items: center;</h2>
+    <div class="main" id="main2">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div with more content</div>
+    </div>
+
+    <h2>align-items: flex-start;</h2>
+    <div class="main" id="main3">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div with more content</div>
+    </div>
+
+    <h2>align-items: flex-end;</h2>
+    <div class="main" id="main4">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div with more content</div>
+    </div>
+
+    <h2>align-items: baseline;</h2>
+    <div class="main" id="main5">
+        <p>hi</p>
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div with more content</div>
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the align-items property.</p>
+    
+</body>
+</html>

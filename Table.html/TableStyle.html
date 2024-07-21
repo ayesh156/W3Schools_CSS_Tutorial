@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+    <style>
+        /* Table Padding */
+        table.pad, .pad th, .pad td {
+            border: 1px solid #ddd;
+        }
+
+        table.pad {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .pad th, .pad td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        /* Horizontal Dividers */
+        table.divi {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .divi th, .divi td {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Hoverable Table */
+        table.hov {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .hov th, .hov td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .hov tr:first-child:hover {background-color: aqua;}
+        .hov tr:hover {background-color: coral;}
+
+        /* Striped Tables */
+        table.str {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .str th, .str td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .str tr:nth-child(even) {background-color: #f2f2f2;}
+
+        /* Table Color */
+        table.col {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .col th, .col td {
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .col tr:nth-child(even) {background-color: #f2f2f2;}
+
+        .col th {
+            background-color: #04aa6f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Table Style</h1>
+
+    <h1>Table Padding</h1>
+
+    <h3>To control the space between the border and the content in a table, use the padding property on (td) and (th) elements:</h3>
+
+    <table class="pad">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <h1>Horizontal Dividers</h1>
+
+    <h3>Add the border-bottom property to (th) and (td) for horizontal dividers:</h3>
+
+    <table class="divi">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <h1>Hoverable Table</h1>
+
+    <h3>Use the :hover selector on (tr) to highlight table rows on mouse over:</h3>
+
+    <table class="hov">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <h1>Striped Tables</h1>
+
+    <h3>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</h3>
+
+    <table class="str">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <h2>Table Color</h2>
+
+    <h3>The example below specifies the background color and text color of (th) elements:</h3>
+
+    <table class="col">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

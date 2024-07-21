@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding - Shorthand</title>
+    <style>
+        /* The padding shorthand property - 4 values */
+        .four {
+            border: 1px solid black;
+            padding: 25px 50px 75px 100px;
+            background-color: lightblue;
+        }
+        
+        /* The padding shorthand property - 3 values */
+        .three {
+            border: 1px solid black;
+            padding: 25px 50px 75px;
+            background-color: lightblue;
+        }
+
+        /* The padding shorthand property - 2 value */
+        .two {
+            border: 1px solid black;
+            padding: 25px 50px;
+            background-color: lightblue;
+        }
+
+        /* The padding shorthand property - 1 value */
+        .one {
+            border: 1px solid black;
+            padding: 25px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>To shorten the code, it is possible to specifity all the padding properties in one property</h3>
+
+    <dl>
+        <dt>If the padding property has four values:</dt>
+        <dd>
+            <ul>
+                <li><b>padding: 25px 50px 75px 100px</b></li>
+                <ul>
+                    <li>top padding is 25px</li>
+                    <li>right padding is 50px</li>
+                    <li>bottom padding is 75px</li>
+                    <li>left padding is 100px</li>
+                </ul>
+            </ul>
+        </dd>
+        <dt>If the padding property has three values:</dt>
+        <dd>
+            <ul>
+                <li><b>padding: 25px 50px 75px</b></li>
+                <ul>
+                    <li>top padding is 25px</li>
+                    <li>right and left paddings are 50px</li>
+                    <li>bottom padding is 75px</li>
+                </ul>
+            </ul>
+        </dd>
+        <dt>If the padding property has two values:</dt>
+        <dd>
+            <ul>
+                <li><b>padding: 25px 50px</b></li>
+                <ul>
+                    <li>top and bottom paddings are 25px</li>
+                    <li>right and left paddings are 50px</li>
+                </ul>
+            </ul>
+        </dd>
+        <dt>If the padding property has one value:</dt>
+        <dd>
+            <ul>
+                <li><b>padding: 25px</b></li>
+                <ul>
+                    <li>all four paddings are 25px</li>
+                </ul>
+            </ul>
+        </dd>
+    </dl>
+
+    <h2>The padding shorthand property - 4 values</h2>
+    
+    <div class="four">
+        This div element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px, and a left padding of 100px.
+    </div>
+
+    <h2>The padding shorthand property - 3 values</h2>
+
+    <div class="three">
+        This div element has a top padding of 25px, a right and left padding of 50px and a bottom padding of 75px.
+    </div>
+
+    <h2>The padding shorthand property - 2 values</h2>
+
+    <div class="two">
+        This div element has a top and bottom padding of 25px and a right and left padding of 50px.
+    </div>
+
+    <h2>The padding shorthand property - 1 value</h2>
+
+    <div class="one">This div element has a top, right, bottom and left padding of 25px</div>
+    
+</body>
+</html>

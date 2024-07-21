@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-image-outset</title>
+    <style>
+        body {
+            background-color: #e7e9eb;
+        }
+
+        /* Place the border image 10 pixels outside the border edges of an element: */
+        #mydiv {
+            height: 300px;
+            background-color: #fff;
+            border: 15px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-repeat: stretch;
+            border-image-slice: 30;
+            border-image-width: 10px;
+            border-image-outset: 10px;
+        }
+        
+        /* Place the border image outside the border edges of an element: */
+        #mydiv2 {
+            height: 300px;
+            background-color: #fff;
+            border: 15px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-slice: 30;
+            border-image-repeat: stretch;
+            border-image-width: 10px;
+            border-image-outset: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>border-image-outset Property</h1>
+
+    <h3>The border-image-outset property specifies the amount by which the border image area extends beyond the border box.</h3>
+
+    <h2>Syntax :- border-image-outset: length|number|initial|inherit</h2>
+
+    <p><b>Note:</b> The border-image-outset property can take from one to four values (top, right, bottom and left sides). If the fourth values is omitted, it is the same as the second. If the third one is also omitted, it is the same as the first. If the second one is also omitted, it is the same as the first.</p>
+
+    <h2>Place the border image 10 pixels outside the border edges of an element:</h2>
+
+    <div id="mydiv">
+        <p>A demonstration on how to set the border image:</p>
+        <p>
+            We used this image:
+            <img src="../src/images/border.png" alt="border">
+        </p>
+    </div><br><br>
+
+    <h2>Place the border image outside the border edges of an element:</h2>
+
+    <div id="mydiv2">
+        <p>A another demonstration on how to set the border image:</p>
+        <p>
+            We used this image:
+            <img src="../src/images/border.png" alt="border">
+        </p>
+    </div>
+    
+</body>
+</html>

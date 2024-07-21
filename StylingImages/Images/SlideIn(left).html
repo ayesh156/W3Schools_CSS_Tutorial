@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide in (left)</title>
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008cba;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            width: 100%;
+        }
+
+        .text {
+            white-space: nowrap;
+            position: absolute;
+            overflow: hidden;
+            font-size: 20px;
+            color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Slide in (left)</h1>
+
+    <div class="container">
+        <img src="../../src/images/img_avatar.png" alt="Avater" class="image">
+        <div class="overlay">
+            <div class="text">Ayesh Chathuranga</div>
+        </div>
+    </div>
+    
+</body>
+</html>

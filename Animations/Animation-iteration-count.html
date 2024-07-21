@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-iteration-count</title>
+    <style>
+        /* Play the animation two times: */
+        .div1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin-bottom: 250px;
+            animation: mymove1 3s;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes mymove1 {
+            from {top: 0;}
+            to {top: 200px;}
+        }
+
+        /* Play the animation forever: */
+        .div2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin-bottom: 250px;
+            animation: mymove2 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes mymove2 {
+            from {top: 0;}
+            to {top: 200px;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>animation-iteration-count</h1>
+
+    <h3>The animation-iteration-count property specifies the number of times an animation should be played.</h3>
+
+    <h2>Syntax :- animation-iteration-count: number|infinite|initial|inherit;</h2>
+
+    <h3>infinite :- Specifies that the animation should be played infinite times (for ever)</h3>
+
+    <h3>Play the animation two times:</h3>
+
+    <div class="div1"></div>
+
+    <h3>Play the animation forever:</h3>
+
+    <div class="div2"></div>
+    
+</body>
+</html>

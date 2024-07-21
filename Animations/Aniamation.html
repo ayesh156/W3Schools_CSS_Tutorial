@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* @keyframes Rule */
+        /* The following example binds the "example" animation to the (div) element. The animation will last for 4 seconds and it will gradually change the background-color of the (div) element from "red" to "yellow": */
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+
+        /* The following example will change the background-color of the (div) element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete: */
+        .div2 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation-name: example2;
+            animation-duration: 4s;
+        }
+
+        @keyframes example2 {
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color: blue;}
+            100% {background-color: green;}
+        }
+
+        /* The following example will change both the background-color and the position of the (div) element when the animation is 25% complete, 50% complete, 75% complete and again when the animation is 100% complete: */
+        .div3 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 250px;
+            background: red;
+            animation-name: example3;
+            animation-duration: 4s;
+        }
+
+        @keyframes example3 {
+            0% {top: 0; left: 0; background-color: red;}
+            25% {top: 0; left: 200px; background-color: yellow;}
+            50% {top: 200px; left: 200px; background-color: blue;}
+            75% {top: 200px; left: 0; background-color: green;}
+            100% {top: 0; left: 0; background-color: red;}
+        }
+
+        /* Delay an Animation */
+        /* The following example has a 2 seconds delay before starting the animation: */
+        .div4 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: example4;
+            animation-duration: 4s;
+            animation-delay: 2s;
+        }
+
+        @keyframes example4 {
+            0% {background-color: red; top: 0; left: 0;}
+            25% {background-color: yellow; top: 0; left: 200px;}
+            50% {background-color: blue; top: 200px; left: 200px;}
+            75% {background-color: green; top: 200px; left: 0;}
+            100% {background-color: red; top: 0; left: 0;}
+        }
+
+        /* In the following example, the animation will start as if it had already been playing for 2 seconds: */
+        .div5 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 250px;
+            background-color: red;
+            animation-name: example5;
+            animation-duration: 4s;
+            animation-delay: -2s;
+        }
+
+        @keyframes example5 {
+            0% {background-color: red; left: 0; top: 0;}
+            25% {background-color: yellow; left: 200px; top: 0;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0; top: 200px;}
+            100% {background-color: red; left: 0; top: 0;}
+        }
+
+        /* Set How Many Times an Animation Should Run */
+        /* The following example will run the animation 3 times before it stops: */
+        .div6 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: example6;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes example6 {
+            0% {background-color: red; top: 0; left: 0;}
+            25% {background-color: yellow; top: 0; left: 200px;}
+            50% {background-color: blue; top: 200px; left: 200px;}
+            75% {background-color: green; top: 200px; left: 0;}
+            100% {background-color: red; top: 0; left: 0;}
+        }
+
+        /* The following example uses the value "infinite" to make the animation continue for ever: */
+        .div7 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: example7;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example7 {
+            0% {background-color: red; left: 0; top: 0;}
+            25% {background-color: yellow; left: 200px; top: 0;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0; top: 200px;}
+            100% {background-color: red; left: 0; top: 0;}
+        }
+
+        /* Run Animation in Reverse Direction or Alternate Cycles */
+        /* The following example will run the animation in reverse direction (backwards): */
+        .div8 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: example8;
+            animation-duration: 4s;
+            animation-direction: reverse;
+        }
+
+        @keyframes example8 {
+            0% {background-color: red; top: 0; left: 0;}
+            25% {background-color: yellow; top: 0; left: 200px;}
+            50% {background-color: blue; top: 200px; left: 200px;}
+            75% {background-color: green; top: 200px; left: 0;}
+            100% {background-color: red; top: 0; left: 0;}
+        }
+
+        /* The forwards example uses the value "alternate" to make the animation run forwards first, then backwards: */
+        .div9 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: example9;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+
+        @keyframes example9 {
+            0%  {background-color: red; top: 0; left: 0;}
+            25%  {background-color: yellow; top: 0; left: 200px;}
+            50%  {background-color: blue; top: 200px; left: 200px;}
+            75%  {background-color: green; top: 200px; left: 0;}
+            100%  {background-color: red; top: 0; left: 0;}
+        }
+
+        /* The following example uses the value "alternate-reverse" to make the animation run backwards first, then forwards: */
+        .div10 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: example10;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes example10 {
+            0% {background-color: red; top: 0; left: 0;}
+            25% {background-color: yellow; top: 0; left: 200px;}
+            50% {background-color: blue; top: 200px; left: 200px;}
+            75% {background-color: green; top: 200px; left: 0;}
+            100% {background-color: red; top: 0; left: 0;}
+        }
+
+        /* Specify the Speed Curve of the Animation */
+        /* The following example shows some of the different speed curves that can be used: */
+        .atf {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            font-weight: bold;
+            animation: mymove 5s infinite;
+        }
+
+        #atf1 {animation-timing-function: linear;}
+        #atf2 {animation-timing-function: ease;}
+        #atf3 {animation-timing-function: ease-in;}
+        #atf4 {animation-timing-function: ease-out;}
+        #atf5 {animation-timing-function: ease-in-out;}
+
+        @keyframes mymove {
+            from {left: 0;}
+            to {left: 300px;}
+        }
+
+        /* Specify the fill-mode For an Animation */
+        /* The following example lets the (div) element retain the style values from the last keyframe when the animation ends: */
+        .afm1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: afm1;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes afm1 {
+            from {top: 0;}
+            to {top: 200px; background-color: blue;}
+        }
+
+        /* The following example lets (div) element get the style values set by the first keyframe before the animation starts (during the animation-delay period): */
+        .afm2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: afm2;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes afm2 {
+            from {top: 0; background-color: yellow;}
+            to {top: 200px;}
+        }
+
+        /* The following example lets the (div) element get the style values set by the first keyframe before the animation starts and retain the style values from the last keyframe when the animation ends: */
+        .afm3 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: afm3;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes afm3 {
+            from {top: 0; background-color: yellow;}
+            to {top: 200px; background-color: blue;}
+        }
+
+        /* The example below uses six of the animation properties: */
+        .six {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation-name: six;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes six {
+            0% {background-color: red; top: 0; left: 0;}
+            25% {background-color: yellow; top: 0; left: 200px;}
+            50% {background-color: blue; top: 200px; left: 200px;}
+            75% {background-color: green; top: 200px; left: 0;}
+            100% {background-color: red; top: 0; left: 0;}
+        }
+
+        /* Animation Shorthand Property */
+        /* The same animation effect as above can be achieved by using the shorthand animation property */
+        .short {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 250px;
+            animation: short 5s linear 2s infinite alternate;
+        }
+
+        @keyframes short {
+            0% {background-color: red; top: 0; left: 0;}
+            25% {background-color: yellow; top: 0; left: 200px;}
+            50% {background-color: blue; top: 200px; left: 200px;}
+            75% {background-color: green; top: 200px; left: 0;}
+            100% {background-color: red; top: 0; left: 0;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>What are CSS Animations?</h1>
+
+    <h3>An animation lets an element gradually change from one style to another.</h3>
+    <h3>You can change as many CSS properties you want, as many times as you want.</h3>
+    <h3>To use CSS animation, you must first specify some keyframes for the animation.</h3>
+    <h3>Keyframes hold what styles the element will have at certain times.</h3>
+
+    <h1>@keyframes Rule</h1>
+
+    <h3>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.</h3>
+    <h3>To get an animation to work, you must bind the animation to an element.</h3>
+    <h3>The following example binds the "example" animation to the (div) element. The animation will last for 4 seconds and it will gradually change the background-color of the (div) element from "red" to "yellow":</h3>
+
+    <div class="div1"></div>
+
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+    <p><b>Note:</b> The animation-duration property defines how long an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s (0 seconds).</p>
+
+    <h3>In the example above we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)).</h3>
+
+    <h3>It is also possible to use precent. By using percent, you can add as many style changes as you like.</h3>
+
+    <h3>The following example will change the background-color of the (div) element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:</h3>
+
+    <div class="div2"></div>
+
+    <h3>The following example will change both the background-color and the position of the (div) element when the animation is 25% complete, 50% complete, 75% complete and again when the animation is 100% complete:</h3>
+
+    <div class="div3"></div>
+
+    <h1>Delay an Animation</h1>
+
+    <h3>The animation-delay property specifies a delay for the start of an animation.</h3>
+
+    <h3>The following example has a 2 seconds delay before starting the animation:</h3>
+
+    <div class="div4"></div>
+
+    <h3>Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for N seconds.</h3>
+
+    <h3>In the following example, the animation will start as if it had already been playing for 2 seconds:</h3>
+
+    <div class="div5"></div>
+
+    <h1>Set How Many Times an Animation Should Run</h1>
+
+    <h3>The animation-iteration-count property specifies the number of times an animation should run.</h3>
+
+    <h3>The following example will run the animation 3 times before it stops:</h3>
+
+    <div class="div6"></div>
+
+    <h3>The following example uses the value "infinite" to make the animation continue for ever:</h3>
+
+    <div class="div7"></div>
+
+    <h1>Run Animation in Reverse Direction or Alternate Cycles</h1>
+
+    <h3>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.</h3>
+
+    <h3>The animation-direction property can have the following values:</h3>
+
+    <ul>
+        <li>normal :- The animation is played as normal (forwards). This is default.</li>
+        <li>reverse :- The animation is played in reverse direction (backwards)</li>
+        <li>alternate :- The animation is played forwards first, then backwards</li>
+        <li>alternate-reverse :- The animation is played backwards first, then forwards</li>
+    </ul>
+
+    <h3>The following example will run the animation in reverse direction (backwards):</h3>
+
+    <div class="div8"></div>
+
+    <h3>The forwards example uses the value "alternate" to make the animation run forwards first, then backwards:</h3>
+
+    <div class="div9"></div>
+
+    <h3>The following example uses the value "alternate-reverse" to make the animation run backwards first, then forwards:</h3>
+
+    <div class="div10"></div>
+
+    <h1>Specify the Speed Curve of the Animation</h1>
+
+    <h3>The animation-timing-function property specifies the speed curve of the animation.</h3>
+
+    <h3>The animation-timing-function property can have the following values:</h3>
+
+    <ul>
+        <li>ease :- Specifies an animation with a slow start, then fast, then end slowly (this is default)</li>
+        <li>linear :- Specifies an animation with the same speed from start to end</li>
+        <li>ease-in :- Specifies an animation with a slow start</li>
+        <li>ease-out :- Specifies an animation with a slow end</li>
+        <li>ease-in-out :- Specifies an animation with a slow start and end</li>
+        <li>cubic-bezier(n,n,n,n) :- Lets you define your own values in a cubic-bezier function</li>
+    </ul>
+
+    <h3>The following example shows some of the different speed curves that can be used:</h3>
+
+    <div class="atf" id="atf1">linear</div>
+    <div class="atf" id="atf2">ease</div>
+    <div class="atf" id="atf3">ease-in</div>
+    <div class="atf" id="atf4">ease-out</div>
+    <div class="atf" id="atf5">ease-in-out</div>
+
+    <h1>Specify the fill-mode For an Animation</h1>
+
+    <h3>CSS animations do not affect an element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior.</h3>
+
+    <h3>The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends or both).</h3>
+
+    <h3>The animation-fill-mode property can have the following values:</h3>
+
+    <ul>
+        <li>none :- Default value. Animation will not apply any styles to the element before or after it is executing.</li>
+        <li>forwards :- The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)</li>
+        <li>backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction) and retain this during the animation-delay period</li>
+        <li>both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions</li>
+    </ul>
+
+    <h3>The following example lets the (div) element retain the style values from the last keyframe when the animation ends:</h3>
+
+    <div class="afm1"></div>
+
+    <h3>The following example lets (div) element get the style values set by the first keyframe before the animation starts (during the animation-delay period):</h3>
+
+    <div class="afm2"></div>
+
+    <h3>The following example lets the (div) element get the style values set by the first keyframe before the animation starts and retain the style values from the last keyframe when the animation ends:</h3>
+
+    <div class="afm3"></div>
+
+    <h3>The example below uses six of the animation properties:</h3>
+
+    <div class="six"></div>
+
+    <h1>Animation Shorthand Property</h1>
+
+    <h2>Syntax :- animation: name duration timing-function delay iteration-count direction fill-mode play-state;</h2>
+
+    <h3>The same animation effect as above can be achieved by using the shorthand animation property:</h3>
+
+    <div class="short"></div>
+    
+</body>
+</html>

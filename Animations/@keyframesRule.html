@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@keyframes Rule</title>
+    <style>
+        /* Make an element move gradually 200px down: */
+        .div1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove1 5s infinite;
+        }
+
+        @keyframes mymove1 {
+            from {top: 0;}
+            to {top: 200px;}
+        }
+
+        /* Add many keyframe selectors in one animation: */
+        .div2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove2 5s infinite;
+        }
+
+        @keyframes mymove2 {
+            0% {top: 0;}
+            25% {top: 200px;}
+            50% {top: 100px;}
+            75% {top: 100px;}
+            100% {top: 0;}
+        }
+
+        /* Change many CSS styles in one animation: */
+        .div3 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove3 5s infinite;
+        }
+
+        @keyframes mymove3 {
+            0% {top: 0; background: red; width: 100px;}
+            100% {top: 200px; background: yellow; width: 300px;}
+        }
+
+        /* Many keyframe selectors with many CSS styles: */
+        .div4 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove4 5s infinite;
+        }
+
+        @keyframes mymove4 {
+            0% {top: 0; left: 0; background: red;}
+            25% {top: 0; left: 100px; background: blue;}
+            50% {top: 100px; left: 100px; background: yellow;}
+            75% {top: 100px; left: 0; background: green;}
+            100% {top: 0; left: 0; background: red;}
+        }
+
+        /* Note: The !important rule is ignored in a keyframe: */
+        .div5 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove5 5s infinite;
+        }
+
+        @keyframes mymove5 {
+            from {top: 0;}
+            50% {top: 100px !important;} /* Ignored */
+            to {top: 200px;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>@keyframes Rule</h1>
+
+    <h3>The @keyframes rule specifies the animation code.</h3>
+
+    <h3>The animation is created by gradually changing from one set of CSS style to another.</h3>
+
+    <h3>During the animation, you can change the set of CSS styles many times.</h3>
+
+    <h3>Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.</h3>
+
+    <p><b>Tip:</b> For best browser support, you should always defines both the 0% and the 100% selectors.</p>
+
+    <p><b>Note:</b> Use the animation properties to control the appearance of the animation and also to bind the animation to selectors.</p>
+
+    <h2>Syntax :- @keyframes animationname {keyframe-selector {css-styles;}}</h2>
+
+    <h3>Make an element move gradually 200px down:</h3>
+
+    <div class="div1" style="margin-bottom: 250px;"></div>
+
+    <h3>Add many keyframe selectors in one animation:</h3>
+
+    <div class="div2" style="margin-bottom: 250px;"></div>
+
+    <h3>Change many CSS styles in one animation:</h3>
+
+    <div class="div3" style="margin-bottom: 250px;"></div>
+
+    <h3>Many keyframe selectors with many CSS styles:</h3>
+
+    <div class="div4" style="margin-bottom: 150px;"></div>
+
+    <h3>Note: The !important rule is ignored in a keyframe:</h3>
+
+    <div class="div5" style="margin-bottom: 250px;"></div>
+
+</body>
+</html>

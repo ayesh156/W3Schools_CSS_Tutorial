@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space & Rounded</title>
+    <style>
+        /* background-repeat: repeat (default) */
+        #example1 {
+            border: 2px solid black;
+            padding: 62px;
+            background-image: url("../../Images/w3school.jpg");
+            background-repeat: repeat;
+        }
+
+        /* background-repeat: space */
+        #example2 {
+            border: 2px solid black;
+            padding: 62px;
+            background-image: url("../../Images/w3school.jpg");
+            background-repeat: space;
+        }
+
+        /* background-repeat: round */
+        #example3 {
+            border: 2px solid black;
+            padding: 62px;
+            background-image: url("../../Images/w3school.jpg");
+            background-repeat: round;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>background-repeat: repeat (default)</h2>
+
+    <p>Here, the background image is repeated both vertically and horizontally. The last image will be clipped if it does not fit. This is default:</p>
+    <div id="example1">
+        <h3>Hellow World!</h3>
+    </div>
+
+    <h2>background-repeat: space</h2>
+
+    <p>Here, the background-image is repeated as much as possible without clipping. The first and last image are pinned to either side of the element, and whitespace is distributed evenly between the images</p>
+    <div id="example2">
+        <h3>Hello World!</h3>
+    </div>
+
+    <h2>background-repeat: round</h2>
+
+    <p>Here, the background-image is repeated and squished or stretched, to fill the space (no gaps):</p>
+    <div id="example3">
+        <h3>Hello World!</h3>
+    </div>
+
+</body>
+</html>

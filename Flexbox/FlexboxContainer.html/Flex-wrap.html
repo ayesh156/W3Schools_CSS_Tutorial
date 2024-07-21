@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+    <style>
+        .main {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+        }
+
+        .main div {
+            width: 50px;
+            height: 50px;
+        }
+
+        #main1 {flex-wrap: nowrap;}
+        #main2 {flex-wrap: wrap;}
+        #main3 {flex-wrap: wrap-reverse;}
+    </style>
+</head>
+<body>
+
+    <h1>flex-wrap</h1>
+
+    <h3>The flex-wrap property specifies whether the flexible items should wrap or not.</h3>
+
+    <h3>Note: If the elements are not flexible items, the flex-wrap property has no effect.</h3>
+
+    <h2>Syntax :- flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;</h2>
+
+    <h3>Different values of the flex-wrap property.</h3>
+
+    <h2>flex-wrap: nowrap;</h2>
+    <div class="main" id="main1">
+        <div style="background-color: coral;">A</div>
+        <div style="background-color: lightblue;">B</div>
+        <div style="background-color: khaki;">C</div>
+        <div style="background-color: lightgray;">D</div>
+        <div style="background-color: pink;">E</div>
+        <div style="background-color: lightgreen;">F</div>
+    </div>
+
+    <h2>flex-wrap: wrap;</h2>
+    <div class="main" id="main2">
+        <div style="background-color: coral;">A</div>
+        <div style="background-color: lightblue;">B</div>
+        <div style="background-color: khaki;">C</div>
+        <div style="background-color: lightgray;">D</div>
+        <div style="background-color: pink;">E</div>
+        <div style="background-color: lightgreen;">F</div>
+    </div>
+
+    <h2>flex-wrap: wrap-reverse;</h2>
+    <div class="main" id="main3">
+        <div style="background-color: coral;">A</div>
+        <div style="background-color: lightblue;">B</div>
+        <div style="background-color: khaki;">C</div>
+        <div style="background-color: lightgray;">D</div>
+        <div style="background-color: pink;">E</div>
+        <div style="background-color: lightgreen;">F</div>
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-wrap property.</p>
+    
+</body>
+</html>

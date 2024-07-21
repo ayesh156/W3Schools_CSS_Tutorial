@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Size</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        /* Table Width and Height */
+        table.size {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table.size th {
+            height: 70px;
+        }
+
+       /* table span half the page */
+        table.width {
+            border-collapse: collapse;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Table Width and Height</h1>
+
+    <h3>The width and height of a table are defined by the width and height properties</h3>
+
+    <h3>The example below sets the width of the table to 100% and height of the (th) elements to 70px:</h3>
+
+    <table class="size">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <h3>To create a table that should only span half the page, use width: 50%:</h3>
+
+    <table class="width">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Graffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

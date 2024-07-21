@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-delay</title>
+    <style>
+        /* Start the animation after 2 seconds: */
+        .div1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove1 5s infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes mymove1 {
+            from {left: 0;}
+            to {left: 200px;}
+        }
+
+        /* Using negative values. Here, the animation will start as if it had already been playing for 2 seconds: */
+        .div2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            animation: mymove2 5s 1;
+            animation-delay: -2s;
+        }
+
+        @keyframes mymove2 {
+            from {left: 0;}
+            to {left: 200px;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>animation-delay</h1>
+
+    <h3>The animation-delay property specifies a delay for the start of an animation</h3>
+
+    <h3>Optional. Defines the number of seconds (s) or milliseconds (ms) to wait before the animation will start. Default value is 0. Negative values are allowed. If you use negative values, the animation will start as if it had already been playing for N seconds/milliseconds.</h3>
+
+    <h3>Start the animation after 2 seconds:</h3>
+
+    <div class="div1"></div>
+
+    <h3>Using negative values. Here, the animation will start as if it had already been playing for 2 seconds:</h3>
+
+    <div class="div2"></div>
+    
+</body>
+</html>

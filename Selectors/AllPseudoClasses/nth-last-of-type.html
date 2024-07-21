@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :nth-last-of-type() Selector</title>
+    <style>
+        /* Specify a background color for every (p) element that is the second (p) element of its parent, counting from the last child */
+        p.p1:nth-last-of-type(2) {
+            background-color: aquamarine;
+        }
+
+        /* Specify two different background colors for odd and even (p) elements */
+        p.p2:nth-last-of-type(odd) {
+            background-color: red;
+        }
+        p.p2:nth-last-of-type(even) {
+            background-color: blue;
+        }
+
+        /* Specify a background color for all (p) elements whose index is a multiple of 3 */
+        p.p3:nth-last-of-type(3n+0) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h3>The :nth-last-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent,counting from the last child.</h3>
+
+    <h3>n can be a number, a keyword, or a formula</h3>
+
+    <h2>Specify a background color for every (p) element that is the second (p) element of its parent, counting from the last child</h2>
+
+    <div>
+        <p class="p1">The first paragraph</p>
+        <p class="p1">The second paragraph</p>
+        <p class="p1">The third paragraph</p>
+        <p class="p1">The fourth paragraph</p>
+    </div>
+    <div>
+        <p class="p1">The fifth paragraph</p>
+        <p class="p1">The sixth paragraph</p>
+        <p class="p1">The seventh paragraph</p>
+        <p class="p1">The eighth paragraph</p>
+    </div>
+
+    <h3>Odd and even are keywords that can be used to match child elements whose index is odd or even (the index of the first child is 1).</h3>
+
+    <h2>Specify two different background colors for odd and even (p) elements</h2>
+
+    <div>
+        <p class="p2">The first paragraph</p>
+        <p class="p2">The second paragraph</p>
+        <p class="p2">The third paragraph</p>
+        <p class="p2">The fourth paragraph</p>
+    </div>
+
+    <h3>Using a formula (an + b). Description: a represents a cycle size, n is a counter (starts at 0), and b is an offset value</h3>
+
+    <h2>Specify a background color for all (p) elements whose index is a multiple of 3</h2>
+
+    <div>
+        <p class="p3">The first paragraph</p>
+        <p class="p3">The second paragraph</p>
+        <p class="p3">The third paragraph</p>
+        <p class="p3">The fourth paragraph</p>
+        <p class="p3">The fifth paragraph</p>
+        <p class="p3">The sixth paragraph</p>
+        <p class="p3">The seventh paragraph</p>
+        <p class="p3">The eighth paragraph</p>
+        <p class="p3">The ninth paragraph</p>
+    </div>
+
+    
+</body>
+</html>

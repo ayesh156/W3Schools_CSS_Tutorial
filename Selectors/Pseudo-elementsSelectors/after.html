@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ::after Selector</title>
+    <style>
+        /* Use the content property to specifty the content to insert. */
+        p.p1::after {
+            content : " - Remember this";
+        }
+
+        /* Insert content after every (p) element, and style the inserted content: */
+        p.p2::after {
+            content: " - Remember this";
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>Use the content property to specifty the content to insert.</h3>
+
+    <h3>The ::after selector inserts something after the content of each selected element(s).</h3>
+
+    <p>Insert some text after the content of each (p) element:</p>
+
+    <p class="p1">My name is Ayesh</p>
+    <p class="p1">I live in Matara</p>
+    
+    <h2>Insert content after every (p) element, and style the inserted content:</h2>
+
+    <p class="p2">My name is Chathuranga</p>
+    <p class="p2">I live in Matara</p>
+
+
+</body>
+</html>

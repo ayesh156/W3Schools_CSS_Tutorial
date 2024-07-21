@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Property</title>
+    <style>
+        /* Set the right edge of the positioned <div> element 150px to the left of the right edge of its nearest positioned ancestor: */
+        div.a {
+            position: relative;
+            border: 3px solid red;
+            width: 400px;
+            height: 200px;
+        }
+
+        div.b {
+            position: absolute;
+            border: 3px solid blue;
+            width: 100px;
+            right: 0;
+            height: 120px;
+        }
+
+        div.c {
+            position: absolute;
+            border: 3px solid green;
+            width: 200px;
+            right: 150px;
+            height: 120px;
+        }
+
+        /* Use the right property with a nagative value and for an element with no positioned ancestors: */
+        div.a2 {
+            position: relative;
+            border: 3px solid red;
+            width: 400px;
+            height: 200px;
+        }
+
+        div.b2 {
+            position: absolute;
+            border: 3px solid blue;
+            width: 100px;
+            height: 120px;
+            right: -20px;
+        }
+
+        div.c2 {
+            position: absolute;
+            border: 3px solid green;
+            width: 200px;
+            right: 150px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Right Property</h1>
+
+    <h3>The right property affects the horizontal position of a positioned element. This property has no effect on non-positioned elements.</h3>
+
+    <ul>
+        <li>If position: absolute; or position: fixed; - the right property sets the right edge of an element to a unit to the right of the right edge of its nearest positioned ancestor.</li>
+        <li>If position: relative; - the right property sets the right edge of an element to a unit to the left/right of its normal position.</li>
+        <li>If position: sticky; - the right property behaves like its position is relative when the element is inside the viewport, and like its position is fixed when it is outside.</li>
+        <li>If position: static; - the right property has no effect.</li>
+    </ul>
+
+    <h2>Set the right edge of the positioned (div) element 150px to the left of the right edge of its nearest positioned ancestor:</h2>
+
+    <div class="a">This div element has position: relative;
+        <div class="b">This div element has position: absolute and right: 0/</div>
+        <div class="c">This div element has position: absolute and is placed 150 pixels to the left of the right edge of the containing positioned element.</div>
+    </div>
+
+    <h2>Use the right property with a nagative value and for an element with no positioned ancestors:</h2>
+
+    <div class="a2">This div element has position: relative;
+        <div class="b2">This div element has position: absolute and right: -20px.</div>
+    </div>
+
+    <div class="c2">This div element has no parent element, has position: absolute and is placed 150 pixels to the left of the right edge of the document body.</div>
+    
+</body>
+</html>

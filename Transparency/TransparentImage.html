@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Image</title>
+    <style>
+        /* Transparent Image */
+        .img1 {
+            opacity: 0.5;
+        }
+
+        /* Transparent Hover Effect */
+        .img2 {
+            opacity: 0.5;
+        }
+
+        .img2:hover {
+            opacity: 1;
+        }
+
+        /* reversed hover effect: */
+        .img3:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transparent Image</h1>
+
+    <h3>The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent:</h3>
+
+    <p>Image with 50% opacity:</p>
+    <img src="../src/images/img_forest.jpg" alt="Forest" width="170" height="100" class="img1">
+
+    <h1>Transparent Hover Effect</h1>
+
+    <h3>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</h3>
+
+    <img src="../src/images/img_forest.jpg" alt="Forest" width="170" height="100" class="img2">
+    <img src="../src/images/img_mountains.jpg" alt="Mountain" width="170" height="100" class="img2">
+    <img src="../src/images/img_5terre.jpg" alt="Italy" width="170" height="100" class="img2">
+
+    <h2>Example explained</h2>
+
+    <h3>The first CSS block is similar to the code in Example 1. In addition, we have added what should happen when a user hovers over one of the images. In this case we want the image to NOT be transparent when the user hovers over it. The CSS for this is opacity: 1;.</h3>
+    <h3>When the mouse pointer moves away from the image, the image will be transparent again.</h3>
+
+    <h3>An example of reversed hover effect:</h3>
+
+    <img src="../src/images/img_forest.jpg" alt="Forest" width="170" height="100" class="img3">
+    <img src="../src/images/img_mountains.jpg" alt="Mountain" width="170" height="100" class="img3">
+    <img src="../src/images/img_5terre.jpg" alt="Italy" width="170" height="100" class="img3">
+    
+    
+</body>
+</html>

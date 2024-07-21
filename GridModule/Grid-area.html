@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-area</title>
+    <style>
+        /* Make "item1" start on  row 2 column 1, and span 2 rows and 3 columns: */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .grid-container .item1 {
+            grid-area: 2 / 1 / span 2 / span 3;
+        }
+        
+        /* item1 gets the name "myArea", and spans all five columns in a five columns grid layout: */
+        .grid-container2 .item1 {
+            grid-area: myArea;
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-template-areas: 'myArea myArea myArea myArea myArea';
+            gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container2 > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Let "myArea" span two columns in a five columns grid layout (period signs represent items with no name): */
+        .grid-container3 .item1 {
+            grid-area: myArea;
+        }
+
+        .grid-container3 {
+            display: grid;
+            grid-template-areas: 'myArea myArea . . .';
+            gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container3 > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Make "item1" span two columns and two rows: */
+        .grid-container4 .item1 {
+            grid-area: myArea;
+        }
+
+        .grid-container4 {
+            display: grid;
+            grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+            gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container4 > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Name all items, and make a ready-to-use webpage tamplate: */
+        .grid-container5 .item1 {grid-area: header;}
+        .grid-container5 .item2 {grid-area: menu;}
+        .grid-container5 .item3 {grid-area: main;}
+        .grid-container5 .item4 {grid-area: right;}
+        .grid-container5 .item5 {grid-area: footer;}
+
+        .grid-container5 {
+            display: grid;
+            grid-template-areas: 
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+            gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container5 > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>grid-area</h1>
+
+    <h3>The grid-area property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:</h3>
+
+    <ul>
+        <li>grid-row-start</li>
+        <li>grid-column-start</li>
+        <li>grid-row-end</li>
+        <li>grid-column-end</li>
+    </ul>
+
+    <h3>The grid-area property can also be used to assign a name to a grid item. Named grid items can then be referenced to by the grid-template-areas property of the grid container. See example below.</h3>
+
+    <h2>Syntax :- grid-area: grid-row-start grid-column-start grid-row-end grid-column-end | itemname;</h2>
+
+    <h3>Make "item1" start on  row 2 column 1, and span 2 rows and 3 columns:</h3>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+    </div>
+
+    <h3>Item1 gets the name "myArea", and spans all five columns in a five columns grid layout:</h3>
+
+    <div class="grid-container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+
+    <h3>Let "myArea" span two columns in a five columns grid layout (period signs represent items with no name):</h3>
+
+    <div class="grid-container3">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+
+    <h3>Make "item1" span two columns and two rows:</h3>
+
+    <div class="grid-container4">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+    </div>
+
+    <h3>Name all items, and make a ready-to-use webpage tamplate:</h3>
+
+    <div class="grid-container5">
+        <div class="item1">header</div>
+        <div class="item2">menu</div>
+        <div class="item3">main</div>
+        <div class="item4">right</div>
+        <div class="item5">footer</div>
+    </div>
+    
+</body>
+</html>

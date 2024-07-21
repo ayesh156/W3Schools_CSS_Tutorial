@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize</title>
+    <style>
+        /* resize: both; */
+        .resize1 {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: both;
+            overflow: auto;
+        }
+
+        /* resize: vertical; */
+        .resize2 {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: vertical;
+            overflow: auto;
+        }
+
+        /* resize: horizontal; */
+        .resize3 {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: horizontal;
+            overflow: auto;
+        }
+
+        /* resize: none; */
+        textarea#test {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>resize</h1>
+
+    <h3>The resize property defines if (and how) an element is resizable by the user.</h3>
+
+    <h3>Note: The resize property does not apply to inline elements or to block elements where overflow="visible". So, make sure that overflow is set to "scroll","auto" or "hidden".</h3>
+
+    <h2>Syntax :- resize: none|both|horizontal|vertical|initial|inherit;</h2>
+
+    <h2>resize: both;</h2>
+
+    <h3>Here, the user can resize both the height and width of a (div) element:</h3>
+
+    <div class="resize1">
+        <p>Let the user resize both the height and the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element</p>
+    </div>
+
+    <h2>resize: vertical;</h2>
+
+    <h3>Let the user resize only the height of a (div) element:</h3>
+
+    <div class="resize2">
+        <p>Let the user resize only the height of this div element:</p>
+        <p>To resize: Click and drag the bottom right corner of this div element</p>
+    </div>
+
+    <h2>resize: horizontal;</h2>
+
+    <h3>Let the user resize only the width of a (div) element:</h3>
+
+    <div class="resize3">
+        <p>Let the user resize only the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <h2>resize: none;</h2>
+
+    <h3>In many browsers, (textarea) is resizable by default. Here, we have used the resize property to disable the resizability:</h3>
+
+    <textarea id="test">Textarea - Not Resizable</textarea>
+    <br><br>
+
+    <textarea>Textarea -Resizable (Default)</textarea>
+    
+    
+</body>
+</html>

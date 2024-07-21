@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caption-side</title>
+    <style>
+        /* caption-side: bottom; */
+        #bottom {
+            caption-side: bottom;
+        }
+        
+        /* caption-side: top (default); */
+        #top {
+            caption-side: top;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>caption-side</h1>
+
+    <h3>The caption-side property specifies the placement of a table caption.</h3>
+
+    <h2>Specify the placement of table caption:</h2>
+
+    <h3>caption-side: bottom;</h3>
+    <table id="bottom" border="1">
+        <caption>Table 1.1 Customers</caption>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds Snabbkop</td>
+            <td>Frencisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+    </table>
+
+    <h2>caption-side: top (default);</h2>
+    <table id="top" border="1">
+        <caption>Table 1.2 Customers</caption>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Maxico</td>
+        </tr>
+        <tr>
+            <td>Ernst Hasdel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Numbering With Counters</title>
+    <style>
+        body {
+            counter-reset: section;
+        }
+
+        h2::before {
+            counter-increment: section;
+            content: "Section " counter(section) ": ";
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Automatic Numbering With Counters</h1>
+
+    <h3>CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).</h3>
+
+    <h3>To work with CSS counters we will use the following properties:</h3>
+
+    <ul>
+        <li>counter-reset - Creates or resets a counter</li>
+        <li>counter-increment - Increments a counter value</li>
+        <li>content - Inserts generated content</li>
+        <li>counter() or counters() function - Adds the value of a counter to an element</li>
+    </ul>
+
+    <h3>To use a CSS counter, it must first be created with counter-reset.</h3>
+
+    <h3>The following example create a counter for the page (in the body selector), then increments the counter value for each (h2) element and adds "Section (value of the counter):" to the beginning of each (h2) element:</h3>
+
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>Javascript Tutorial</h2>
+    <h2>Python Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+    
+</body>
+</html>

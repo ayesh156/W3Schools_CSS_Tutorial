@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserInterface</title>
+    <style>
+        /* Resizing */
+        /* Resize: horizontal; */
+        .resize1 {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: horizontal;
+            overflow: auto;
+        }
+
+        /* Resize: vertical; */
+        .resize2 {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: vertical;
+            overflow: auto;
+        }
+
+        /* Resize: both; */
+        .resize3 {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: both;
+            overflow: auto;
+        }
+
+        /* Resize: none */
+        textarea#test {
+            resize: none;
+        }
+
+        /* outline offset */
+        .ex1 {
+            margin: 20px;
+            border: 1px solid black;
+            outline: 4px solid red;
+            outline-offset: 15px;
+        }
+
+        .ex2 {
+            margin: 10px;
+            border: 1px solid black;
+            outline: 5px dashed blue;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Interface</h1>
+
+    <h2>In this chapter you will learn about following CSS user interface properties:</h2>
+
+    <ul>
+        <li>resize</li>
+        <li>outline-offset</li>
+    </ul>
+
+    <h1>Resizing</h1>
+
+    <h3>The resize property specifies if (and how) an element should be resizable by the user.</h3>
+
+    <h2>Resize: horizontal;</h2>
+
+    <h3>The following example lets the user resize only the width of a (div) element:</h3>
+
+    <div class="resize1">
+        <p>Let the user resize only the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <h2>Resize: vertical;</h2>
+
+    <h3>The following example lets the user resize only the height of a (div) element:</h3>
+
+    <div class="resize2">
+        <p>Let the user resize only the height of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <h2>Resize: both;</h2>
+
+    <h3>The following example lets the user resize both the height and width of a (div) element:</h3>
+
+    <div class="resize3">
+        <p>Let the user resize both the height and the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <h2>Resize: none;</h2>
+
+    <h3>In many browsers, (textarea) is resizable by default. Here, we have used the resize property to disable the resizability:</h3>
+
+    <textarea id="test">Textarea - Not Resizable</textarea>
+    <br><br>
+
+    <textarea>Textarea - Resizable (default)</textarea>
+
+    <h1>outline offset</h1>
+
+    <h3>The outline-offset property adds space between an outline and the edge or border of an element.</h3>
+
+    <p><b>Note:</b> Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.</p>
+
+    <h3>The following example uses the outline-offset property to add space between the border and the outline:</h3>
+
+    <div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+    <br>
+
+    <div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+    
+</body>
+</html>

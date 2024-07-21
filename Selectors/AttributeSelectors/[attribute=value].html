@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[attribute=value] Selector</title>
+    <style>
+        /* Style (a) elements with a target="_blank". */
+        [target="_blank"] {
+            background-color: silver;
+        }
+
+        /* When an (input type="text") get focus, gradually change the width from 100px to 250px. */
+        [type="text"] {
+            width: 100px;
+            transition: width 0.3s ease-in-out;
+        }
+
+        [type="text"]:focus {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>[attribute="value"] Selector</h1>
+
+    <h3>The [attribute=value] selector is used to select element with the specified attribute and value.</h3>
+
+    <h2>Style (a) elements with a target="_blank".</h2>
+
+    <a href="https://www.w3schools.com">W3Schools.com</a>
+    <a href="https://www.google.com" target="_blank">Google.com</a>
+    <a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+
+    <h2>When an (input type="text") get focus, gradually change the width from 100px to 250px.</h2>
+
+    Search: <input type="text" name="Search">
+
+</body>
+</html>

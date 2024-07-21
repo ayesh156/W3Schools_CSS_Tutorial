@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-self</title>
+    <style>
+        .main {
+            width: 300px;
+            height: 400px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+
+        .main div {
+            flex: 1;
+        }
+
+        #blueDiv1 {align-self: stretch;}
+        #blueDiv2 {align-self: center;}
+        #blueDiv3 {align-self: flex-start;}
+        #blueDiv4 {align-self: flex-end;}
+        #blueDiv5 {align-self: baseline;}
+    </style>
+</head>
+<body>
+
+    <h1>align-self</h1>
+
+    <h3>The align-self property specifies the alignment for the selected item inside the flexible container.</h3>
+
+    <h3>Note: The align-self property override the flexible container's <a href="../FlexboxContainer.html/Align-items.html">align items</a> property.</h3>
+
+    <h2>Syntax :- align-self: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit;</h2>
+
+    <h2>align-self: auto;</h2>
+    <div class="main">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div width more content.</div>
+    </div>
+
+    <h2>align-self: stretch;</h2>
+    <div class="main">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;" id="blueDiv1">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div width more content.</div>
+    </div>
+    <h2>align-self: center;</h2>
+    <div class="main">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;" id="blueDiv2">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div width more content.</div>
+    </div>
+
+    <h2>align-self: flex-start;</h2>
+    <div class="main">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;" id="blueDiv3">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div width more content.</div>
+    </div>
+
+    <h2>align-self: flex-end;</h2>
+    <div class="main">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;" id="blueDiv4">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div width more content.</div>
+    </div>
+
+    <h2>align-self: baseline;</h2>
+    <div class="main">
+        <div style="background-color: coral;min-height: 30px;">Red</div>
+        <div style="background-color: lightblue;min-height: 40px;" id="blueDiv5">Blue</div>
+        <div style="background-color: lightgreen;min-height: 190px;">Green div width more content.</div>
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the align-self property.</p>
+    
+</body>
+</html>

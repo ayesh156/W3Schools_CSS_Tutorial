@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sprites - Hover Effect</title>
+    <style>
+        #navlist {
+            position: relative;
+        }
+
+        #navlist li {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            top: 0;
+        }
+
+        #navlist li, #navlist a {
+            display: block;
+            height: 44px;
+        }
+
+        #home {
+            left: 0;
+            width: 46px;
+            background: url("../../src/images/Image-Sprite.gif") 0 0;
+        }
+
+        #prev {
+            left: 63px;
+            width: 43px;
+            background: url("../../src/images/Image-Sprite.gif") -47px 0;
+        }
+
+        #next {
+            left: 129px;
+            width: 43px;
+            background: url("../../src/images/Image-Sprite.gif") -91px 0;
+        }
+
+        #home:hover {
+            background: url("../../src/images/Image-Sprite.gif") 0 -45px;
+        }
+
+        #prev:hover {
+            background: url("../../src/images/Image-Sprite.gif") -47px -45px;
+        }
+
+        #next:hover {
+            background: url("../../src/images/Image-Sprite.gif") -91px -45px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Sprites - Hover Effect</h1>
+
+    <h3>Now we want to add a hover effect to our navigation list.</h3>
+
+    <p><b>Tip:</b> The :hover selector can be used on all elements, not only on links.</p>
+
+    <h3>Our new image ('Image-Sprite.gif') contains three navigation images and three images to use for hover effects:</h3>
+
+    <h3>Because this is one single image, and not six separate files, there will be no loading delay when a user hovers over the image.</h3>
+
+    <h3>We only add three lines of code to add the hover effect:</h3>
+
+    <ul id="navlist">
+        <li id="home"><a href="https://www.w3schools.com"></a></li>
+        <li id="prev"><a href="https://www.w3schools.com"></a></li>
+        <li id="next"><a href="https://www.w3schools.com"></a></li>
+    </ul>
+
+    <!-- <h2>Example explained:</h2>
+
+    <ul>
+        <li>#home a:hover {background: url('Image-Sprite.gif') 0 -45px;} - For all three hover images we specify the same background position, only 45px further down</li>
+    </ul> -->
+    
+</body>
+</html>

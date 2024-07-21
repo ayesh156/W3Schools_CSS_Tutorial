@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-row-end</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Make "item1" span 3 rows: */
+        .gc1 .item1 {
+            grid-row-end: span 3;
+        }
+
+        /* You can use row-line values instead numbers of rows to span: */
+        .gc2 .item1 {
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>grid-row-end</h1>
+
+    <h3>The grid-row-end property defines how many rows an item will span, or on which row-line the item will end.</h3>
+
+    <h2>grid-row-end: auto|row-line|span n;</h2>
+
+    <h3>Make "item1" span 3 rows:</h3>
+
+    <div class="grid-container gc1">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+    </div>
+
+    <h3>You can use row-line values instead numbers of rows to span:</h3>
+
+    <div class="grid-container gc2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+    
+</body>
+</html>

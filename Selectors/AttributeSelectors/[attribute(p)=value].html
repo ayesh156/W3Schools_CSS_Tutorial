@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[attribute|=value] selector</title>
+    <style>
+        /* Select and style elements, where the lang attribute's value starts with "en": */
+        p[lang|="en"] {
+            background-color: yellow;
+        }
+
+        /* Select and style elements, where the class attribute's value starts with "top": */
+        [class|="top"] {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>The [attribute|=value] selector is used to select elements with the specified attribute starting with the specified value.</h3>
+
+    <p><b>Note:</b> The value has to be a whole word, either alone, like lang="en" or followed by a hyphen( - ), like lang="en-us".</p>
+
+    <h2>Select and style elements, where the lang attribute's value starts with "en":</h2>
+
+    <p lang="en">Hello!</p>
+    <p lang="en-us">Hi!</p>
+    <p lang="en-gb">Ello!</p>
+    <p lang="us">Hi!</p>
+    <p lang="no">Hei!</p>
+
+    <h2>Select and style elements, where the class attribute's value starts with "top":</h2>
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="content">Are you learning CSS?</p>
+    
+</body>
+</html>

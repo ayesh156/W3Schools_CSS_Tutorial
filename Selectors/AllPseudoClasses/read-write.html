@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :read-write Selector</title>
+    <style>
+        input:read-write {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h3>The :read-write selector selects form elements which are "readable" and "writeable"</h3>
+
+    <h3>Form elements with no "readonly" attribute, and no "disabled" attribute are defined as "readable" and "writeable"</h3>
+
+    <h2>Select and style only if the input element is not "readonly"</h2>
+
+    <form action="">
+        <p>A normal input element: <br> <input type="text" value="Hello"></p>
+        <p>A readable input element: <br> <input type="text" value="Hello" readonly></p>
+    </form>
+    
+</body>
+</html>

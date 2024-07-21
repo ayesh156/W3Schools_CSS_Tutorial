@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Borders</title>
+    <style>
+        table, th, td {
+            border: 1px solid;
+        }
+
+        /* Full-Width Table */
+        table.width {
+            width: 100%;
+        }
+
+        /* Double Borders */
+        table.collapse {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Only border around the table */
+        table.only {
+            width: 100%;
+            border: 1px solid;
+        }
+
+        table.only th, td {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Table Borders</h1>
+
+    <h3>To specify table borders in CSS, use the border property.</h3>
+
+    <h3>The example below specifies a solid border for (table), (th) and (td) elements:</h3>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <h1>Full-Width Table</h1>
+
+    <h3>The table above might seem small in some cases. If you need a table that should span the entire screen (fill-width) add width: 100% to the (table) element:</h3>
+
+    <table class="width">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <h2>Double Borders</h2>
+
+    <h3>Notice that the table in the examples above the double borders. This is because both the table, (th) and (td) elements have separate borders.</h3>
+
+    <h1>Collapse Table Borders</h1>
+
+    <h3>The border-collapse property sets whether the table border sould be collapsed into single border:</h3>
+
+    <table class="collapse">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Giffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <h3>If you only want a border around the table, only specify the border property for (table):</h3>
+
+    <table class="only">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        /* overflow: visible; */
+        div.visible {
+            background-color: aqua;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: visible;
+        }
+
+        /* overflow: hidden; */
+        div.hidden {
+            background-color: aquamarine;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: hidden;
+        }
+        
+        /* overflow: scroll; */
+        #overflowTest {
+            background-color: #4caf50;
+            color: white;
+            padding: 5px;
+            height: 100px;
+            width: 50%;
+            border: 1px solid;
+            overflow: scroll;
+        }
+
+        div.scroll {
+            background-color: coral;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: scroll;
+        }
+
+        /* overflow: auto; */
+        div.auto {
+            background-color: pink;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: auto;
+        }
+
+        /* overflow-x and overflow-y */
+        div.overflow-x {
+            background-color: yellow;
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Overflow</h1>
+
+    <h3>The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.</h3>
+
+    <h3>The overflow property has the follwing values:</h3>
+
+    <ul>
+        <li>visible - Default. The overflow is not clipped. The content renders outside the element's box</li>
+        <li>hidden - The overflow is clipped and the rest of the content will be invisible</li>
+        <li>scroll -  The overflow is clipped and a scrollbar is added to see the rest of the content</li>
+        <li>auto - Similar to scroll, but it adds scrollbars only when necessary</li>
+    </ul>
+
+    <p><b>Note:</b> The overflow property only works for block elements with a specified height.</p>
+
+    <p><b>Note:</b> In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set.)</p>
+
+    <h1>overflow: visible;</h1>
+
+    <h3>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</h3>
+
+    <div class="visible">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <br><br><br>
+
+    <h1>overflow: hidden;</h1>
+
+    <h3>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</h3>
+
+    <div class="hidden">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+    <h1>overflow: scroll;</h1>
+    
+    <h2>Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</h2>
+
+    <div id="overflowTest">This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aliquid error velit esse veniam ipsa dicta labore cupiditate officia iure quo non doloribus sequi fugit laborum, expedita illo quisquam fuga veritatis omnis nostrum reprehenderit? Dolor porro possimus corporis nihil quasi. Obcaecati provident dignissimos odit non perferendis laborum quibusdam ratione quia? Porro, blanditiis hic soluta consectetur a neque praesentium temporibus voluptatum id natus atque veniam aliquam quam ut itaque consequatur esse architecto ipsum, adipisci, aperiam est pariatur! Vel voluptates recusandae magnam laboriosam ut, minus officiis molestias ab pariatur debitis obcaecati inventore a. Mollitia suscipit, adipisci nobis quod eligendi sequi accusantium nihil!</div>
+    <br>
+
+    <div class="scroll">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box</div>
+
+    <h1>overflow: auto;</h1>
+
+    <h3>The auto value is similar to scroll, but it adds scrollbars only when necessary:</h3>
+
+    <div class="auto">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+    <h1>overflow-x and overflow-y</h1>
+
+    <h3>The overflow-x and overflow-y property specifies whether to change the overflow of content just horizontally or vertically (or both):</h3>
+
+    <h3>overflow-x specifies what to do with the left/right edges of the content.</h3>
+    <h3>overflow-y specifies what to do with the top/bottom edges of the content.</h3>
+
+    <div class="overflow-x">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    
+</body>
+</html>

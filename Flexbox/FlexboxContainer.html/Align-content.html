@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+    <style>
+        .main {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .main div {
+            width: 400px;
+            height: 40px;
+        }
+
+        #main1 {align-content: stretch;}
+        #main2 {align-content: center;}
+        #main3 {align-content: flex-start;}
+        #main4 {align-content: flex-end;}
+        #main5 {align-content: space-between;}
+        #main6 {align-content: space-around;}
+        #main7 {align-content: space-evenly;}
+    </style>
+</head>
+<body>
+    
+    <h1>align-content</h1>
+
+    <h3>The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it align flex lines.</h3>
+
+    <h3>Note: There must be multiple lines of items for this property to have any effect!</h3>
+
+    <h3>Tip: Use the <a href="Justify-content.html">justify-content</a> property to align the items on the main-axis (horizontally).</h3>
+
+    <h2>Syntax :- align-content: stretch|center|flex-start|flex-end|space-between|space-around|space-evenly|initial|inherit;</h2>
+
+    <h3>Different values of the align-content property.</h3>
+
+    <h2>align-content: stretch;</h2>
+    <div class="main" id="main1">
+        <div style="background-color: coral;"></div>
+        <div style="background-color: lightblue;"></div>
+        <div style="background-color: pink;"></div>
+    </div>
+
+    <h2>align-content: center;</h2>
+    <div class="main" id="main2">
+        <div style="background-color: coral;"></div>
+        <div style="background-color: lightblue;"></div>
+        <div style="background-color: pink;"></div>
+    </div>
+
+    <h2>align-content: flex-start;</h2>
+    <div class="main" id="main3">
+        <div style="background-color: coral;"></div>
+        <div style="background-color: lightblue;"></div>
+        <div style="background-color: pink;"></div>
+    </div>
+
+    <h2>align-content: flex-end;</h2>
+    <div class="main" id="main4">
+        <div style="background-color: coral;"></div>
+        <div style="background-color: lightblue;"></div>
+        <div style="background-color: pink;"></div>
+    </div>
+
+    <h2>align-content: space-between;</h2>
+    <div class="main" id="main5">
+        <div style="background-color: coral;"></div>
+        <div style="background-color: lightblue;"></div>
+        <div style="background-color: pink;"></div>
+    </div>
+
+    <h2>align-content: space-around;</h2>
+    <div class="main" id="main6">
+        <div style="background-color: coral;"></div>
+        <div style="background-color: lightblue;"></div>
+        <div style="background-color: pink;"></div>
+    </div>
+
+    <h2>align-content: space-evenly;</h2>
+    <div class="main" id="main7">
+        <div style="background-color: coral;"></div>
+        <div style="background-color: lightblue;"></div>
+        <div style="background-color: pink;"></div>
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the align-content property.</p>
+    
+</body>
+</html>

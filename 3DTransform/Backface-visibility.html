@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backface-visibility</title>
+    <style>
+        div {
+            position: relative;
+            height: 60px;
+            width: 60px;
+            background-color: red;
+            transform: rotateY(180deg);
+        }
+
+        #div1 {
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+        }
+
+        #div2 {
+            -webkit-backface-visibility: visible; /* Safari */
+            backface-visibility: visible; /* Safari */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Backface-visibility</h1>
+
+    <h3>The backface-visibility property difines whether or not the backface of an element should be visible when facing the user.</h3>
+
+    <h3>The back face of an element is a mirror image of the front face being displayed.</h3>
+
+    <h3>This property is useful when an element is rotated. It lets you choose if the user should see the back face or not.</h3>
+
+    <h3>To better understand this property, <a href="Demo/Backface-visibilityDemo.html">view a demo</a>.</h3>
+
+    <h2>Syntax:- backface-visibility: visible|hidden|initial|inherit;</h2>
+
+    <h3>Hide and show the back face of two rotated (div) elements:</h3>
+
+    <p>This div element has "backface-visibility: hidden", and the back face of the div element is invisible:</p>
+    <div id="div1">DIV 1</div>
+
+    <p>This div element has "backface-visibility: visible", and the back face of the div element shows a mirror image of the front face:</p>
+    <div id="div2">DIV 2</div>
+
+    <p><strong>Note:</strong> The backface-visibility property is supported in Safari with a webkit prefix.</p>
+    
+</body>
+</html>

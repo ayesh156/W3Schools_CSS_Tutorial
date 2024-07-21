@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition-timing-function</title>
+    <style>
+        /* A transition effect with the same speed from start to end: */
+        .ttf1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s;
+            transition-timing-function: linear;
+        }
+
+        .ttf1:hover {
+            width: 300px;
+        }
+
+        /* Here are five different div elements with five different values: */
+        .ttf2 {
+            width: 100px;
+            height: 50px;
+            background: blue;
+            color: white;
+            font-weight: bold;
+            transition: width 2s;
+        }
+
+        #div1 {transition-timing-function: linear;}
+        #div2 {transition-timing-function: ease;}
+        #div3 {transition-timing-function: ease-in;}
+        #div4 {transition-timing-function: ease-out;}
+        #div5 {transition-timing-function: ease-in-out;}
+
+        .ttf2:hover {
+            width: 300px;
+        }
+
+        /* speed curves are specified with the cubic-bezier function: */
+        .ttf3 {
+            width: 100px;
+            height: 50px;
+            background: coral;
+            color: white;
+            font-weight: bold;
+            transition: width 2s;
+        }
+
+        #cb1 {transition-timing-function: cubic-bezier(0,0,1,1);}
+        #cb2 {transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+        #cb3 {transition-timing-function: cubic-bezier(0.42,0.1,1,1);}
+        #cb4 {transition-timing-function: cubic-bezier(0,0,0.58,1);}
+        #cb5 {transition-timing-function: cubic-bezier(0.42,0,0.58,1);}
+
+        .ttf3:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>transition-timing-function</h1>
+
+    <h3>The transition-timing-function property specifies the speed curve of the transition effect.</h3>
+
+    <h3>This property allows a transition effect to change speed over its duration.</h3>
+
+    <h2>A transition effect with the same speed from start to end:</h2>
+
+    <div class="ttf1"></div>
+
+    <h2>Syntax :- transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n,)|initial|inherit;</h2>
+
+    <ul>
+        <li>ease :- Default value. Specifies a transition effect with a slow start, then fast, then end slowly (equivalent to cubic-bezier(0.25, 0.1, 0.25, 1)</li>
+        <li>linear :- Specifies a transition effect with the same speed from start to end (equivalent to cubic-bezier(0,0,1,1))</li>
+        <li>ease-in :- Specifies a transition effect with a slow start (equivalent to cubic-bezier(0.42,0,1,1))</li>
+        <li>ease-out :- Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1))</li>
+        <li>ease-in-out :- Specifies a transition effect with a slow start and end (equivalent to cubic-bezier(0.42,0,0.58,1))</li>
+        <li>step-start :- Equivalent to steps(1, start)</li>
+        <li>step-end :- Equivalent to steps(1, end)</li>
+        <li>Steps(int,start|end) :- Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end"</li>
+        <li>cubic-bezier(n,n,n,n) :- Define your own values in the cubic-bezier function. Possible values are numeric values from 0 to 1</li>
+        <li>initial :- Sets this property to its default value.</li>
+        <li>inherit :- Inherits this property from its parent element.</li>
+    </ul>
+
+    <h2>Here are five different div elements with five different values:</h2>
+
+    <div class="ttf2" id="div1">linear</div>
+    <div class="ttf2" id="div2">ease</div>
+    <div class="ttf2" id="div3">ease-in</div>
+    <div class="ttf2" id="div4">ease-out</div>
+    <div class="ttf2" id="div5">ease-in-out</div>
+
+    <p>Hover over the div elements above, to see the different transition effects.</p>
+
+    <h2>Same as the example above, but the speed curves are specified with the cubic-bezier function:</h2>
+
+    <div class="ttf3" id="cb1">cubic-bezier(0,0,1,1)</div>
+    <div class="ttf3" id="cb2">cubic-bezier(0.25,0.1,0.25,1)</div>
+    <div class="ttf3" id="cb3">cubic-bezier(0.42,0,1,1)</div>
+    <div class="ttf3" id="cb4">cubic-bezier(0,0,0.58,1)</div>
+    <div class="ttf3" id="cb4">cubic-bezier(0.42,0,0.58,1)</div>
+
+    <p>Hover over the div elements above, to see the different transition effects.</p>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax scrolling effect</title>
+    <style>
+       * {
+           margin: 0;
+           padding: 0;
+       }
+
+       .fixed-bg {
+           background-image: url("../../Images/tree.gif");
+           background-repeat: no-repeat;
+           background-position: center;
+           min-height: 500px;
+           background-size: cover;
+           background-attachment: fixed;
+       }
+    </style>
+</head>
+<body>
+
+    <h2>Create a simple parallax scrolling effect (create an illusion of 3D depth):</h2>
+
+    <p>we have created a fixed background image that will dissappear slowly on scroll. Scroll the page to see the effect. <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.</p>
+
+    <div class="fixed-bg"></div>
+
+    <div style="height: 800px;background-color: yellow;">This div is only here to enable scrolling (height = 800 pixels).</div>
+
+    
+    
+</body>
+</html>

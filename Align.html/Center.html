@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ticon2.png">
+    <title>Center Align</title>
+    <style>
+        /* Center Align Elements */
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            border: 3px solid #71ae21;
+        }
+
+        /* Center Align Text */
+        .center2 {
+            text-align: center;
+            border: 3px solid green;
+        }
+
+        /* Center an Image */
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Center Align Elements</h1>
+
+    <h3>To horizontal center a block element (like (div)), use margin: auto;</h3>
+
+    <h3>Setting the width of the element will prevent it from stretching out to the edges of its container</h3>
+
+    <h3>The element will then take up the specified width, and the remaining space will be split equally between the two margins:</h3>
+
+    <div class="center">
+        <h2>Hello World</h2>
+    </div>
+
+    <p><b>Note:</b> Center aligning has no effect if the width property is not set (or set to 100%).</p>
+
+    <h1>Center Align Text</h1>
+
+    <h3>To just center the text inside an element, use text-align: center;</h3>
+
+    <div class="center2">
+        <h2>This text is centered</h2>
+    </div>
+
+    <h1>Center an Image</h1>
+
+    <h3>To center an image, set left and right margin to auto and make it into a block element:</h3>
+
+    <img src="../src/images/paris.jpg" alt="Paris">
+    
+</body>
+</html>

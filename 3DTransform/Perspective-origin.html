@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective-origin</title>
+    <style>
+        #div1 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin-left: 60px;
+            padding: 10px;
+            border: 1px solid blue;
+            perspective: 100px;
+            perspective-origin: left;
+        }
+
+        #div3 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin-left: 60px;
+            padding: 10px;
+            border: 1px solid blue;
+            perspective: 100px;
+            perspective-origin: bottom right;
+        }
+
+        #div5 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            margin-left: 60px;
+            border: 1px solid blue;
+            perspective: 100px;
+            perspective-origin: -90%;
+        }
+
+        #div2, #div4, #div6 {
+            position: absolute;
+            padding: 50px;
+            border: 1px solid red;
+            background: rgba(100, 100, 100, 0.5);
+            transform-style: preserve-3d;
+            transform: rotatex(45deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>perspective-origin</h1>
+
+    <h3>The perspective-origin property defines at from which position the user is looking at the 3D-positioned element.</h3>
+
+    <h3>When defining the perspective-origin property for an element, it is the CHILD elements that will get the effect, NOT the element itself.</h3>
+
+    <p><b>Note:</b> This property must be used in conjunction with the perspective property!</p>
+
+    <h3>To better understand the perspective-origin property, <a href="Demo/Perspective-originDemo.html">view a demo</a>.</h3>
+
+    <h2>Synatx :- perspective-origin: x-axis y-axis|initial|inherit;</h2>
+
+    <h3>x-axis :- Defines where the view is placed at the x-axis. Possible values:</h3>
+    <ul>
+        <li>left</li>
+        <li>center</li>
+        <li>right</li>
+        <li>length</li>
+        <li>%</li>
+        Default value: 50%
+    </ul>
+
+    <h3>y-axis :- Defines where the view is placed at the y-axis. Possible values:</h3>
+    <ul>
+        <li>top</li>
+        <li>center</li>
+        <li>bottom</li>
+        <li>length</li>
+        <li>%</li>
+        Default value: 50%
+    </ul>
+
+    <h3>Define at from which position the user is looking at the 3D-positioned element:</h3>
+
+    <h2>perspective-origin: left;</h2>
+    <div id="div1">DIV1
+        <div id="div2">DIV2</div>
+    </div>
+
+    <h2>perspective-origin: bottom right;</h2>
+    <div id="div3">DIV3
+        <div id="div4">DIV4</div>
+    </div>
+
+    <h2>perspective-origin: -90%;</h2>
+    <div id="div5">DIV5
+        <div id="div6">DIV6</div>
+    </div>
+    
+</body>
+</html>

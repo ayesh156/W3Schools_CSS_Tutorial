@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :only-of-type Selector</title>
+    <style>
+        p:only-of-type {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h3>The :only-of-type selector matches every element that is the only child of its type, of its parent.</h3>
+
+    <h2>Specify a background color for every (p) element that is the only child of its type, of its parent</h2>
+
+    <div>
+        <p>This is a paragraph</p>
+    </div>
+    <div>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </div>
+    <div>
+        <p>This is a paragraph</p>
+    </div>
+    
+</body>
+</html>

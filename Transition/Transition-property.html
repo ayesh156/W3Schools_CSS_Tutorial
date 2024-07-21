@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition-property</title>
+    <style>
+        /* Hover over a (div) element, and change the width with a smooth transition effect: */
+        .trans1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 2s;
+        }
+
+        .trans1:hover {
+            width: 300px;
+        }
+
+        /* Hover over a (div) element, and change the width AND height with a smooth transition effect: */
+        .trans2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition-property: width, height;
+            transition-duration: 2s;
+        }
+
+        .trans2:hover {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>transition-property</h1>
+
+    <h3>The transition-property property specifies the name of the CSS property the transition effect is for (the transition effect will start when the specified CSS property changes).</h3>
+
+    <p><b>Tip:</b> A transition effect could typically occur when a user hover over an element.</p>
+
+    <p><b>Note:</b> Always specify the transition-duration property, otherwise the duration is 0, and the transition will have no effect.</p>
+
+    <h2>Hover over a (div) element, and change the width with a smooth transition effect:</h2>
+
+    <div class="trans1"></div>
+
+    <p>Hover over the div element above, to see the transition effect:</p>
+
+    <h2>Hover over a (div) element, and change the width AND height with a smooth transition effect:</h2>
+
+    <div class="trans2"></div>
+
+    <p>Hover over the div element above, to see the transition effect.</p>
+    
+</body>
+</html>

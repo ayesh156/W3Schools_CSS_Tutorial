@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :target Selector</title>
+    <style>
+        /* The :target selector can be used to style the current active target element */
+        p:target {
+            border: 2px solid #d4d4d4;
+            background-color: #e5eecc;
+        }
+
+        /* Create a tabbed menu: */
+        .tab div {
+            display: none;
+        }
+        .tab div:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h3>URLs with an # followed by an anchor name link to a certain element within a document. The element being linked to is the target element</h3>
+
+    <h3>The :target selector can be used to style the current active target element</h3>
+
+    <h2>Highlight active HTML anchor</h2>
+
+    <p><a href="#new1">Jump to New content 1</a></p>
+    <p><a href="#new2">Jump to New content 2</a></p>
+
+    <p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+
+    <p id="new1"><b>New content 1...</b></p>
+    <p id="new2"><b>New content 2...</b></p>
+
+    <h2>Create a tabbed menu:</h2>
+
+    <div class="tab">
+        <a href="#link1">Link 1</a>
+        <a href="#link2">Link 1</a>
+        <a href="#link3">Link 1</a>
+
+        <div id="link1">
+            <h3>Content to Link 1</h3>
+            <p>Hello World</p>
+        </div>
+        <div id="link2">
+            <h3>Content to link 2</h3>
+            <h4>Great Success</h4>
+        </div>
+        <div id="link3">
+            <h3>Content to Link 3</h3>
+            <p>Yeah!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

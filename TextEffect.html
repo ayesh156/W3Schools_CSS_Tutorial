@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effect</title>
+    <style>
+        /* Text Overflow */
+        /* text-overflow: clip; */
+        .clip {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        /* text-overflow: ellipsis; */
+        .ellipsis {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* text-overflow when hover */
+        .test {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+        }
+
+        .test:hover {
+            overflow: visible;
+        }
+
+        /* Word Wrapping */
+        .wrap {
+            width: 11em;
+            border: 1px solid #000000;
+            word-wrap: break-word;
+        }
+
+        /* Word Breaking */
+        /* This line will-break-at-hyphens. */
+        .break {
+            width: 140px;
+            border: 1px solid #000000;
+            word-break: keep-all;
+        }
+
+        /* This lines will break at any character */
+        .break2 {
+            width: 140px;
+            border: 1px solid #000000;
+            word-break: break-all;
+        }
+
+        /* Writing Mode */
+        /* default writing-mode */
+        p.mode1 {
+            writing-mode: horizontal-tb;
+        }
+
+        /* span element with a writing-mode: vertical-rl */
+        span.mode2 {
+            writing-mode: vertical-rl;
+        }
+
+        /* writing-mode: vertical-rl */
+        p.mode2 {
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes</h1>
+
+    <h3>In this chapter you will learn about the following properties:</h3>
+
+    <ul>
+        <li>text-overflow</li>
+        <li>word-wrap</li>
+        <li>word-break</li>
+        <li>writing-mode</li>
+    </ul>
+
+    <h1>Text Overflow</h1>
+
+    <h3>The CSS text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.</h3>
+
+   <h2>text-overflow: clip;</h2>
+   <p class="clip">This is some long text that will not fit in the box</p>
+
+   <h2>text-overflow: ellipsis;</h2>
+   <p class="ellipsis">This is some long text that will not fit in the box</p>
+
+   <h3>The following example shows how you can display the overflowed content when hovering over the element:</h3>
+
+   <h2>text-overflow when hover</h2>
+   <div class="test" style="text-overflow: ellipsis;">This is some long text that will not fit in the box</div>
+   <br>
+
+   <div class="test" style="text-overflow: clip;">This is some long text that will not fit in the box.</div>
+
+   <h1>Word Wrapping</h1>
+
+   <h3>The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line.</h3>
+
+   <div class="wrap">This paragraph contain a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+
+   <h1>Word Breaking</h1>
+
+   <h3>The CSS word-break property specifies line breaking rules.</h3>
+
+   <p class="break">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+   <p class="break2">This paragraph contains some text. This lines will break at any character</p>
+
+   <h1>Writing Mode</h1>
+
+   <h3>The CSS writting-mode property specifies whether lines of text are laid out horizontally or vertically.</h3>
+
+   <p class="mode1">Some text with default writing-mode.</p>
+
+   <p>Some text with a span element with a <span class="mode2">vertical-rl</span> writing-mode.</p>
+
+   <p class="mode2">Some text with writing-mode: vertical-rl</p>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal box-sizing</title>
+    <style>
+        /* Set the "universal box-sizing" */
+        * {
+            box-sizing: border-box;
+        }
+
+        #example1 {
+            width: 300px;
+            padding: 40px;
+            border: 15px solid blue;
+        }
+
+        #example2 {
+            width: 300px;
+            padding: 10px;
+            border: 2px solid red;
+        }
+
+        /* Applying this to all elements is safe and wise: */
+       body {
+           margin: 0;
+       }
+
+       input, textarea {
+           width: 100%;
+       }
+    </style>
+</head>
+<body>
+
+    <h1>Universal box-sizing</h1>
+
+    <h3>Since the result of using the box-sizing: border-box; is so much better, many developers want all elements on their pages to work this way.</h3>
+
+    <h3>The code below ensures that all elements are sized in this more intuitive way. Many browsers already use box-sizing: border-box; for many form elements (but not all - which is why inputs and text areas look different at width: 100%;).</h3>
+
+    <h3>Set the "universal box-sizing"</h3>
+
+    <div id="example1">This div has a full width of 300px, no matter padding or border!</div>
+    <br>
+    <div id="example2">This div also has a full width of 300px, no matter padding or border!</div>
+
+    <h3>Applying this to all elements is safe and wise:</h3>
+
+    <form action="">
+        First name: <br>
+        <input type="text" name="firstname" value="Ayesh"><br>
+        Last name: <br>
+        <input type="text" name="lastname" value="Chathuranga"><br>
+        Comments: <br>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p><b>Tip:</b> Try to remove the box-sizing property from the style element and look what happens. Notice that the width of input, textarea and submit button will go outside of the screen.</p>
+    
+</body>
+</html>

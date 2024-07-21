@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-shadow</title>
+    <style>
+        /* Basic text-shadow: */
+        h1.h1 {text-shadow: 2px 2px #ff0000;}
+
+        /* Text-shadow on a blur effect: */
+        h1.h2 {text-shadow: 2px 2px 8px blue;}
+
+        /* Text-shadow on a white text: */
+        h1.h3 {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* Text-shadow with a red neon glow: */
+        h1.h4 {text-shadow: 0 0 3px #ff0000;}
+
+        /* Text-shadow with a red and blue neon glow: */
+        h1.h5 {text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;}
+    </style>
+</head>
+<body>
+
+    <h3>The text-shadow property adds shadow to text.</h3>
+
+    <h3>This property accepts a comma-separated list of shadows to be applied to the text.</h3>
+
+    <h3>Synatx - text-shadow: h-shadow v-shadow blur-radius color|none|intial|inherit</h3>
+
+    <ul>
+        <li>h-shadow - Required. The position of the horizontal shadow. Negative value are allowed</li>
+        <li>v-shadow - Required. The position of the vertical shadow. Negative values are allowed</li>
+        <li>blur-radius - Optional. The blur radius. Default value is 0</li>
+        <li>color - Optional. The color of the shadow.</li>
+    </ul>
+
+    <h2>Basic text-shadow:</h2>
+
+    <h1 class="h1">The text-shadow Property</h1>
+
+    <h2>Text-shadow on a blur effect:</h2>
+
+    <h1 class="h2">Text-shadow with a blur effect:</h1>
+
+    <h2>Text-shadow on a white text:</h2>
+
+    <h1 class="h3">Text-shadow on white text</h1>
+
+    <h2>Text-shadow with a red neon glow:</h2>
+
+    <h1 class="h4">Text-shadow with red neon glow</h1>
+
+    <h2>Text-shadow with a red and blue neon glow:</h2>
+
+    <h1 class="h5">Text-shadow with red and blue neon glow</h1>
+    
+</body>
+</html>

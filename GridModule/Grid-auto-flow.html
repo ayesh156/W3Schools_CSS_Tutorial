@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titlet>Grid-auto-flow</title>
+    <style>
+        .gc1 {grid-auto-flow: row;}
+
+        .gc2 {grid-auto-flow: column;}
+
+        .gc3 {grid-auto-flow: dense;}
+        .gc3 .item3 {grid-column: auto / span 2;}
+
+        .gc4 {grid-auto-flow: row dense;}
+        .gc4 .item3 {grid-column: auto / span 2;}
+
+        .gc5 {grid-auto-flow: column dense;}
+        .gc5 .item3 {grid-column: auto / span 2;}
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>grid-auto-flow</h1>
+
+    <h3>The grid-auto-flow property controls how auto-placed items get inserted in the grid.</h3>
+
+    <h2>Syntax :- grid-auto-flow: row|column|dense|row dense|column dense;</h2>
+
+    <ul>
+        <li><h3>row :- Default value. Places items by filling each row</h3></li>
+        <li><h3>colun :- Place items by filling each column</h3></li>
+        <li><h3>dense :- Place items to fill any holes in the grid</h3></li>
+        <li><h3>row dense :- Places items by filling each row, and fill any holes in the grid</h3></li>
+        <li>column dense :- Places items by filling each column, and fill any holes in the grid.<h3></h3></li>
+    </ul>
+
+   <h2>grid-auto-flow: row;</h2>
+   <div class="grid-container gc1">
+       <div class="item1">1</div>
+       <div class="item2">2</div>
+       <div class="item3">3</div>
+       <div class="item4">4</div>
+   </div>
+
+   <h2>grid-auto-flow: column;</h2>
+   <div class="grid-container gc2">
+       <div class="item1">1</div>
+       <div class="item2">2</div>
+       <div class="item3">3</div>
+       <div class="item4">4</div>
+   </div>
+
+   <h2>grid-auto-flow: dense;</h2>
+   <div class="grid-container gc3">
+       <div class="item1">1</div>
+       <div class="item2">2</div>
+       <div class="item3">3</div>
+       <div class="item4">4</div>
+   </div>
+
+   <h2>grid-auto-flow: row dense;</h2>
+   <div class="grid-container gc4">
+       <div class="item1">1</div>
+       <div class="item2">2</div>
+       <div class="item3">3</div>
+       <div class="item4">4</div>
+   </div>
+
+   <h2>grid-auto-flow: column dense;</h2>
+   <div class="grid-container gc5">
+       <div class="item1">1</div>
+       <div class="item2">2</div>
+       <div class="item3">3</div>
+       <div class="item4">4</div>
+   </div>
+
+   <h3>Fill any holes in the grid by adding the "dense" value:</h3>
+
+   <h2>grid-auto-flow: row;</h2>
+   <div class="grid-container" style="grid-auto-flow: row;">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3" style="grid-column: auto / span 2;">3</div>
+        <div class="item4">4</div>
+   </div>
+
+   <h2>grid-auto-flow: row dense;</h2>
+   <div class="grid-container" style="grid-auto-flow: row dense;">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3" style="grid-column: auto / span 2;">3</div>
+        <div class="item4">4</div>
+   </div>
+    
+</body>
+</html>

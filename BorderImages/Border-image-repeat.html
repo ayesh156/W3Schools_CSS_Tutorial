@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-image-repeat</title>
+    <style>
+        #borderimg1 {
+            border: 15px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-repeat: stretch;
+            border-image-slice: 30;
+        }
+
+        #borderimg2 {
+            border: 15px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-slice: 30;
+            border-image-repeat: repeat;
+        }
+
+        #borderimg3 {
+            border: 15px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-slice: 30;
+            border-image-repeat: round;
+        }
+
+        #borderimg4 {
+            border: 15px solid transparent;
+            padding: 15px;
+            border-image-source: url("../src/images/border.png");
+            border-image-slice: 30;
+            border-image-repeat: space;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Border-image-repeat Property</h1>
+
+    <h3>The border-image-repeat property specifies whether the border image should be repeated, rounded, spaced or stretched</h3>
+
+    <h2>Syntax :- border-image-repeat: stretch|repeat|round|space|initial|inherit</h2>
+
+    <p><b>Note:</b> This property specifies how the images for the sides and the middle part of the border image are scaled and tiled. So, you can specify two values here. If the second value is omitted, it is assumed to be the same as the first.</p>
+
+    <h2>Specify how to repeat the border image:</h2>
+
+    <h2>border-image-repeat: stretch (default);</h2>
+    <p id="borderimg1">Here, the image is stretched to fill the area.</p>
+
+    <h2>border-image-repeat: repeat;</h2>
+    <p id="borderimg2">Here, the is tiled to fill the area. Tiles are divided if necessary.</p>
+
+    <h2>border-image-repeat: round;</h2>
+    <p id="borderimg3">Here, the image is tiled to fill the area. The image is rescaled if necessary, to avoid dividing tiles.</p>
+
+    <h2>border-image-repeat: space;</h2>
+    <p id="borderimg4">Here, the image is tiled to fill the area. Extra space is distributed around the tiles if necessary.</p>
+
+    <p>Here is the original image:</p>
+    <img src="../src/images/border.png" alt="border">
+
+    <p><b>Note:</b> Internet Explorer 10, and earlier versions, do not support the border-image-repeat property.</p>
+    
+</body>
+</html>

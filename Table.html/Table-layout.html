@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-layout</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table.a {
+            table-layout: auto;
+            width: 180px;
+        }
+
+        table.b {
+            table-layout: fixed;
+            width: 180px;
+        }
+
+        table.c {
+            table-layout: auto;
+            width: 100%;
+        }
+
+        table.d {
+            table-layout: fixed;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>table-layout</h1>
+
+    <h3>The table-layout property defines the algorithm used to lay out table cells, rows and columns</h3>
+
+    <p><b>Tip</b> The main benefit of table-layout: fixed; is that the table renders much faster. On large tables, users will not see any part of the table until the browser has rendered the whole table. So, if you use table-layout: fixed, users will see the top of the table while the browser loads and renders rest of the table. This gives the impression that the page loads a lot quicker!</p>
+
+    <h2>Set different table layout algorithms:</h2>
+
+    <h3>table-layout: auto; width: 180px;</h3>
+    <table class="a">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Island Treding</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+    
+    <h3>table-layout: fixed; width: 180px;</h3>
+    <table class="b">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Island Treding</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+    <h3>table-layout: auto; width: 100%;</h3>
+    <table class="c">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Island Treding</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+    <h3>table-layout: fixed; width: 100%;</h3>
+    <table class="d">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Island Treding</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>

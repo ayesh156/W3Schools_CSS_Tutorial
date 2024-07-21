@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Variables in Media Queries</title>
+    <style>
+        /* Variable declarations */
+        :root {
+            --blue: #1e90ff;
+            --white: #fff;
+        }
+
+        .container {
+            --fontsize: 25px;
+        }
+
+        /* Styles */
+        body {
+            background-color: var(--blue);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .container {
+            background-color: var(--white);
+            color: var(--blue);
+            padding: 15px;
+            font-size: var(--fontsize);
+        }
+
+        @media screen and (min-width: 600px) {
+            .container {
+                --fontsize: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using Variables in Media Queries</h1>
+
+    <p><b>Tip</b> Media Queries are about defining different style rules for different devices (screens, tablets, mobile phones, etc.).</p>
+
+    <h3>Here, we first declare a new local variable named --fontsize for the .container class. We set its value to 25 pixels. Then we use it in the .container class further down. Then, we create a @media rule that says "When the browser's width is 600px or wider, change the --fontsize varible value of the .container class to 50px."</h3>
+
+    <h3>Here is the complete example:</h3>
+
+    <div class="container">
+        <h2>Lorem, ipsum.</h2>
+        <p>When the browser's width is less than 600px, the font-size of this div is 25px. When it is 600px or wider. set the --fontsize variable value to 50px. Resize the browser window to see the effect.</p>
+    </div>
+    
+</body>
+</html>

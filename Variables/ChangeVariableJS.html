@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Variable JS</title>
+    <style>
+        :root {
+            --blue: #1e90ff;
+            --white: #fff;
+        }
+
+        body {
+            background-color: var(--blue);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .container {
+            background-color: var(--white);
+            color: var(--blue);
+            padding: 15px;
+        }
+
+        .container button {
+            background-color: var(--white);
+            color: var(--blue);
+            border: 1px solid var(--blue);
+            padding: 5px;
+        }
+    </style>
+
+    <script>
+        // Get the root element
+        var r = document.querySelector(':root');
+
+        // Create a function for getting a variable value
+        function myFunc_get() {
+            // Get the style (properties and values) for the root
+            var rs = getComputedStyle(r);
+            // Alert the value of the --blue variable
+            alert('The value of --blue is: ' + rs.getPropertyValue('--blue'));
+        }
+
+        // Create a function for setting a variable value 
+        function myFunc_set() {
+            // Set the value of variable --blue to another value (in this case "lightblue")
+            r.style.setProperty('--blue', 'lightblue');
+        }
+
+    </script>
+</head>
+<body>
+
+    <h1>Change Variable With JavaScript</h1>
+
+    <h3>CSS variables have access to the DOM, which means that you can change them with JavaScript.</h3>
+
+    <h3>Here is an example of how you can create a script to display and change the --blue variable from the example used in the previous pages.</h3>
+
+    <div class="container">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, unde deleniti quos dicta explicabo, aliquid ab quaerat repellat velit reprehenderit voluptas et nam repudiandae tempora esse quisquam, mollitia sapiente sint.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam blanditiis fugiat, modi ut cumque reprehenderit repudiandae aliquam omnis, quos quidem officia harum! Voluptate fuga, qui ut molestias nostrum dolor odit.</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+    <br>
+
+    <button onclick="myFunc_get()">Get CSS Variable with JavaScript</button>
+    <button onclick="myFunc_set()">Change CSS Variable with JavaScript</button>
+    
+</body>
+</html>

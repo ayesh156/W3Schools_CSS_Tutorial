@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Buttons</title>
+    <style>
+        a.one:link, a.one:visited {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            padding: 14px 25px;
+        }
+
+        a.two:link, a.two:visited {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border: 2px solid green;
+            padding: 10px 20px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        a.two:hover, a.two:active {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Links Buttons</h1>
+
+    <h3>This example demontrates a more advanced example where we combine several CSS properties to display links as boxes/buttons:</h3>
+
+    <h2>Link Button</h2>
+
+    <p>A link styled as a button:</p>
+    <a href="https://w3schools.com" class="one" target="_blank">This is a link</a>
+
+    <h2>Link Button 2</h2>
+
+    <a href="https://w3schools.com" class="two" target="_blank">This is a link</a>
+    
+</body>
+</html>

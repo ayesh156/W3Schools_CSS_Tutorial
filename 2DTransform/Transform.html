@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        #myDiv {
+            background-color: #E7E9EB;
+            padding: 15px;
+        }
+
+        #myDiv2 {
+            padding: 10px;
+            margin: 10px;
+            height: 300px;
+            background-color: #fff;
+        }
+
+        #blueDiv {
+            position: relative;
+            width: 70px;
+            padding: 10px;
+            background-color: lightblue;
+            left: 30%;
+            top: 50px;
+        }
+
+        button {
+            width: 99%;
+            border: none;
+            background-color: #666;
+            text-align: left;
+            cursor: pointer;
+            font-size: 20px;
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+        }
+
+        button:hover {
+            background-color: #222;
+        }
+
+        .span1 {
+            color: #f16694;
+        }
+
+        .span2 {
+            color: #54dc91;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transform</h1>
+    
+    <h3>The transform property applies a 2D or 3D tranformation to an element. This property allows you to roate, scale, move, skew, etc., elements.</h3>
+
+    <h2>Syntax :- none|transform-functions|initial|inherit;</h2>
+
+    <div id="myDiv">
+        <button id="btn1" onclick="none()"><span class="span1">transform:</span> <span class="span2">none;</span></button>
+        <button id="btn2" onclick="rotate1()"><span class="span1">transform:</span> <span class="span2">rotate(10deg);</span></button>
+        <button id="btn3" onclick="rotate2()"><span class="span1">transform:</span> <span class="span2">rotate(45deg);</span></button>
+        <button id="btn4" onclick="rotateX1()"><span class="span1">transform:</span> <span class="span2">rotateX(45deg);</span></button>
+        <button id="btn5" onclick="rotateX2()"><span class="span1">transform:</span> <span class="span2">rotateX(100deg);</span></button>
+        <button id="btn6" onclick="rotateY1()"><span class="span1">transform:</span> <span class="span2">rotateY(45deg);</span></button>
+        <button id="btn7" onclick="rotateY2()"><span class="span1">transform:</span> <span class="span2">rotateY(80deg);</span></button>
+        <button id="btn8" onclick="skew1()"><span class="span1">transform:</span> <span class="span2">skew(20deg, 20deg);</span></button>
+        <button id="btn9" onclick="skew2()"><span class="span1">transform:</span> <span class="span2">skew(30deg, 30deg);</span></button>
+        <button id="btn10" onclick="skewX1()"><span class="span1">transform:</span> <span class="span2">skewX(30deg);</span></button>
+        <button id="btn11" onclick="skewX2()"><span class="span1">transform:</span> <span class="span2">skewX(40deg);</span></button>
+        <button id="btn12" onclick="skewY1()"><span class="span1">transform:</span> <span class="span2">skewY(30deg);</span></button>
+        <button id="btn13" onclick="skewY2()"><span class="span1">transform:</span> <span class="span2">skewY(40deg);</span></button>
+        <button id="btn14" onclick="translate1()"><span class="span1">transform:</span> <span class="span2">translate(20px, 10px);</span></button>
+        <button id="btn15" onclick="translate2()"><span class="span1">transform:</span> <span class="span2">translate(20px, 20px);</span></button>
+        <button id="btn16" onclick="scale1()"><span class="span1">transform:</span> <span class="span2">scale(2, 2);</span></button>
+        <button id="btn17" onclick="scale2()"><span class="span1">transform:</span> <span class="span2">scale(2, 3);</span></button>
+        <button id="btn18" onclick="matrix1()"><span class="span1">transform:</span> <span class="span2">matrix(0.866, 0.7, -0.8, 0.866, 0 0)</span></button>
+        <button id="btn19" onclick="matrix2()"><span class="span1">transform:</span> <span class="span2">matrix(0.586, 0.8, -0.8, 0.586, 0, 0)</span></button>
+        <button id="btn20" onclick="matrix3()"><span class="span1">transform:</span> <span class="span2">matrix(0.586, 0.8, -0.8, 0.586, 40, 30)</span></button>
+
+        <div id="myDiv2">
+            <div id="blueDiv">See what different transform values does with this blue DIV element</div>
+        </div>
+    </div>
+
+    <script>
+        function none() {
+            document.getElementById("blueDiv").style.transform = "none";
+            document.getElementById("btn1").style.backgroundColor = "#222";
+            for (i = 2;i < 21; i++) {
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+           
+        }
+        function rotate1() {
+            document.getElementById("blueDiv").style.transform = "rotate(10deg)";
+            document.getElementById("btn2").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 2) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+            
+        }
+        function rotate2() {
+            document.getElementById("blueDiv").style.transform = "rotate(45deg)";
+            document.getElementById("btn3").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 3) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function rotateX1() {
+            document.getElementById("blueDiv").style.transform = "rotateX(45deg)";
+            document.getElementById("btn4").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 4) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function rotateX2() {
+            document.getElementById("blueDiv").style.transform = "rotateX(100deg)";
+            document.getElementById("btn5").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 5) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function rotateY1() {
+            document.getElementById("blueDiv").style.transform = "rotateY(45deg)";
+            document.getElementById("btn6").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 6) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function rotateY2() {
+            document.getElementById("blueDiv").style.transform = "rotateY(80deg)";
+            document.getElementById("btn7").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 7) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function skew1() {
+            document.getElementById("blueDiv").style.transform = "skew(20deg, 20deg)";
+            document.getElementById("btn8").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 8) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function skew2() {
+            document.getElementById("blueDiv").style.transform = "skew(30deg, 30deg)";
+            document.getElementById("btn9").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 9) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function skewX1() {
+            document.getElementById("blueDiv").style.transform = "skewX(30deg)";
+            document.getElementById("btn10").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 10) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function skewX2() {
+            document.getElementById("blueDiv").style.transform = "skewX(40deg)";
+            document.getElementById("btn11").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 11) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function skewY1() {
+            document.getElementById("blueDiv").style.transform = "skewY(30deg)";
+            document.getElementById("btn12").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 12) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function skewY2() {
+            document.getElementById("blueDiv").style.transform = "skewY(40deg)";
+            document.getElementById("btn13").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 13) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function translate1() {
+            document.getElementById("blueDiv").style.transform = "translate(20px, 10px)";
+            document.getElementById("btn14").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 14) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function translate2() {
+            document.getElementById("blueDiv").style.transform = "translate(20px, 20px)";
+            document.getElementById("btn15").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 15) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function scale1() {
+            document.getElementById("blueDiv").style.transform = "scale(2, 2)";
+            document.getElementById("btn16").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 16) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function scale2() {
+            document.getElementById("blueDiv").style.transform = "scale(2, 3)";
+            document.getElementById("btn17").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 17) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function matrix1() {
+            document.getElementById("blueDiv").style.transform = "matrix(0.866, 0.7, -0.8, 0.866, 0, 0)";
+            document.getElementById("btn18").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 18) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function matrix2() {
+            document.getElementById("blueDiv").style.transform = "matrix(0.586, 0.8, -0.8, 0.586, 0, 0)";
+            document.getElementById("btn19").style.backgroundColor = "#222";
+            for (i = 1;i < 21; i++) {
+                if (i === 19) continue;
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+        function matrix3() {
+            document.getElementById("blueDiv").style.transform = "matrix(0.586, 0.8, -0.8, 0.586, 40, 30)";
+            document.getElementById("btn20").style.backgroundColor = "#222";
+            for (i = 2;i < 20; i++) {
+                document.getElementById(["btn"+i]).style.backgroundColor = "#666"
+            }
+        }
+    </script>
+    
+</body>
+</html>

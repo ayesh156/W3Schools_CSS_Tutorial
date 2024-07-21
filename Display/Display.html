@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        p {color: red;}
+
+        p.ex1 {display: none;}
+        p.ex2 {display: inline;}
+        p.ex3 {display: block;}
+        p.ex4 {display: inline-block;}
+    </style>
+</head>
+<body>
+
+    <h1>The display property</h1>
+
+    <h3>The display property specifies if/how an element is displyed.</h3>
+
+    <h3>Every HTML element has a default display value depending on what type of element it is. The default dispaly value for most elements is block or inline.</h3>
+
+    <h3>In HTML, the default display property value is taken from the HTML specifications or from the browser/user default style sheet. The default value in XML is inline, including SVG elements.</h3>
+
+    <h1>Block-level Elements</h1>
+
+    <h3>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</h3>
+
+    <h3>Examples of block-level elements:</h3>
+
+    <ul>
+        <li>(div)</li>
+        <li>(h1) - (h6)</li>
+        <li>(p)</li>
+        <li>(from)</li>
+        <li>(header)</li>
+        <li>(footer)</li>
+        <li>(section)</li>
+    </ul>
+
+    <h1>Inline Elements</h1>
+
+    <h3>An inline element does not start on a new line and only takes up as much width as necessary.</h3>
+
+    <h3>Examples of inline elements:</h3>
+
+    <ul>
+        <li>(span)</li>
+        <li>(a)</li>
+        <li>(img)</li>
+    </ul>
+
+    <h1>Display: none;</h1>
+
+    <h3>display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them.</h3>
+    <h3>The (script) element uses display: none; as default</h3>
+
+    <h1>Override The Default Display Value</h1>
+
+    <h3>As mentioned, every element has a default display value. However, you can override this.</h3>
+
+    <h3>Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.</h3>
+
+    <h2>Use of some different display values:</h2>
+
+    <h3>Display: none;</h3>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nostrum ad velit cupiditate aliquam dolores itaque modi vel optio nesciunt. <p class="ex1">Hello World</p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, minima?</div>
+
+    <h3>Display: inline;</h3>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nostrum ad velit cupiditate aliquam dolores itaque modi vel optio nesciunt. <p class="ex2">Hello World</p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, minima?</div>
+
+    <h3>Display: block;</h3>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nostrum ad velit cupiditate aliquam dolores itaque modi vel optio nesciunt. <p class="ex3">Hello World</p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, minima?</div>
+
+    <h3>Display: inline-block;</h3>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nostrum ad velit cupiditate aliquam dolores itaque modi vel optio nesciunt. <p class="ex4">Hello World</p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, minima?</div>
+    
+</body>
+</html>

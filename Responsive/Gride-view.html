@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Grid-View</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Grid View Example 1 */
+        .header {
+            border: 1px solid red;
+            padding: 15px;
+        }
+
+        .menu {
+            width: 25%;
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+        }
+
+        .main {
+            width: 75%;
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+        }
+
+        /* Grid View Example 2 */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        html {
+            font-family: "Lusida Sans", sans-serif;
+        }
+
+        .header2 {
+            background-color: #9933cc;
+            color: #fff;
+            padding: 15px;
+        }
+
+        .menu2 ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu2 li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu2 li:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>What is a Grid-View?</h1>
+
+    <h3>Many web pages are based on a grid-view, which means that the page is divided into columns:</h3>
+
+    <h3>Using a grid-view is very helpful when designing web pages. It makes it easier to place elements on the page.</h3>
+
+    <h3>A responsive Grid-view often has 12 columns, and has a total width of 100%, and will shrink and expand as you resize the browser window.</h3>
+
+    <h1>Building a Responsive Grid-View</h1>
+
+    <h3>First ensure that all HTML elements have the box-sizing property set to border-box. This makes sure that the padding and border are include in the total width and height of the elements.</h3>
+
+    <h3>Add the following code in your CSS:</h3>
+
+    <div>* { <br>
+            box-sizing: border-box; <br>
+        }
+    </div>
+
+    <h3>The following example shows a simple responsive web page, with two columns:</h3>
+
+    <div class="header">
+        <h1>China</h1>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li>The Flight</li>
+            <li>The City</li>
+            <li>The Island</li>
+            <li>The Food</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <h1>The City</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure alias neque laborum vitae, libero maxime possimus doloremque earum mollitia! Eaque laudantium doloremque quo itaque quos officiis eius doloribus consequatur ipsa?</p>
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+
+    <h3>The example above is fine if the web page only contains two columns.</h3>
+
+    <h3>However, we want to use a responsive grid-view with 12 columns, to have more control over the web page.</h3>
+
+    <h3>First we must calculate the percentage for one column: 100% / 12 columns = 8.33%.</h3>
+
+    <h3>Then we make one class for each of the 12 columns, class="col-" and a number defining how many columns the section should span:</h3>
+
+    <h3>All these columns should be floating to the left, and have a padding of 15px:</h3>
+
+    <h3>Each row should be wrapped in a (div). The number of columns inside a row should always add up to 12:</h3>
+
+    <h3>The columns inside a row are all floating to the left, and are therefore taken out of the flow of the page, and other elements will be placed as if the columns do not exist. To prevent this, we will add a style that clears the flow:</h3>
+
+    <h3>We also want to add some styles and colors to make it look better:</h3>
+
+    <div class="header2">
+        <h1>China</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu2">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+
+        <div class="col-9">
+            <h1>The City</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sit, velit harum suscipit deleniti molestiae rerum laudantium deserunt labore enim corporis cumque, odit ab perferendis totam sed neque temporibus a?</p>
+            <p>Resize the browser window to see how the content to the resizing.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

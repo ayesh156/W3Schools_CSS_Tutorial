@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-gap</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        /* Set the gap between rows and columns to 50px: */
+        .gc1 {grid-gap: 50px;}
+
+        /* Set the gap between rows to 20px and the columns to 50px: */
+        .gc2 {grid-gap: 20px 50px;}
+    </style>
+</head>
+<body>
+
+    <h1>grid-gap</h1>
+
+    <h3>The grid-gap property defines the size of the gap between the rows and columns in a grid layout, and is a shorthand property for the following properties:</h3>
+
+    <ul>
+        <li>grid-row-gap</li>
+        <li>grid-column-gap</li>
+    </ul>
+
+    <h3>Note: This property was renamed to gap in CSS3.</h3>
+
+    <h2>Syntax :- grid-gap: grid-row-gap grid-column-gap</h2>
+
+    <h3>Set the gap between rows and columns to 50px:</h3>
+
+    <div class="grid-container gc1">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+    </div>
+
+    <h3>Set the gap between rows to 20px and the columns to 50px:</h3>
+
+    <div class="grid-container gc2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+    </div>
+    
+</body>
+</html>

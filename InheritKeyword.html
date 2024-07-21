@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherit Keyword</title>
+    <style>
+        span {
+            color: blue;
+            border: 1px solid black;
+        }
+
+        .extra span {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>inherit Keyword</h1>
+
+    <h3>The inherit keyword specifies that a property should inherit its value from its parent element.</h3>
+
+    <h3>The inherit keyword can be used for any CSS property and on any HTML element.</h3>
+
+    <h2>Set the text-color for (span) elements to blue, except those inside elements with class="extra":</h2>
+
+    <div>
+        Here is <span>a span element</span> which is blue, as span elements are set to be
+    </div><br>
+
+    <div class="extra" style="color: green;">
+        Here is <span>a span element</span> which is green, because it inherit from its parent.
+    </div><br>
+
+    <div style="color: red;">
+        Here is <span>a span element</span> which is blue, as span element are set to be
+    </div>
+
+
+    
+</body>
+</html>

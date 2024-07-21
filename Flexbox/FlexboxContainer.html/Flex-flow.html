@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-flow</title>
+    <style>
+        .main {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+        }
+
+        .main div {
+            width: 50px;
+            height: 50px;
+        }
+
+        #main1 {flex-flow: row nowrap;}
+        #main2 {flex-flow: row-reverse nowrap;}
+        #main3 {flex-flow: column nowrap;}
+        #main4 {flex-flow: column-reverse nowrap;}
+        #main5 {flex-flow: row wrap;}
+        #main6 {flex-flow: row-reverse wrap;}
+        #main7 {flex-flow: column wrap;}
+        #main8 {flex-flow: column-reverse wrap;}
+        #main9 {flex-flow: row wrap-reverse;}
+        #main10 {flex-flow: row-reverse wrap-reverse;}
+        #main11 {flex-flow: column wrap-reverse;}
+        #main12 {flex-flow: column-reverse wrap-reverse;}
+    </style>
+</head>
+<body>
+
+    <h1>flex-flow</h1>
+
+    <h3>The flex-flow property is a shorthand property for:</h3>
+
+    <ul>
+        <li>flex-direction</li>
+        <li>flex-wrap</li>
+    </ul>
+
+    <h3>Note: If the elements are not flexible items, the flex-flow property has no effect.</h3>
+
+    <h2>Syntax :- flex-flow: flex-direction flex-wrap|initial|inherit;</h2>
+
+    <h2>Different values of the flex-flow property.</h2>
+
+   <h2>flex-flow: row nowrap;</h2>
+   <div class="main" id="main1">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: row-reverse nowrap;</h2>
+   <div class="main" id="main2">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: column nowrap;</h2>
+   <div class="main" id="main3">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: column-reverse nowrap;</h2>
+   <div class="main" id="main4">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: row wrap;</h2>
+   <div class="main" id="main5">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: row-reverse wrap;</h2>
+   <div class="main" id="main6">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: column wrap;</h2>
+   <div class="main" id="main7">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: column-reverse wrap;</h2>
+   <div class="main" id="main8">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: row wrap-reverse;</h2>
+   <div class="main" id="main9">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: row-reverse wrap-reverse;</h2>
+   <div class="main" id="main10">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: column wrap-reverse;</h2>
+   <div class="main" id="main11">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+
+   <h2>flex-flow: column-reverse wrap-reverse;</h2>
+   <div class="main" id="main12">
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: lightblue;">B</div>
+       <div style="background-color: khaki;">C</div>
+       <div style="background-color: lightgray;">D</div>
+       <div style="background-color: pink;">E</div>
+       <div style="background-color: lightgreen;">F</div>
+   </div>
+    
+</body>
+</html>

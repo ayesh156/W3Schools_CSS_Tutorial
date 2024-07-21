@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :invalid Selector</title>
+    <style>
+        input:invalid {
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p>The :invalid selector selects form elements with a value that does not validate according to the element's settings</p>
+
+    <p><b>Note:</b> The :invalid selector only works for form elements with limitations, such as input elements with min and max attributes, email fields without a legal email, or number fields without a numeric value, etc</p>
+
+    <h2>Select and style only if the value of the (input) element is invalid:</h2>
+
+    <input type="email" value="supportEmail">
+
+    <p>try typing a legal e-mail address, to see the styling disappear</p>
+
+    <input type="number" min="5" max="10" value="15">
+
+    <p>Try typing a number within the given range (between 5 to 10), to see the styling dissapear</p>
+    
+</body>
+</html>

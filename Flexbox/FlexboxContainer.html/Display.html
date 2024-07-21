@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* Use of some different display values: */
+        .ex {color: red;}
+
+        .ex1 {display: none;}
+        .ex2 {display: inline;}
+        .ex3 {display: block;}
+        .ex4 {display: inline-block;}
+
+        /* display: contents; */
+        .a {
+            display: contents;
+            border: 1px solid red;
+            background-color: lightblue;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .b {
+            border: 1px solid blue;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* A demonstration of how to use the inherit property value: */
+        .inline {
+            display: inline;
+        }
+
+        .inherit {
+            display: inherit;
+        }
+
+        /* Set the direction of some flexible items inside a (div) element in reverse order: */
+        .main {
+            width: 400px;
+            height: 400px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .main div {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Display</h1>
+
+    <h3>The display property specifies the display behavior (the type of rendering box) of an element.</h3>
+
+    <h3>In HTML, the default display property value is taken from the HTML specifications or from the browser/user default style sheet. The default value in XML is inline, including SVG elements.</h3>
+
+    <h2>Syntax :- display: value;</h2>
+
+    <ul>
+        <li><h3>inline :- Displays an element as an inline element(like (span)). Any height and width properties will have no effect</h3></li>
+        <li><h3>block :- Displays an elemnt as a block element (like (p)). It starts on a new line, and take up the whole width</h3></li>
+        <li><h3>contents :- Makes the container disappear, making the child elements children of the element the next level up in DOM</h3></li>
+        <li><h3>flex :- Displays an element as a block-level flex container</h3></li>
+        <li><h3>grid :- Displays an element as a block-level grid container</h3></li>
+        <li><h3>inline-block :- Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply heght and width values</h3></li>
+        <li><h3>inline-flex :- Displays an element as an inline-level flex container</h3></li>
+        <li><h3>inline-grid :- Displays an element as an inline-level grid container</h3></li>
+        <li><h3>inline-table :- The element is displayed as an inline-level table</h3></li>
+        <li><h3>list-item :- Let the element behave like a (li) element</h3></li>
+        <li><h3>run-in :- Displays an element as either block or inline, depending on content</h3></li>
+        <li><h3>table :- Let the element behave like a (table) element</h3></li>
+        <li><h3>table-caption :- Let the element behave like a (caption) element</h3></li>
+        <li><h3>table-column-gap :- Let the element behave like a (colgroup) element</h3></li>
+        <li><h3>table-header-group :- Let the element behave like a (thead) element</h3></li>
+        <li><h3>table-footer-group :- Let the element behave like a (tfoot) element</h3></li>
+        <li><h3>table-row-group :- Let the element behave like a (tbody) element</h3></li>
+        <li><h3>table-cell :- Let the element behave like a (td) element</h3></li>
+        <li><h3>table-column :- Let the element behave like a (col) element</h3></li>
+        <li><h3>table-row :- Let the element behave like a (tr) element</h3></li>
+        <li><h3>none :- The element is completely removed</h3></li>
+        <li><h3>initial :- Sets this property to its default value.</h3></li>
+        <li><h3>inherit :- Inherits this property from its parent element.</h3></li>
+    </ul>
+
+    <h3>Use of some different display values:</h3>
+
+    <h2>display: none;</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit eius repellendus aspernatur quos tempore nam dolorum assumenda pariatur minus. <p class="ex ex1">Hello World</p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, qui.</div>
+
+    <h2>display: inline;</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit eius repellendus aspernatur quos tempore nam dolorum assumenda pariatur minus. <p class="ex ex2">Hello World</p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, qui.</div>
+
+    <h2>display: block;</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit eius repellendus aspernatur quos tempore nam dolorum assumenda pariatur minus. <p class="ex ex3">Hello World</p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, qui.</div>
+
+    <h2>display: inline-block;</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit eius repellendus aspernatur quos tempore nam dolorum assumenda pariatur minus. <p class="ex ex4">Hello World</p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, qui.</div>
+
+    <h3>A demonstration of how to use the contents property value. In the following example the .a container will disappear, and making the child elements (.b) children of the element the next level up in the DOM:</h3>
+
+    <h2>display: contents;</h2>
+    <div class="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sapiente molestias expedita libero possimus aliquam delectus porro quasi eius consequatur! <div class="b">Hello World</div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, porro?</div>
+
+    <p>display: content does not work in Edge, prior version 79</p>
+
+    <h3>A demonstration of how to use the inherit property value:</h3>
+
+    <div class="inline">
+        <p class="inherit">These two paragraphs generates inline boxes, and it result</p>
+
+        <p class="inherit">no distance between the two elements</p>
+    </div>
+
+    <h3>Set the direction of some flexible items inside a (div) element in reverse order:</h3>
+
+    <div class="main">
+        <div style="background-color: coral;">A</div>
+        <div style="background-color: lightblue;">B</div>
+        <div style="background-color: khaki;">C</div>
+        <div style="background-color: pink;">D</div>
+        <div style="background-color: lightgreen;">E</div>
+        <div style="background-color: lightgray;">F</div>
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-direction property.</p>
+
+    
+</body>
+</html>

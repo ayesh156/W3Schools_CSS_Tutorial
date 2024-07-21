@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Width</title>
+    <style>
+        p.one {
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        p.two {
+            border-style: solid;
+            border-width: thin;
+        }
+
+        p.three {
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        p.four {
+            border-style: solid;
+            border-width: medium;
+        }
+
+        p.five {
+            border-style: solid;
+            border-width: 15px;
+        }
+
+        p.six {
+            border-style: solid;
+            border-width: thick;
+        }
+
+        p.seven {
+            border-style: solid;
+            border-width: 20px 5px; /* 20 px top and bottom, 20px on the sides */
+        }
+
+        p.eight {
+            border-style: solid;
+            border-width: 5px 20px; /*20px top and bottom, 5px on the sides */
+        }
+
+        p.nine {
+            border-style: solid;
+            border-width: 25px 10px 5px 35px; /* 25px top, 10px right, 5px bottom and 35px left */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Border Width</h1>
+
+    <h3>The border-width property specifies the width of the four borders</h3>
+
+    <h3>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium or thick:</h3>
+
+    <h2>Demonstration of the different border widths:</h2>
+
+    <p class="one">A 2px border</p>
+    <p class="two">A thin border</p>
+    <p class="three">A 5px border</p>
+    <p class="four">A medium border</p>
+    <p class="five">A 15px border</p>
+    <p class="six">A thick border</p>
+
+    <h1>Specific Side Widths</h1>
+
+    <h3>The border-width property can have from one to four values (for the top border, right border, bottom border and left border)</h3>
+
+    <p class="seven">5px top and bottom, 20px on the sides</p>
+    <p class="eight">20px top and bottom, 5px on the sides</p>
+    <p class="nine">25px top, 10px right, 4px bottom and 35px left</p>
+    
+</body>
+</html>

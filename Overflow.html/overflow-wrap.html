@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow-wrap Property</title>
+    <style>
+        div {
+            width: 150px;
+            border: 1px solid #000;
+            
+        }
+
+        /* overflow-wrap: normal (default): */
+        div.normal{
+            overflow-wrap: normal;
+        }
+
+        /* overflow-wrap: break-word; */
+        div.break-word {
+            overflow-wrap: break-word;
+        }
+
+        /* overflow-wrap: anywhere */
+        div.anywhere {
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>overflow-wrap</h1>
+
+    <h3>The overflow-wrap property specifies whether or not the browser can break lines with long words, if they overflow the container.</h3>
+
+    <h2>Let the browser be allowed to break lines with long words, if they overflow the container:</h2>
+
+    <h2>overflow-wrap: normal (default):</h2>
+    <div class="normal">This div contains a very long word: thisisaveryvaryveryveryveryverylongword. The long word will not break and wrap to the next line.</div>
+
+    <h2>overflow-wrap: break-word;</h2>
+    <div class="break-word">This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+
+    <h2>overflow-wrap: anywhere</h2>
+    <div class="anywhere">This div contains a very long word: thisisaveryvaryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+    
+</body>
+</html>

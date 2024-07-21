@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-direction</title>
+    <style>
+        /* Play the animation forwards first, then backwords: */
+        .div1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 150px;
+            background-color: red;
+            animation: mymove1 5s 2;
+            animation-direction: alternate;
+        }
+
+        @keyframes mymove1 {
+            0% {top: 0; left: 0; background: red;}
+            25% {top: 0; left: 100px; background: blue;}
+            50% {top: 100px; left: 100px; background: green;}
+            75% {top: 100px; left: 0; background: yellow;}
+            100% {top: 0; left: 0; background: red;}
+        }
+
+        /* Play the animation backwards first, then forwards: */
+        .div2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 150px;
+            background: red;
+            animation: mymove2 5s 2;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes mymove2 {
+            0% {top: 0; left: 0; background: red;}
+            25% {top: 0; left: 100px; background: blue;}
+            50% {top: 100px; left: 100px; background: green;}
+            75% {top: 100px; left: 0; background: yellow;}
+            100% {top: 0; left: 0; background: red;}
+        }
+
+        /* Play animation backwards: */
+        .div3 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 150px;
+            background: red;
+            animation: mymove3 5s 1;
+            animation-direction: reverse;
+        }
+
+        @keyframes mymove3 {
+            0% {top: 0; left: 0; background: red;}
+            25% {top: 0; left: 100px; background: blue;}
+            50% {top: 100px; left: 100px; background: green;}
+            75% {top: 100px; left: 0; background: yellow;}
+            100% {top: 0; left: 0; background: red;}
+        }
+         
+    </style>
+</head>
+<body>
+
+    <h1>animation-direction</h1>
+
+    <h3>The animation-direction property defines whether an animation should be played forward, backward or in alternate cycles.</h3>
+
+    <h2>Syntax :- animation-direction: normal|reverse|alternate|alternate-reverse|initial|inherit;</h2>
+
+    <h3>alternate :- The animation is played forward first, then backwords</h3>
+
+    <h3>alternate-reverse :- The animation is played backwards first, then forwards</h3>
+
+    <h3>Play the animation forwards first, then backwords:</h3>
+
+    <div class="div1"></div>
+
+    <h3>Play the animation backwards first, then forwards:</h3>
+
+    <div class="div2"></div>
+
+    <h3>Play animation backwards:</h3>
+
+    <div class="div3"></div>
+    
+</body>
+</html>

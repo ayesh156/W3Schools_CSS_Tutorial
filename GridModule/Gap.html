@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap</title>
+    <style>
+        /* Set the gap between rows and columns to 50px: */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 50px;
+        }
+
+        .grid-container > div {
+            border: 1px solid black;
+            background-color: yellow;
+        }
+
+        /* Set the gap between rows to 20px, and the columns to 50px: */
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px 50px;
+        }
+
+        .grid-container2 > div {
+            border: 1px solid black;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>gap</h1>
+
+    <h3>The gap property defines the size of the gap between the rows and columns. It is a shorthand for the following properties:</h3>
+
+    <ul>
+        <li>row-gap</li>
+        <li>column-gap</li>
+    </ul>
+
+    <h3>Note: The gap property was formerly known as grid-gap</h3>
+
+    <h2>Syntax :- gap: row-gap column-gap;</h2>
+
+    <h3>Set the gap between rows and columns to 50px:</h3>
+
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <h3>Set the gap between rows to 20px, and the columns to 50px:</h3>
+
+    <div class="grid-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    
+</body>
+</html>

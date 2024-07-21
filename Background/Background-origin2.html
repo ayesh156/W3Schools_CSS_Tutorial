@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-origin</title>
+    <style>
+        /* background-origin: content-box, padding-box */
+        #example1 {
+            border: 10px dashed black;
+            padding: 25px;
+            background: url("../Images/tree_img.png"), url("../Images/download.jpg");
+            background-repeat: no-repeat;
+            background-origin: content-box, padding-box;
+        }
+       
+        /* background-origin: content-box,  border-box */
+        #example2 {
+            border: 10px dashed black;
+            padding: 25px;
+            background: url("../Images/tree_img.png"), url("../Images/download.jpg");
+            background-repeat: no-repeat;
+            background-origin: content-box, border-box;
+        }
+
+        /* background-origin: content-box, content-box */
+        #example3 {
+            border: 10px dashed black;
+            padding: 25px;
+            background: url("../Images/tree_img.png"), url("../Images/download.jpg");
+            background-repeat: no-repeat;
+            background-origin: content-box, content-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>background-origin: content-box, padding-box</h2>
+    <div id="example1">
+        <h3>Hello World</h3>
+        <p>The "paper.gif" background image starts from the upper left corner of the padding edge.</p>
+        <p>The "tree_img.gif" background image starts from the upper left corner of the content.</p>
+    </div>
+    
+
+    <h2>background-origin: content-box,  border-box</h2>
+    <div id="example2">
+        <h3>Hello World</h3>
+        <p>The "paper.gif" background image starts from the upper left corner of the border</p>
+        <p>The "img_tree.gif" background image starts from the upper left corner of the content.</p>
+    </div>
+
+    <h2>background-origin: content-box, content-box</h2>
+    <div id="example3">
+        <h3>Hello World</h3>
+        <p>Both background images starts from the upper left corner of the content.</p>
+    </div>
+    
+</body>
+</html>

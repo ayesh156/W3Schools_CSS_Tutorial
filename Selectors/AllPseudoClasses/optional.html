@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :optional Selector</title>
+    <style>
+        input:optional {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h3>The :optional selector selects form elements which are optional</h3>
+
+    <h3>Form elements with no required attribute are defined as optional</h3>
+
+    <p><b>Note:</b> The :optional selector only applies to the form elements: input, select and textarea</p>
+
+    <form action="">
+        An optional input element: <br> <input type="text"> <br><br>
+        A required input element: <br> <input type="text" required>
+    </form>
+    
+</body>
+</html>

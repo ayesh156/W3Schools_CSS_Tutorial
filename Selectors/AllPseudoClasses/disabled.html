@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :disabled Selector</title>
+    <style>
+        /* Set a background color for all disabled input elements of type="text" */
+        input[type=text]:enabled {
+            background-color: yellow;
+        }
+        input[type=text]:disabled {
+            background-color: #ddd;
+        }
+
+        /* Set a background color for all disabled (option) element */
+        option:disabled {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <p>The:disabled selector matches every disabled element (mostly used on form elements)</p>
+
+    <h2>Set a background color for all disabled input elements of type="text"</h2>
+
+    <form action="">
+        First name: <input type="text" value="Ayesh"><br>
+        Last name: <input type="text" value="Chathuranga"><br>
+        Country: <input type="text" disabled value="SriLanka">
+    </form>
+
+    <h2>Set a background color for all disabled (option) element</h2>
+
+    <select>
+        <option value="Volvo">Volvo</option>
+        <option value="Saab" disabled>Saab</option>
+        <option value="Opel">Opel</option>
+        <option value="Audi" disabled>Audi</option>
+        <option value="Bmw">Bmw</option>
+    </select>
+    
+</body>
+</html>

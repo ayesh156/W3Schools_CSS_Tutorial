@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Media Queries</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #9933cc;
+            color: #fff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+        .aside {
+            background-color: #33b5e5;
+            color: #fff;
+            padding: 15px;
+            font-size: 14px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        /* For tablets: */
+        @media only screen and (min-width: 600px) {
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+
+        /* For desktop: */
+        @media only screen and (min-width: 768px) {
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Another Breakpoint</h1>
+
+    <h3>You can add as many breakpoints as you like.</h3>
+
+    <h3>We will also insert a breakpoint between tablets and mobile phones.</h3>
+
+    <h3>We do this by adding one more media query (at 600px), and a set of new classes for devices larger than 600px (but smaller than 768px):</h3>
+
+    <h3>Note that the two sets of classes are almost identical, the only difference is the name (col- and col-s-):</h3>
+
+    <div class="header">
+        <h1>Chania</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <h1>The City</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam consequuntur quod, dolorem placeat neque vitae dolore reprehenderit, delectus veritatis aliquam distinctio a eius asperiores, voluptatum animi adipisci tenetur quae temporibus?</p>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>What?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Where?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>How?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+
+    <h3>It might seem odd that we have two sets of identical classes, but it gives us the opportunity in HTML, to decide what will happen with the columns at each breakpoint:</h3>
+
+    <h2>For desktop:</h2>
+
+    <h3>The first and the third section will both span 3 columns each. The middle section will span 6 columns.</h3>
+
+    <h2>For tablets:</h2>
+
+    <h3>The first section will span 3 columns, the second will span 9, and the third section will be displayed below the first two sections, and it will span 12 columns:</h3>
+    
+</body>
+</html>

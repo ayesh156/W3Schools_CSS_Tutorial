@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit</title>
+    <style>
+        /* However, if we style the image above to be half its width (200 pixels) and same height (300 pixels), it will look like this: */
+        .img1 {
+            width: 200px;
+            height: 300px;
+        }
+
+        /* Using object-fit: fill; */
+        .img2 {
+            width: 200px;
+            height: 300px;
+            object-fit: fill;
+        }
+
+        /* Using object-fit: cover; */
+        .img3 {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Using object-fit: contain; */
+        .img4 {
+            width: 200px;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        /* Using object-fit: none; */
+        .img5 {
+            width: 200px;
+            height: 300px;
+            object-fit: none;
+        }
+
+        /* Using object-fit: scale-down; */
+        .img6 {
+            width: 200px;
+            height: 300px;
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>object-fit</h1>
+
+    <h3>The CSS object-fit property is used to specify how an (img) or (video) should be resized to fit its container.</h3>
+
+    <h3>This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".</h3>
+
+    <h3>Look at the following image from Paris. This image is 400 pixels wide and 300 pixels hight:</h3>
+
+    <h3>However, if we style the image above to be half its width (200 pixels) and same height (300 pixels), it will look like this:</h3>
+
+    <img src="../../src/images/paris.jpg" alt="Paris" class="img1">
+
+    <h3>We see that the image is being squished to fit the container of 200x300 pixels (its original aspect ratio is destroyed).</h3>
+
+    <h3>Here is where the object-fit property comes in. The object-fit property can take one of the following values:</h3>
+
+    <ul>
+        <li>fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit.</li>
+        <li>contain - The image keeps its aspect ratio, but is resized to fit within the given dimension</li>
+        <li>cover - The image keeps its aspect ratio and fill the given dimension.The image will clipped to fit</li>
+        <li>none- The image is no resized</li>
+        <li>scale-down - The image is scaled down to the smallest version of none or contain</li>
+    </ul>
+
+    <h1>Using object-fit: fill;</h1>
+
+    <h3>If we use object-fit: fill; the image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit:</h3>
+
+    <img src="../../src/images/paris.jpg" alt="Paris" class="img2">
+
+    <h1>Using object-fit: cover;</h1>
+
+    <h3>If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit:</h3>
+
+    <img src="../../src/images/paris.jpg" alt="Paris" class="img3">
+
+   <h1>Using object-fit: contain;</h1>
+
+   <h3>If we use object-fit: contain; the image keeps its aspect ratio, but is resized to fit within the given dimension:</h3>
+
+   <img src="../../src/images/paris.jpg" alt="Paris" class="img4">
+
+   <h1>Using object-fit: none;</h1>
+
+   <h3>If we use object-fit: none; the image is not resized;</h3>
+
+   <img src="../../src/images/paris.jpg" alt="Paris" class="img5">
+
+   <h1>Using object-fit: scale-down;</h1>
+
+   <h3>If we use object-fit: scale-down; the image is scaled down to the smallest version of none or contain:</h3>
+
+   <img src="../../src/images/paris.jpg" alt="Paris" class="img6">
+
+   <h1>Another Example</h1>
+
+   <h3>Here we have two images and we want them to fill the width of 50% of the browser window and 100% of the height.</h3>
+
+   <h3>In the following example we do NOT use object-fit, so when we resize the browser window, the aspect ratio of the images will be destroyed:</h3>
+
+   <div style="width: 100%; height: 400px;">
+       <img src="../../src/images/rock600x400.jpg" alt="Norway" style="float: left; width: 50%; height: 100%;">
+       <img src="../../src/images/paris.jpg" alt="Paris" style="float: left; width: 50%; height: 100%;">
+   </div>
+
+   <h3>In the next example, we use object-fit: cover; so when we resize the browser window, the aspect ratio of the images is preserved:</h3>
+
+   <div style="width: 100%; height: 400px;">
+       <img src="../../src/images/rock600x400.jpg" alt="Norway" style="float: left; width: 50%; height: 100%; object-fit: cover;">
+       <img src="../../src/images/paris.jpg" alt="Paris" style="float: left; width: 50%; height: 100%; object-fit: cover;">
+   </div>
+
+</body>
+</html>

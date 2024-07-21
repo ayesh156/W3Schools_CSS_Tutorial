@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective</title>
+    <style>
+        
+        /* Give a 3D-positioned element some perspective */
+        #div1 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            margin-left: 60px;
+            border: 1px solid black;
+            perspective: 100px;
+        }
+
+        #div3 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            bottom: 10px;
+            padding: 10px;
+            margin-left: 60px;
+            border: 1px solid black;
+            perspective: none;
+        }
+
+        #div2, #div4 {
+            padding: 50px;
+            position: absolute;
+            border: 1px solid red;
+            background: rgba(100, 100, 100, 0.5);
+            transform-style: preserve-3d;
+            transform: rotateX(45deg);
+        }
+
+        /* Create a cube and set different perspectives: */
+        .ex1 {
+            perspective: 800px;
+        }
+
+        .cube {
+            font-size: 4em;
+            width: 2em;
+            margin: 1.5em auto;
+            transform-style: preserve-3d;
+            transform: rotateX(-45deg) rotateY(30deg);
+        }
+
+        .side {
+            position: absolute;
+            width: 2em;
+            height: 2em;
+            border: 1px solid red;
+            background: rgba(100, 100, 100, 0.5);
+            text-align: center;
+            line-height: 2em;
+        }
+
+        .front {transform: translateZ(1em);}
+        .top {transform: rotateX(90deg) translateZ(1em);}
+        .right {transform: rotateY(90deg) translateZ(1em);}
+        .left {transform: rotateY(-90deg) translateZ(1em);}
+        .bottom {transform: rotateX(-90deg) translateZ(1em);}
+        .back {transform: rotateY(-180deg) translateZ(1em);}
+
+        .ex2 {
+            perspective: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Perspective</h1>
+
+    <h3>The perspective property is used to give a 3D-positioned element some perspective.</h3>
+
+    <h3>The perspective property defines how far the object is away from the user. So, a lower value will result in a more intensive 3D effect than a higher value.</h3>
+
+    <h3>When defining the perspective property for an element, it is the CHILD element that get perspective view, NOT the element itself.</h3>
+
+    <h3>To better understand the perspective property, <a href="Demo/PerspectiveDemo.html">view a demo</a></h3>
+
+    <h3>Give a 3D-positioned element some perspective</h3>
+
+    <h2>perspective: 100px;</h2>
+    <div id="div1">DIV1
+        <div id="div2">DIV2</div>
+    </div>
+
+    <h2>perspective: none;</h2>
+    <div id="div3">DIV3
+        <div id="div4">DIV4</div>
+    </div>
+
+    <p><b>Note:</b> The perspective property is not supported in IE9 and earlier versions.</p>
+
+    <h3>Create a cube and set different perspectives:</h3>
+
+    <h2>perspective: 800px;</h2>
+    <div class="ex1">
+        <div class="cube">
+            <div class="side front">1</div>
+            <div class="side back">6</div>
+            <div class="side right">4</div>
+            <div class="side left">3</div>
+            <div class="side top">5</div>
+            <div class="side bottom">2</div>
+        </div>
+    </div>
+
+    <h2 style="margin-top: 300px;">perspective: 150px;</h2>
+    <div class="ex2" style="margin-bottom: 300px;">
+        <div class="cube">
+            <div class="side front">1</div>
+            <div class="side back">6</div>
+            <div class="side right">4</div>
+            <div class="side left">3</div>
+            <div class="side top">5</div>
+            <div class="side bottom">2</div>
+        </div>
+    </div>
+    
+</body>
+</html>

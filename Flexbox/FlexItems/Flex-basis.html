@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        #main {
+            width: 300px;
+            height: 100px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+        }
+
+        #main div {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 50px;
+        }
+
+        #main div:nth-of-type(2) {
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>flex-basis</h1>
+
+    <h3>The flex-basis property specifies the initial length of a flexible item.</h3>
+
+    <h3>Note: If the element is not a flexible item, the flex-basis property has no effect.</h3>
+
+    <h2>Syntax :- flex-basis: number|auto|inital|inherit;</h2>
+
+    <h3>number :- A length unit, or percentage, specifying the initial length of the flexible item(s)</h3>
+
+    <h3>auto :- Default value. The length is equal to the length of the flexible item. If the item has no length specified, the length will be according to its content</h3>
+
+    <div id="main">
+        <div style="background-color: coral;">50px</div>
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: khaki;">50px</div>
+        <div style="background-color: pink;">50px</div>
+        <div style="background-color: lightgray;">50px</div>
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-basis property.</p>
+    
+</body>
+</html>

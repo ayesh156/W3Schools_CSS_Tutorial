@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-duration</title>
+    <style>
+        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin-bottom: 250px;
+            animation: mymove infinite;
+            animation-duration: 3s;
+        }
+
+        @keyframes mymove {
+            from {top: 0;}
+            to {top: 200px;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>animation-duration</h1>
+
+    <h3>The animation-duration property defines how long an animation should take to complete one cycle.</h3>
+
+    <h2>Syntax :- animation-duration: time|initial|inherit;</h2>
+
+    <h3>time :- This can be specified in seconds or milliseconds. Default value is 0, which means that no animation will occur</h3>
+
+    <h3>Specify that the animation should complete one cycle in 3 seconds:</h3>
+
+    <div></div>
+
+    <p><b>Note:</b> Always specify the animation-duration property. Otherwise the duration is 0, and the animation will not be played.</p>
+    
+</body>
+</html>

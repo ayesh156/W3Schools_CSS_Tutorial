@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Columns</title>
+    <style>
+        /* CSS Create Multiple Columns */
+        .np1 {
+            column-count: 3;
+        }
+
+        /* Specify the Gap Between Column */
+        .np2 {
+            column-count: 3;
+            column-gap: 40px;
+        }
+
+        /* CSS Column Rules */
+        /* column-rule-style */
+        .np3 {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule-style: solid;
+        }
+
+        /* column-rule-width */
+        .np4 {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule-style: solid;
+            column-rule-width: 1px;
+        }
+
+        /* column-rule-color */
+        .np5 {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule-style: solid;
+            column-rule-width: 1px;
+            column-rule-color: lightblue;
+        }
+
+        /* column-rule */
+        .np6 {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule: 1px solid lightblue;
+        }
+
+        /* Specify How Many Columns an Element Should Span */
+        .np7 {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule: 1px solid lightblue;
+        }
+
+        .np7 h2 {
+            column-span: all;
+        }
+
+        /* Specify The Column Width */
+        .np8 {
+            column-width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Multiple Columns</h1>
+
+    <h3>In this chapter you will learn about the following multi-column properties:</h3>
+
+    <ul>
+        <li>column-count</li>
+        <li>column-gap</li>
+        <li>column-rule-style</li>
+        <li>column-rule-width</li>
+        <li>column-rule-color</li>
+        <li>column-rule</li>
+        <li>column-span</li>
+        <li>column-width</li>
+    </ul>
+
+    <h1>Create Multiple Columns</h1>
+
+    <h3>The column-count property specifies the number of columns an element should be divided into.</h3>
+
+    <h3>The following example will divide the text in the (div) element into 3 columns:</h3>
+
+    <div class="np1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eos commodi dolorum quia aliquam necessitatibus debitis nisi ipsa porro, quos, sed magnam nesciunt explicabo? Tempora quae asperiores tempore optio ipsum nihil eaque reiciendis, nobis error recusandae, iure architecto, ipsa hic illum animi! Quod, debitis enim nisi ratione possimus ad, beatae alias doloremque natus necessitatibus veritatis eius, quae iste? Nostrum deserunt, tempore ab adipisci, architecto omnis consectetur consequuntur aliquid molestiae quo est recusandae, possimus aperiam praesentium delectus illo itaque nesciunt vel tempora nemo sapiente id hic totam? Repudiandae non obcaecati, reprehenderit iusto ea veritatis ipsa delectus, tempora ad voluptatem modi aperiam!</div>
+
+    <h1>Specify the Gap Between Columns</h1>
+
+    <h3>The column-gap property specifies the gap between the columns.</h3>
+
+    <h3>The following example specifies a 40 pixels gap between the columns:</h3>
+
+    <div class="np2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nobis unde asperiores iste animi similique dicta ipsum cumque voluptatum dolore. Quis omnis totam laborum fugiat hic? Libero sed dicta similique obcaecati. Doloribus tempora officia harum culpa corrupti soluta, illo itaque labore, totam nobis quae reprehenderit. Nihil perferendis sed nisi iure hic quas numquam ipsa quis, aliquam deserunt ex praesentium mollitia eaque maxime recusandae vero unde sint accusamus qui laborum possimus, porro necessitatibus earum. Nisi, praesentium. Quae quis beatae nesciunt sed ad, corrupti laborum praesentium, soluta veniam illum alias voluptatem eius rerum laudantium reprehenderit odit? Tempore animi laudantium nihil illum aut!</div>
+
+    <h1>Column Rules</h1>
+
+    <h2>column-rule-style</h2>
+
+    <h3>The column-rule-style proeprty specifies the style of the rule between columns:</h3>
+
+    <div class="np3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, alias harum, quisquam, error magnam saepe porro dolores repellendus ipsa amet voluptates nihil! Quaerat ducimus modi dignissimos velit? Quis doloremque repellat nemo nesciunt ex harum reiciendis labore, veniam nihil numquam quae odio tenetur quam! Porro mollitia quis laborum quod vitae maiores voluptatem aut similique ipsa assumenda in qui, tenetur consequatur eaque vel sequi vero, odit dolor obcaecati impedit? Omnis culpa eum eaque veritatis eius delectus illum ea in doloribus, quisquam harum cumque reiciendis explicabo, veniam totam voluptatem distinctio. Recusandae voluptatem ipsum officiis saepe aut. Eligendi accusamus asperiores sed dicta exercitationem molestiae.</div>
+
+    <h2>column-rule-width</h2>
+
+    <h3>The column-rule-width property specifies the width of the rule between columns:</h3>
+
+    <div class="np4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla esse obcaecati odio molestias sunt, repellat a voluptas quod pariatur earum voluptatem recusandae voluptate odit, nostrum impedit eaque blanditiis minus repudiandae voluptatum atque? Maiores amet possimus odit doloremque provident asperiores iste exercitationem? Animi blanditiis accusamus, officia reiciendis repellendus sed architecto dolor illo delectus. Repudiandae voluptatum expedita neque voluptates aperiam consequuntur, doloribus sint dolor voluptatibus! Iste quod assumenda porro, repellat accusantium, corporis sint atque cupiditate rem aspernatur sed natus voluptas eligendi possimus minus, illo fuga consequuntur nobis optio nulla animi temporibus est nesciunt hic? Cupiditate harum doloremque ut animi deleniti? Necessitatibus.</div>
+
+    <h2>column-rule-color</h2>
+
+    <h3>The column-rule-color property specifies the color of the rule between columns:</h3>
+
+    <div class="np5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut alias nulla autem provident ab incidunt praesentium expedita adipisci at repudiandae voluptatum quo harum beatae, tenetur blanditiis laboriosam pariatur consectetur, in sunt nesciunt aut! Eaque id architecto asperiores soluta necessitatibus. Quisquam ea reiciendis corporis illo sit expedita. Ut aspernatur, quod quidem velit laboriosam nulla minus eveniet autem similique excepturi! Ab, blanditiis amet dicta aut, vero sit in placeat error nihil ipsum atque voluptatum tenetur, adipisci exercitationem reiciendis ducimus ipsa aliquid vitae quia quod voluptates. Reprehenderit architecto soluta eveniet magni ea aspernatur molestiae impedit esse molestias illo? Quaerat hic repellendus molestias. Numquam.</div>
+
+    <h2>column-rule</h2>
+
+    <h3>The column-rule property is a shorthand property for setting all the column-rule-* properties above.</h3>
+
+    <h3>The following example sets the width, style and color of the rule between columns:</h3>
+
+    <div class="np6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minus facilis aliquam illo, dolorem cumque ducimus eos omnis blanditiis corrupti commodi cupiditate natus hic recusandae fugit similique consectetur nesciunt et atque perferendis mollitia voluptate neque perspiciatis. Neque, incidunt provident perspiciatis eveniet rerum a laborum quis quidem, explicabo ipsa mollitia dolor consequuntur sequi. Natus ipsam velit architecto, a dolorum corrupti! Molestias sit maiores facere ipsum beatae alias libero laborum pariatur autem, quia impedit eveniet rerum. Harum dolore nemo voluptatem quas tenetur quia id saepe, quidem, aliquid fuga molestias odio deleniti ipsa enim eius quam asperiores eveniet reiciendis, quod inventore! Ea, praesentium!</div>
+
+    <h1>Specify How Many Columns an Element Should Span</h1>
+
+    <h3>The column-span property specifies how many columns an element should span across.</h3>
+
+    <h3>The following example specifies that the (h2) element should span across all columns:</h3>
+
+    <div class="np7"><h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, possimus!</h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio doloribus ea, qui deleniti magnam nemo distinctio quisquam laborum aspernatur iusto accusamus consectetur incidunt velit voluptates nulla nam sed unde possimus voluptate aliquid molestias. Nesciunt deleniti explicabo corrupti facere numquam neque exercitationem laboriosam ex odio cupiditate ipsum soluta maiores modi dolor, esse nostrum, alias, ipsam iusto praesentium pariatur veniam perferendis aliquid! Ratione repellat, maxime asperiores temporibus voluptate labore aut suscipit quidem officia sequi reprehenderit. Ut voluptatibus itaque nobis quae, perferendis possimus voluptatem voluptates natus officia voluptas, vero quod minus expedita sit repellat quasi? Quibusdam, expedita, asperiores impedit voluptatibus cum esse a sint assumenda hic, earum debitis! Assumenda incidunt optio laboriosam suscipit. Qui commodi ex dignissimos neque autem! Recusandae perspiciatis facilis saepe nobis assumenda quaerat, illum consequatur quod corrupti explicabo doloribus, quasi magnam vel voluptas perferendis dolore quam debitis itaque quibusdam dolor commodi. Quam repellendus expedita sapiente sed! Cupiditate reprehenderit quaerat atque deleniti, quo hic quibusdam minus voluptatum delectus iste necessitatibus aliquam temporibus quis similique enim dicta ullam asperiores nulla fuga sunt. Quam at voluptatem repellat delectus odit, quis eum ea vitae quisquam ratione placeat aliquid quae nisi sit. Ut, excepturi sunt quam vitae amet ex maiores provident illum laborum esse.</div>
+
+    <h1>Specify The Column Width</h1>
+
+    <h3>The column-width property specifies a suggested, optimal width for the columns.</h3>
+
+    <h3>The following example specifies that the suggested, optimal width for the columns should be 100px:</h3>
+
+    <div class="np8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident molestias a sit unde labore voluptates, nostrum dicta nesciunt in inventore perferendis modi eligendi totam, illum eius laudantium veniam natus accusamus quidem? Necessitatibus animi sequi, magni fugiat, harum impedit aperiam minima tempora, voluptate natus eveniet hic enim id corrupti cumque laudantium mollitia. Maiores possimus magni amet doloribus. Quas tempora possimus quaerat quis inventore, quidem vel! Tempora, quasi facilis ut ducimus maxime esse, nesciunt natus, rem sint repellat voluptatum sunt? Magnam adipisci unde officia. Aut dolorem ratione sit voluptatum atque hic aliquam quaerat, soluta laboriosam incidunt nobis, odio perspiciatis quis porro expedita. Cum corrupti obcaecati odio error eos illum quis nobis? Facere ducimus excepturi quia iusto aliquid, odit mollitia. Deserunt ea repellendus, nisi asperiores nulla expedita eveniet natus veritatis voluptatum a odit consequuntur animi rerum aut ipsa beatae dolore minus quod dolorum voluptatem recusandae alias inventore. Vero architecto in est explicabo eligendi earum omnis aperiam culpa, exercitationem, provident tempora, dolorem libero tenetur? Perspiciatis expedita ratione recusandae magni nihil doloribus sapiente, repellendus hic sit consequuntur! Numquam ipsam in quaerat quidem, sed eius nisi nobis consequatur, reprehenderit hic non eaque illum adipisci quisquam? Cupiditate quasi aspernatur tempora amet debitis corrupti culpa. Reiciendis, quod beatae.</div>
+    
+</body>
+</html>

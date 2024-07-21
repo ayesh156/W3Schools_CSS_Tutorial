@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left and Right Align</title>
+    <style>
+        /* Right align with the position property */
+        .right {
+            position: relative;
+        }
+
+        .right p{
+            position: absolute;
+            right: 0;
+            width: 300px;
+            border: 3px solid #71ad21;
+            padding: 10px;
+        }
+
+        /* Right align with the float property */
+        .right2 {
+            float: right;
+            width: 300px;
+            border: 3px solid green;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Left and Right Align - Using position</h1>
+
+    <h3>One method for aligning elements is to use position: absolute;</h3>
+
+    <h2>Right align with the position property</h2>
+
+    <div class="right">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate enim ab atque assumenda minus placeat cum perspiciatis provident ratione at.</p>
+    </div>
+    <br><br><br><br><br><br>
+
+    <h1>Left and Right Align - Using float</h1>
+
+    <h3>Another method for aligning elements is to use the float property:</h3>
+
+    <h2>Right align with the float property</h2>
+
+    <div class="right2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsam dicta architecto a pariatur rerum adipisci aut eum molestias soluta?</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-clip property</title>
+    <style>
+        /* Background-clip: border-box (this is default): */
+        #example1 {
+            border: 10px dotted black;
+            padding: 15px;
+            background-color: lightblue;
+            background-clip: border-box;
+        }
+
+        /* background-clip: padding-box */
+        #example2 {
+            border: 10px dotted black;
+            padding: 15px;
+            background-color: wheat;
+            background-clip: padding-box;
+        }
+
+        /* background-clip: content-box */
+        #example3 {
+            border: 10px dotted black;
+            padding: 15px;
+            background-color: lawngreen;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Specify how far the background should extend within an element:</h3>
+
+    <h2>Background-clip: border-box (this is default):</h2>
+    <div id="example1">
+        <p>The background extends behind the border.</p>
+    </div>
+
+    <h2>background-clip: padding-box</h2>
+    <div id="example2">
+        <p>The background extends to the inside edge of the border.</p>
+    </div>
+
+    <h2>background-clip: content-box</h2>
+    <div id="example3">
+        <p>The background extends to the edge of the content box.</p>
+    </div>
+    
+</body>
+</html>

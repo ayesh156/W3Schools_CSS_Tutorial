@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content</title>
+    <style>
+        .main {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+        }
+
+        .main div {
+            width: 70px;
+            height: 70px;
+        }
+
+        #main1 {justify-content: flex-start;}
+        #main2 {justify-content:flex-end ;}
+        #main3 {justify-content: center;}
+        #main4 {justify-content: space-between;}
+        #main5 {justify-content: space-around;}
+        #main6 {justify-content: space-evenly;}
+    </style>
+</head>
+<body>
+
+    <h1>justify-content</h1>
+
+    <h3>The justify-content property aligns the flexible container's items when items do not use all available space on the main-axis (horizontally).</h3>
+
+    <h2>Syntax :- justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly|initial|inherit;</h2>
+
+    <h3>Different values of the justify-content property.</h3>
+
+    <h2>justify-content: flex-start;</h2>
+    <div class="main" id="main1">
+        <div style="background-color: coral;">1</div>
+        <div style="background-color: lightblue;">2</div>
+        <div style="background-color: pink;">3</div>
+    </div>
+
+    <h2>justify-content: flex-end;</h2>
+    <div class="main" id="main2">
+        <div style="background-color: coral;">1</div>
+        <div style="background-color: lightblue;">2</div>
+        <div style="background-color: pink;">3</div>
+    </div>
+
+    <h2>justify-content: center;</h2>
+    <div class="main" id="main3">
+        <div style="background-color: coral;">1</div>
+        <div style="background-color: lightblue;">2</div>
+        <div style="background-color: pink;">3</div>
+    </div>
+
+    <h2>justify-content: space-between;</h2>
+    <div class="main" id="main4">
+        <div style="background-color: coral;">1</div>
+        <div style="background-color: lightblue;">2</div>
+        <div style="background-color: pink;">3</div>
+    </div>
+
+    <h2>justify-content: space-around;</h2>
+    <div class="main" id="main5">
+        <div style="background-color: coral;">1</div>
+        <div style="background-color: lightblue;">2</div>
+        <div style="background-color: pink;">3</div>
+    </div>
+
+    <h2>justify-content: space-evenly;</h2>
+    <div class="main" id="main6">
+        <div style="background-color: coral;">1</div>
+        <div style="background-color: lightblue;">2</div>
+        <div style="background-color: pink;">3</div>
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the justify-content property.</p>
+    
+</body>
+</html>

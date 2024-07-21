@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <style>
+        /* Responsive Images */
+        .img1 {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Polaroid Images / Cards */
+       .polaroid {
+           width: 45%;
+           float: left;
+           margin: 0 6px;
+           background-color: white;
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+           margin-bottom: 25px;
+       }
+
+       .container {
+           text-align: center;
+           padding: 10px 20px;
+       }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Images</h1>
+
+    <h3>Responsive images will automatically adjust to fit the size of the screen.</h3>
+
+    <h3>If you want an image to scale down it has to, but never scale up to be larger than its original size, add the following:</h3>
+
+    <p>Resize the browser window to see the effect:</p>
+
+    <img src="../../src/images/img_5terre_wide.jpg" alt="Terre" width="1000" height="300" class="img1">
+
+    <h1>Polaroid Images / Cards</h1>
+
+    <div class="polaroid">
+        <img src="../../src/images/img_5terre.jpg" alt="Terre" style="width: 100%;">
+        <div class="container">
+            <p>Cinque Terre</p>
+        </div>
+    </div>
+
+    <div class="polaroid">
+        <img src="../../src/images/img_lights.jpg" alt="Lights" style="width: 100%;">
+        <div class="container">
+            <p>Northern Lights</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

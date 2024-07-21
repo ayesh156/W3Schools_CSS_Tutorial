@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+       * {
+           box-sizing: border-box;
+       }
+
+       body {
+           background-color: black;
+       }
+
+       .header, .footer {
+           background-color: gray;
+           color: white;
+           padding: 15px;
+       }
+
+       .column {
+           float: left;
+           padding: 15px;
+       }
+
+       .clearfix:after {
+           content: "";
+           clear: both;
+           display: table;
+       }
+
+       .menu {
+           width: 25%;
+       }
+
+       .content {
+           width: 75%;
+           color: white;
+       }
+
+       .menu ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+       }
+
+       .menu li {
+           background-color: #33b5e5;
+           padding: 8px;
+           margin-bottom: 8px;
+           color: white;
+       }
+
+       .menu li:hover {
+           background-color: #0033cc;
+           cursor: default;
+       }
+    </style>
+</head>
+<body>
+
+    <h1>Web Layout Example</h1>
+
+    <h3>It is also common to do entire web layouts using the float property:</h3>
+
+    <div class="header">
+        <h1>Chania</h1>
+    </div>
+
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Footer</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <h1>The City</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis aliquid neque ipsam tempora, provident recusandae eos nulla iure accusantium earum sequi, error sapiente aut! Reprehenderit accusantium nisi animi itaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur optio, reprehenderit reiciendis modi ipsam cupiditate.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer Text</p>
+    </div>
+    
+</body>
+</html>

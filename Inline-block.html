@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display: inline-block</title>
+    <style>
+        /* display: inline */
+        span.a {
+            display: inline;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+
+        /* display: inline-block */
+        span.b {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: pink;
+        }
+
+        /* display: block */
+        span.c {
+            display: block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: greenyellow;
+        }
+
+        /* Using inline-block to Create Navigation Links */
+        .nav {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: coral;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The display: inline-block Value</h1>
+
+    <h3>Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.</h3>
+
+    <h3>Also, With display: inline-block, the top and bottom margins/paddings are respected, but with display: inline the are not.</h3>
+
+    <h3>Compared to display: block, the major difference is that display: inline-block does not add a line break after the element, so the element can sit next to other elements.</h3>
+
+    <h3>The following example shows the different behavior of display: inline, display: inline-block and display: block:</h3>
+
+    <h2>display: inline</h2>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad error, maxime asperiores ex quaerat sit voluptatum expedita neque at facilis? <span class="a">Ayesh</span> <span class="a">Chathuranga</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, culpa.</div>
+
+    <h2>display: inline-block</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat doloremque quam, obcaecati cum veniam accusantium sapiente aspernatur minus esse? a <span class="b">Ayesh</span> <span class="b">Chathuranga</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, laborum.</p>
+
+    <h2>display: block</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis optio dignissimos consectetur dolore consequatur iure rem quis commodi, itaque facilis? <span class="c">Ayesh</span> <span class="c">Chathuranga</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ut?</p>
+
+    <h1>Using inline-block to Create Navigation Links</h1>
+
+    <h3>One common use for display: inline-block is to display list items horizontally instead of vertically. The following example create horizontal navigation links:</h3>
+
+    <p>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#content">Content Us</a></li>
+    </ul>
+    
+</body>
+</html>

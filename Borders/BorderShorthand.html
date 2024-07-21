@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand Border</title>
+    <style>
+        p.ind {
+            border: 5px solid red;
+            background-color: lightblue;
+        }
+
+        /* Left Border */
+        p.left {
+            border-left: 7px solid blue;
+            background-color: lightgray;
+        }
+
+        /* Bottom Border */
+        p.bottom {
+            border-bottom: 7px solid greenyellow;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>To shorten the code, it is also possible to specify all the individual border properties in one property</h3>
+
+    <h3>The border property is a shorthand property for the following individual border properties</h3>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style (required)</li>
+        <li>border-color</li>
+    </ul>
+
+    <p class="ind">This property is a shorthand property for border-width, border-style and border-color.</p>
+
+    <h3>You can also specify all the individual border properties for just one side:</h3>
+
+    <h2>Left Border</h2>
+
+    <p class="left">This property is a shorthand property for border-left-width, border-left-style and border-left-color.</p>
+
+    <h2>Bottom Border</h2>
+
+    <p class="bottom">This property is a shorthand property for border-bottom-width, border-bottom-style and border-bottom-color.</p>
+    
+</body>
+</html>

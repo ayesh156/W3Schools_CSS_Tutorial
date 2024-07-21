@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Images</title>
+    <style>
+        /* For width smaller than 600px: */
+        body {
+            background-image: url("../../src/images/img_smallflower.jpg");
+            background-repeat: no-repeat;
+        }
+
+        /* For width 600px and larger */
+        @media only screen and (min-width: 600px) {
+            body {
+                background-image: url("../../src/images/img_flowers.jpg");
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <p style="margin-top: 360px;">Resize the browser width and the background image will change at 600px.</p>
+
+    <h1>Different Images for Screen Sizes</h1>
+
+    <h3>A large image can be perfect on a big computer screen, but useless on a small device. Why load a large image when you have to scale it down anyway? To reduce the load or for any other reasons, you can use media queries to different images on different devices.</h3>
+
+    <h3>Here is one large image and one smaller image that will be displayed on different devices:</h3>
+    
+</body>
+</html>

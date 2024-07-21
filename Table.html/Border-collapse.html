@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-collapse</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        #separate {
+            border-collapse: separate;
+        }
+
+        #collapse {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Border-collapse</h1>
+
+    <h2>Set the collapsing border model for two tables:</h2>
+
+    <h3>border-collapse: separate(default):</h3>
+    <table id="separate">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <h3>border-collapse: collapse:</h3>
+    <table id="collapse">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

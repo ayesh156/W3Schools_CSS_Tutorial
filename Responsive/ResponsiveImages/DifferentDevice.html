@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Image</title>
+    <style>
+        /* For device width smaller than 600px */
+        body {
+            background-repeat: no-repeat;
+            background-image: url("../../src/images/img_smallflower.jpg");
+        }
+
+        /* For device width 600px and larger */
+        @media only screen and (min-device-width: 600px) {
+            body {
+                background-image: url("../../src/images/img_flowers.jpg");
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <p style="margin-top: 360px;"></p>
+
+    <h1>Different Images for Different Devices</h1>
+
+    <h3>You can use the media query min-device-width, instead of min-width, which checks the device width, instead of the browser width. Then the image will not change when you resize the browser window:</h3>
+    
+</body>
+</html>

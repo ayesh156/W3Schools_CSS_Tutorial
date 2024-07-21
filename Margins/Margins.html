@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        /* Set different margins for all four sides of a (p) element: */
+        .ind {
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-right: 150px;
+            margin-bottom: 100px;
+            margin-left: 80px;
+            background-color: lightblue;
+        }
+
+        /* Use margin: auto; */
+        .auto {
+            border: 1px solid black;
+            width: 300px;
+            margin: auto;
+        }
+
+        /* Use of the inherit value */
+        .par {
+            border: 1px solid red;
+            margin-left: 100px;
+        }
+
+        p.ex1 {
+            margin-left: inherit;
+        }
+
+        /* Use percentage Value */
+        .per {
+            border: 1px solid black;
+            margin: 10% 15% 20% 25%;
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+     
+    <h1>CSS Margin</h1>
+
+    <h3>The CSS margin properties are used to create space around elements, outside of any defined borders.</h3>
+
+    <h3>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom and left)</h3>
+
+    <h1>Margin - Individual Sides</h1>
+
+    <h3>CSS has properties for specifying the margin for each side of an element:</h3>
+
+    <ul>
+        <li>margin-top</li>
+        <li>margin-right</li>
+        <li>margin-bottom</li>
+        <li>margin-left</li>
+    </ul>
+
+    <h2>Set different margins for all four sides of a (p) element:</h2>
+
+    <div class="ind">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px</div>
+
+    <h3>All the margin properties can have the following value:</h3>
+
+    <ul>
+        <li>auto - the browser calculates the margin</li>
+        <li>length - Specifies a margin in px, pt, cm, etc.</li>
+        <li>% (percentage) - specifies a margin in % of the width of the containing element</li>
+        <li>inherit - specifies that the margin should be inherited from the parent element</li>
+    </ul>
+
+    <h3><b>Tip:</b> Negative values are allowed</h3>
+
+    <h1>auto Value</h1>
+
+    <h3>You can set the margin property to auto to horizontally center the element within its container</h3>
+
+    <h3>The element will then take up the specified width and the remaining space will be split equally between the left and right margins</h3>
+
+    <h2>Use margin: auto;</h2>
+
+    <div class="auto">
+        This div will be horizontally centered because it has margin: auto;
+    </div>
+
+    <h1>inherit Value</h1>
+
+    <h3>Lets the left margin of the (p.ex1) element be inherit from the parent element (.par)</h3>
+
+    <h2>Use of the inherit value</h2>
+
+    <div class="par">
+        <p class="ex1">This paragraph has inherited left margin (from the div element).</p>
+    </div>
+
+    <h2>Use percentage Value</h2>
+
+    <div class="per">
+        A paragraph with a 10% top margin, 15% right margin, 20% bottom margin and 25% left margin.The percentage is based on the width of the containing element.
+    </div>
+
+
+</body>
+</html>

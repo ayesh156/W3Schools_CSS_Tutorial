@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        /* --Anchor Pseudo-classes-- */
+
+        /* unvisited link */
+        #p1 a:link {
+            color: red;
+        }
+
+        /* visited link */
+        #p1 a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        #p1 a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        #p1 a:active {
+            color: blue;
+        }
+
+        /* --Pseudo-classes and HTML Classes --*/
+        #p2 a.highlight:hover {
+            color: red;
+            font-size: 22px;
+        }
+
+        /* --Hover on (div) */
+        #div1 {
+            background-color: green;
+            color: wheat;
+            padding: 25px;  
+            text-align: center;
+        }
+
+        #div1:hover {
+            background-color: blue;
+        }
+
+        /* --Simple Tooltip Hover -- */
+        #p3 {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        #div3:hover #p3 {
+            display: block;
+        }
+
+        /* --CSS - The :first-child Pseudo-class-- */
+        .p4:first-child {
+            color: blue;
+        }
+
+        /* Match the first (i) element in all (p) elements */
+        .p5 i:first-child {
+            color: green;
+        }
+
+        /* Match all (i) elements in all first child (p) elements */
+        .p6:first-child i {
+            color: blueviolet;
+        }
+
+        /* :lang defines the quotation marks for (q) elements with lang="no" */
+        q:lang(no) {
+            quotes: "~" "~";
+        }
+
+        /* Use of :focus */
+        input:focus {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anchor Pseudo-classes</h1>
+
+    <h2>Styling a link depending on state</h2>
+
+    <h3>Use the :link selector to style links to unvisited pages, the :visited selector to style links to visited pages, and the :hover selector to style links when you over them.</h3>
+
+    <p id="p1"><b><a href="https://www.w3schools.com/css/default.asp" target="_blank">This is a link</a></b></p>
+
+    <p><b>Note: </b>a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note: </b>a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+    <h1>Pseudo-classes and HTML Classes</h1>
+
+    <h2>Hover over the first link below, it will change color and font-size.</h2>
+
+    <p id="p2"><a href="https://www.w3schools.com/css/css_syntax.asp" class="highlight">CSS Syntax</a></p>
+
+    <p id="p2"><a href="https://www.w3schools.com/css/default.asp">CSS Tutorial</a></p>
+
+    <h1>Hover on (div)</h1>
+
+    <h2>Mouse over the div element below to change its background color:</h2>
+
+    <div id="div1">Mouse Over Me</div>
+
+    <h1>Simple Tooltip Hover</h1>
+
+    <h2 id="div3">
+        Hover over this element to show the p element
+        <p id="p3">Tada! Here I am!</p>
+    </h2>
+
+    <h1>CSS - The :first-child Pseudo-class</h1>
+
+    <h2>The selector matches any (p) element that is the first child of any element</h2>
+    
+    <div>
+        <p class="p4">This is a some text</p>
+        <p class="p4">This is a some text</p>
+    </div>
+
+    <div>
+        <p class="p4">This is a some text</p>
+        <p class="p4">This is a some text</p>
+    </div>
+
+    <h1>Match the first (i) element in all (p) elements</h1>
+
+    <p class="p5">I am a <i>strong</i> person. I am a <i>strong</i> person</p>
+    <p class="p5">I am a <i>strong</i> person. I am a <i>strong</i> person</p>
+
+    <h1>Match all (i) elements in all first child (p) elements</h1>
+
+    <div>
+        <p class="p6">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p class="p6">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+
+    <div>
+        <p class="p6">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p class="p6">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+
+    <h1>CSS - The :lang Pseudo-class</h1>
+
+    <h2>:lang defines the quotation marks for (q) elements with lang="no"</h2>
+
+    <p>Some text. <q lang="no">A quotes in a paragraph</q> Some text.</p>
+
+    <h1>Use of :focus</h1>
+
+   <form action="/action_page.php" method="get">
+       First name: <input type="text" name="fname"><br><br>
+       Last name: <input type="text" name="lname"><br><br>
+       <input type="submit" value="Submit">
+   </form>
+
+</body>
+</html>

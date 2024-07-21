@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Images</title>
+    <style>
+        /* Using The Width Property */
+        .img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Using The max-width Property */
+        .img2 {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using The Width Property</h1>
+
+    <h3>If the width property is set to a percentage and the height property is set to "auto", the image will be responsive and scale up and down:</h3>
+
+    <img src="../../src/images/img_chania.jpg" alt="Chania" class="img">
+
+    <p>Resize the browser window to see how the image will scale.</p>
+
+    <h1>Using The max-width Property</h1>
+
+    <h3>If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:</h3>
+
+    <img src="../../src/images/img_chania.jpg" alt="Chania" class="img2">
+    
+</body>
+</html>

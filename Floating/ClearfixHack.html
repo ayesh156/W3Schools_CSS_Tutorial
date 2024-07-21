@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The clearfix Hack</title>
+    <style>
+       div {
+           padding: 5px;
+           border: 3px solid green;
+       }
+
+        /* Without Clearfix */
+        .img1 {
+            float: right;
+        }
+
+        /* With Clearfix */
+        .img2 {
+            float: right;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        /* With New Modern Clearfix */
+        .img3 {
+            float: right;
+        }
+
+        .newClearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>clearfix Hack</h1>
+
+    <h3>If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem:</h3>
+
+    <h2>Without Clearfix</h2>
+
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container.</p>
+
+    <div>
+        <img src="../src/images/pineapple.jpg" alt="Pineapple" width="170" height="170" class="img1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, corrupti.
+    </div>
+
+    <h2 style="clear: right;">With Clearfix</h2>
+    <p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+    <div class="clearfix">
+        <img src="../src/images/pineapple.jpg" alt="Pineapple" width="170" height="170" class="img2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, veniam?
+    </div>
+
+    <h3>The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use and the following code is used for most website:</h3>
+
+    <h2>With New Modern Clearfix</h2>
+    <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+    <div class="newClearfix">
+        <img src="../src/images/pineapple.jpg" alt="Pineapple" width="170" height="170" class="img3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, illo!
+    </div>
+    
+</body>
+</html>

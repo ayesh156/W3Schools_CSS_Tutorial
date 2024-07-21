@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-timing-function</title>
+    <style>
+        /* Play an animation with the same speed from beginning to end: */
+        .div1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: mymove1 5s infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes mymove1 {
+            from {left: 0;}
+            to {right: 300px;}
+        }
+
+        /* To better understand the different timing function values; Here are five different (div) elements with five different values: */
+        .div2 {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            background: red;
+            color: white;
+            font-weight: bold;
+            animation: mymove2 5s infinite;
+        }
+
+        #div1 {animation-timing-function: linear;}
+        #div2 {animation-timing-function: ease;}
+        #div3 {animation-timing-function: ease-in;}
+        #div4 {animation-timing-function: ease-out;}
+        #div5 {animation-timing-function: ease-in-out;}
+
+        @keyframes mymove2 {
+            from {left: 0;}
+            to {left: 300px;}
+        }
+
+        /* Same as the example above, but the speed curves are defined with the cubic-bezier function: */
+        .div3 {
+            position: relative;
+            width: 200px;
+            height: 50px;
+            background: red;
+            font-weight: bold;
+            color: white;
+            animation: mymove3 5s infinite;
+        }
+
+        #atf1 {animation-timing-function: cubic-bezier(0,0,1,1);}
+        #atf2 {animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+        #atf3 {animation-timing-function: cubic-bezier(0.42,0,1,1);}
+        #atf4 {animation-timing-function: cubic-bezier(0,0,0.58,1);}
+        #atf5 {animation-timing-function: cubic-bezier(0.25,0,0.58,1);}
+
+        @keyframes mymove3 {
+            from {left: 0;}
+            to {left: 300px;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>animation-timing-function</h1>
+
+    <h3>The animation-timing-function specifies the speed curve of an animation.</h3>
+
+    <h3>The speed curve defines the TIME an animation uses to change from one set of CSS style to another.</h3>
+
+    <h3>The speed curve is used to make the changes smoothly.</h3>
+
+    <h2>Syntax :- transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n,)|initial|inherit;</h2>
+
+    <h3>The animation-timing-function uses a mathematical function, called the Cubic Bezier curve, to make the speed curve, You can use your own values in this function, or use one of the pre-defined values:</h3>
+
+    <ul>
+        <li>ease :- Default value. Specifies a transition effect with a slow start, then fast, then end slowly (equivalent to cubic-bezier(0.25, 0.1, 0.25, 1)</li>
+        <li>linear :- Specifies a transition effect with the same speed from start to end (equivalent to cubic-bezier(0,0,1,1))</li>
+        <li>ease-in :- Specifies a transition effect with a slow start (equivalent to cubic-bezier(0.42,0,1,1))</li>
+        <li>ease-out :- Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1))</li>
+        <li>ease-in-out :- Specifies a transition effect with a slow start and end (equivalent to cubic-bezier(0.42,0,0.58,1))</li>
+        <li>step-start :- Equivalent to steps(1, start)</li>
+        <li>step-end :- Equivalent to steps(1, end)</li>
+        <li>Steps(int,start|end) :- Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end"</li>
+        <li>cubic-bezier(n,n,n,n) :- Define your own values in the cubic-bezier function. Possible values are numeric values from 0 to 1</li>
+        <li>initial :- Sets this property to its default value.</li>
+        <li>inherit :- Inherits this property from its parent element.</li>
+    </ul>
+
+    <h3>Play an animation with the same speed from beginning to end:</h3>
+
+    <div class="div1"></div>
+
+    <h3>To better understand the different timing function values; Here are five different (div) elements with five different values:</h3>
+
+    <div class="div2" id="div1">linear</div>
+    <div class="div2" id="div2">ease</div>
+    <div class="div2" id="div3">ease-in</div>
+    <div class="div2" id="div4">ease-out</div>
+    <div class="div2" id="div5">ease-in-out</div>
+
+    <h3>Same as the example above, but the speed curves are defined with the cubic-bezier function:</h3>
+
+    <div class="div3" id="atf1">cubic-bezier(0,0,1,1)</div>
+    <div class="div3" id="atf2">cubic-bezier(0.25,0.1,0.25,1)</div>
+    <div class="div3" id="atf3">cubic-bezier(0.42,0,1,1)</div>
+    <div class="div3" id="atf4">cubic-bezier(0,0,0.58,1)</div>
+    <div class="div3" id="atf5">cubic-bezier(0.52,0,0.58,1)</div>
+    
+</body>
+</html>
